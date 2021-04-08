@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
+
+
+body {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* BACKGROUND COLORS */
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+.bg-color-game {
+    background-color: white;
+}
+
+
+/* CONTAINERS */
+
+.game-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 100px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    border: none;
+}
+
+.xo-container {
+    position: relative;
+    margin: 0;
+    background-color: rgb(0, 88, 88);
+
+}
+
+/* NAVBAR */
+
+
+.navbar-light .navbar-brand {
+    color: rgb(0, 88, 88) !important;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 88, 88) !important;
+}
+
+/* MEDIA BREAKPOINTS */
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 576px) {
+    .game-container {
+        width: 310px;
+        height: 310px;
+    }
+
+    .xo-container {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up)  */
+
+@media (min-width: 1400px) {}
