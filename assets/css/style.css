@@ -55,7 +55,7 @@ body {
 
 /* MEDIA BREAKPOINTS */
 
-/* Small devices (landscape phones, 576px and up) */
+/* Small devices (landscape phones, max 576px) */
 
 @media (max-width: 576px) {
     .game-container {
@@ -75,11 +75,33 @@ body {
 
 /* Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+    .game-container {
+        width: 460px;
+        height: 460px;
+    }
+
+    .xo-container {
+        width: 150px;
+        height: 150px;
+    }
+}
 
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+    .game-container {
+        width: 610px;
+        height: 610px;
+    }
+
+    .xo-container {
+        width: 200px;
+        height: 200px;
+    }
+}
 
 /* X-Large devices (large desktops, 1200px and up) */
 
