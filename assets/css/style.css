@@ -6,6 +6,7 @@ body {
     padding: 0;
     margin: 0;
     overflow: hidden;
+    color: white;
 }
 
 /* BACKGROUND COLORS */
@@ -27,16 +28,19 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Waiting for the Sunrise', cursive;
-    font-size: 100px;
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(3, 1fr);
+
+
+
 }
 
 .xo-container {
     position: relative;
     margin: 0;
     background-color: rgb(0, 88, 88);
+
 }
 
 /* NAVBAR */
@@ -59,6 +63,25 @@ body {
     .game-container {
         width: 310px;
         height: 310px;
+        text-align: center;
+
+    }
+
+    .xo-container {
+        width: 100px;
+        height: 100px;
+        font-size: 75px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .game-container {
+        width: 310px;
+        height: 310px;
+        font-size: 75px;
+
     }
 
     .xo-container {
@@ -67,10 +90,6 @@ body {
     }
 }
 
-/* Small devices (landscape phones, 576px and up) */
-
-@media (min-width: 576px) {}
-
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
@@ -78,6 +97,7 @@ body {
     .game-container {
         width: 460px;
         height: 460px;
+        font-size: 100px;
     }
 
     .xo-container {
@@ -93,6 +113,7 @@ body {
     .game-container {
         width: 610px;
         height: 610px;
+        font-size: 150px;
     }
 
     .xo-container {
@@ -108,3 +129,10 @@ body {
 /* XX-Large devices (larger desktops, 1400px and up)  */
 
 @media (min-width: 1400px) {}
+
+
+/* ADDITIONAL STYLING */
+
+.text-center {
+    text-align: center;
+}
