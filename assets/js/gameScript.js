@@ -10,7 +10,23 @@ console.log('hello');
 // The Game is finished, make it possible to reset the gameboard.
 // Make the two player enter their names.
 // 
+// The players. 
+var player1 = 'X';
+var player2 = 'O';
+//get the gameboard containers, make them into an array. 
+var xo = Array.from(document.querySelectorAll('.xo-container'));
+console.log(xo);
+//add click to the gameboard, 
+var clicked = document.getElementById('gameboard').addEventListener('click', turnHandler);
 
+function turnHandler(event) {
+    $('.xo-container').css('background-color', 'red');
+}
 
+// The gameboard, 9 empty strings, to fill with X's & O's. 
+function game() {
 
-// I want to get the 
+    var gameboard = ['X', '', '', '', 'X', 'O', '', '', 'X'];
+}
+
+game()
