@@ -5,7 +5,7 @@ body {
     background-color: #fff;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow-y: hidden;
     color: black;
 }
 
@@ -16,14 +16,14 @@ body {
 }
 
 .bg-color-game {
-    background-color: white;
+    background-color: black;
 }
 
 
 /* CONTAINERS */
 
 .game-container {
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -31,6 +31,8 @@ body {
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 8rem;
+
 
 
 
@@ -39,7 +41,7 @@ body {
 .xo-container {
     position: relative;
     margin: 0;
-    background-color: rgb(0, 88, 88);
+    background-color: white;
 
 }
 
@@ -135,4 +137,9 @@ body {
 
 .text-center {
     text-align: center;
+}
+
+button {
+    height: 2rem;
+    width: 10rem;
 }
