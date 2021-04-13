@@ -1,6 +1,6 @@
 <h1 align="center">TicTacToe</h1>
 
-[View the live project here.](https://codeinstitute.net)
+[View the live project here.]()
 
 Welcome to my second milestone project provided by [Code Institute](https://codeinstitute.net). For this project I am going to do a Tic Tac Toe Game. I hope you will enjoy it!
 
@@ -8,7 +8,23 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 
 ## User Experience (UX)
 
--   ### User stories
+### Strategy
+
+- My targeted audience for this project is children somewhere between the ages of 5-9 years old. In most cases when two adults plays against each other it ends in a draw, unless your not familiar with the basic strategy of the game. So the Tic-tac-toe game is very simple, so it's well suited for children who dont already know the basic strategy. So I will try to make it appealing to kids at first. Having in mind what kids are interested in now a days, such as sports, tv-series, toys etc. 
+
+- I made up a very simple chart, by asking my own kids and some of their friends. I wanted to know their thought on what they think is important for this project. So they had three choices to make, between "Game Play", "Styling" and the "Contact page". They were going to rank these choices between 1-3.
+ <h2 align="center"><img src="assets/img/img-readme/chartOfImportance.png"></h2>
+
+- The one who got the most points was "Styling". And I intend to agree, if my main target is children, I want it to look interesting and fun. So the kids will keep on playing, and visit the site again. 
+- The second most was the "Game Play" chocie. Though I would think it's equally or even more important then the styling. Without a functional game, then what's theres to even do on the site.
+- Not a shocker that the "Contact Page" got the least points. So I will focus on doing a visually striking and fun game at first. The implementing of a "Contact Page" will maybe be a feature to add in the future. But if I feel that I've got the time to do it, then I probably will. 
+
+### Scope
+
+-
+
+### User stories
+
 
     - As a First Time Visitor,
 
@@ -18,9 +34,11 @@ Welcome to my second milestone project provided by [Code Institute](https://code
     - As as user,
     
         1. I want the game to be played easily.
-        2. I want feedback once the game is done, such as who won.
-        3. I want to reset the game when the game is finished.
-        4. I want to know if the author has done some other games.  
+        2. I want it to have nice estetics. 
+        3. I want feedback once the game is done, such as who won. 
+        4. I want to restart the game when the game is finished.
+        5. I want to know if the author has done some other games. 
+         
         
 
 -   ### Design
