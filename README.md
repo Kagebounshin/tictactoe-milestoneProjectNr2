@@ -6,22 +6,57 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 
 <h2 align="center"><img src=></h2>
 
-## User Experience (UX)
+## Table Of Content
+1.[**UX**](#user-experience) 
+- [**Strategy**](#strategy)
+- [**Scope**](#scope)
+- [**Structure**](#structure)
+- [**User Stories**](#user-stories)
+- [**Design**](#design)
+- [**Wireframes**](#wireframes)
+
+2.[**Features**](#features)
+- [**Existing Features**](#existing-features)
+- [**Features For The Future**](#features-for-the-future)
+
+3.[**Technologies**](#technologies-used)
+
+
+4.[**Testing**](#testing)
+
+5.[**Deployment**](#deployment)
+
+6.[**Credits**](#credits)
+- [**Content**](#content)
+- [**Media**](#media)
+- [**Acknowledgements**](#acknowledgements)
+
+
+
+## User Experience
 
 ### Strategy
 
-- My targeted audience for this project is children somewhere between the ages of 5-9 years old. In most cases when two adults plays against each other it ends in a draw, unless your not familiar with the basic strategy of the game. So the Tic-tac-toe game is very simple, so it's well suited for children who dont already know the basic strategy. So I will try to make it appealing to kids at first. Having in mind what kids are interested in now a days, such as sports, tv-series, toys etc. 
+- My targeted audience for this project is children somewhere between the ages of 4-9 years old. In most cases when two adults plays against each other it ends in a draw, unless your not familiar with the basic strategy of the game. So the Tic-tac-toe game is very simple, so it's well suited for children who dont already know the basic strategy. So I will try to make it appealing to kids at first. Having in mind what kids are interested in now a days, such as sports, tv-series, toys etc. 
 
 - I made up a very simple chart, by asking my own kids and some of their friends. I wanted to know their thought on what they think is important for this project. So they had three choices to make, between "Game Play", "Styling" and the "Contact page". They were going to rank these choices between 1-3.
  <h2 align="center"><img src="assets/img/img-readme/chartOfImportance.png"></h2>
 
 - The one who got the most points was "Styling". And I intend to agree, if my main target is children, I want it to look interesting and fun. So the kids will keep on playing, and visit the site again. 
-- The second most was the "Game Play" chocie. Though I would think it's equally or even more important then the styling. Without a functional game, then what's theres to even do on the site.
+- The second most was the "Game Play" choice. Though I would think it's more important then the styling. Without a functional game, then what's the purpose of the page.
 - Not a shocker that the "Contact Page" got the least points. So I will focus on doing a visually striking and fun game at first. The implementing of a "Contact Page" will maybe be a feature to add in the future. But if I feel that I've got the time to do it, then I probably will. 
 
 ### Scope
 
--
+- So alot of styling and a fun and intuitive gameplay is most important.
+- The first thing they need is instructions on how the actuall game work, so I will implement some easy to understand instructions to be shown when they enter the site. The instructions will be picture based, showing them the steps you need to get to win the game. Im thinking three pictures wich shows three winning combinations horizontally, vertically & diagonally. And a picture wich display a tie.
+
+
+
+### Structure
+
+- At the top of the page I will have a navigation bar, there you you will be able to navigate between the game and the contact page.
+- The "Game" page will be the home page of this site. After you get some game instructions you can start the game.  
 
 ### User stories
 
@@ -51,9 +86,11 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 -   ### Wireframes
 
     Home Page.
-    - <img src="assets/img/img-readme/wireframeHome.png">
+    - <img src="assets/img/img-readme/wfHome.png">
     Contact Page.
-    - <img src="assets/img/img-readme/wireframeContact.png">
+    - <img src="assets/img/img-readme/wfContact.png">
+    Instruction modal.
+    - <img src="assets/img/img-readme/wfInstructions.png">
 
 ## Features
 
