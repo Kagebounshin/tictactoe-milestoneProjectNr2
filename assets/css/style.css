@@ -3,22 +3,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
 
 body {
-    background-color: #fff;
+    background-color: #7fc3ccc4;
     padding: 0;
     margin: 0;
     /* overflow-x: hidden; */
-    color: white;
+    color: black;
     font-family: 'Just Me Again Down Here', cursive;
 }
 
 /* BACKGROUND COLORS */
 
 .bg-light {
-    background-color: transparent !important;
+    background-color: white !important;
 }
 
 .bg-color-game {
-    background-color: white;
+    background-color: transparent;
 }
 
 .bg-color-footer {
@@ -30,10 +30,12 @@ body {
 
 .turn-container {
     padding-right: 0;
+    z-index: 1;
 }
 
 .counter-container {
     padding-left: 0;
+    z-index: 1;
 }
 
 .game-container {
@@ -43,7 +45,7 @@ body {
     transform: translate(-50%, -50%);
     font-family: 'Waiting for the Sunrise', cursive;
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 7px;
     grid-template-columns: repeat(3, 1fr);
     cursor: pointer;
 }
@@ -52,9 +54,9 @@ body {
 .xo-container {
     position: relative;
     margin: 0;
-    background-color: #984848;
+    background-color: white;
     border-radius: 15%;
-
+    box-shadow: 12px 12px 2px 1px rgb(0 0 0 / 83%);
 }
 
 
@@ -177,8 +179,9 @@ body {
     transform: translate(-50%, -50%);
     border: none;
     border-radius: 50%;
-    background-color: #000;
+    background-color: transparent;
     color: black;
+    box-shadow: 8px 5px 2px 1px rgb(0 0 0 / 83%);
 }
 
 button i {
@@ -189,6 +192,55 @@ button i {
 
 h1#turn,
 h1.counter {
-    background-color: #984848;
+    background-color: white;
     text-align: center;
+    box-shadow: 7px 7px 2px 1px rgb(0 0 0 / 83%);
+}
+
+/* CLOUD */
+
+/* https://lauryndbrown.github.io/2017/06/08/creating-clouds-in-css.html */
+
+.cloud {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 15%;
+    width: 200px;
+    height: 80px;
+    background: #dadada;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+}
+
+.cloud::after,
+.cloud::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    background: inherit;
+    border-radius: inherit;
+}
+
+.cloud::after {
+    width: 100px;
+    height: 100px;
+    top: -49px;
+    right: 60px;
+}
+
+.cloud::before {
+    width: 80px;
+    height: 80px;
+    top: -45px;
+    left: 95px;
+}
+
+@keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
 }
