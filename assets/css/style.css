@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
 
 body {
     background-color: #fff;
     padding: 0;
     margin: 0;
-    overflow-y: hidden;
-    color: black;
+    /* overflow-x: hidden; */
+    color: white;
+    font-family: 'Just Me Again Down Here', cursive;
 }
 
 /* BACKGROUND COLORS */
@@ -16,11 +18,23 @@ body {
 }
 
 .bg-color-game {
-    background-color: black;
+    background-color: white;
+}
+
+.bg-color-footer {
+    background-color: chartreuse;
 }
 
 
 /* CONTAINERS */
+
+.turn-container {
+    padding-right: 0;
+}
+
+.counter-container {
+    padding-left: 0;
+}
 
 .game-container {
     position: relative;
@@ -31,15 +45,18 @@ body {
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 6rem;
     cursor: pointer;
 }
+
 
 .xo-container {
     position: relative;
     margin: 0;
-    background-color: white;
+    background-color: #984848;
+    border-radius: 15%;
+
 }
+
 
 /* NAVBAR */
 
@@ -56,6 +73,15 @@ body {
 
 .navbar-light .navbar-toggler {
     border-color: none !important;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    float: right;
 }
 
 /* MEDIA BREAKPOINTS */
@@ -143,6 +169,26 @@ body {
 
 .restartButton {
     position: relative;
-    height: 2rem;
-    width: 10rem;
+    height: 4rem;
+    width: 4rem;
+    left: 50%;
+    top: 50%;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 50%;
+    background-color: #000;
+    color: black;
+}
+
+button i {
+    font-size: 2rem;
+    margin-top: 2px;
+    color: white;
+}
+
+h1#turn,
+h1.counter {
+    background-color: #984848;
+    text-align: center;
 }
