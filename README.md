@@ -49,14 +49,18 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 ### Scope
 
 - So alot of styling and a fun and intuitive gameplay is most important.
-- The first thing they need is instructions on how the actuall game work, so I will implement some easy to understand instructions to be shown when they enter the site. The instructions will be picture based, showing them the steps you need to get to win the game. Im thinking three pictures wich shows three winning combinations horizontally, vertically & diagonally. And a picture wich display a tie.
+- The first thing thats needed are instructions, what the game is about and how do inte work. I will implement some easy to understand instructions to be shown when they enter the site. The instructions will be picture based, showing them the steps you need to take to win the game. Im thinking three pictures wich shows three winning combinations horizontally, vertically & diagonally. And a picture wich display a tie. Look at the instruction [**wireframe**](#wireframes) to see my idea.
+- To make it more fun to play I will put in a countdown timer, so the choices they make must be made quickly, unless the game ends. 
+- I also going to implement a scoreboard, displaying how many matches each have won, and how many times it  has ended in a tie. 
+
 
 
 
 ### Structure
 
-- At the top of the page I will have a navigation bar, there you you will be able to navigate between the game and the contact page.
-- The "Game" page will be the home page of this site. After you get some game instructions you can start the game.  
+- At the top of the page I will have a navigation bar. You will be able to navigate between the "Game" and the "Contact" page.
+- The "Game" page will be the home page of this site. After you get some game instructions you can choose to start the game. 
+
 
 ### User stories
 
@@ -109,6 +113,7 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 - [Bootstrap v5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 - [Hover.css](https://ianlunn.github.io/Hover/) - Hover effect on buttons.
 - [fontAwesome](https://fontawesome.com/) - provides icons across the sit
+- [GoogleFonts](https://fonts.google.com/)
 
 ## Testing
 
