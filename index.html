@@ -36,11 +36,18 @@
     <!-- AUDIO -->
 
     <!--GAMEAREA -->
-
-    <div class="container-fluid">
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-4 col-lg-3 turn-container">
+                <h1 id="turn">It's '' Turn</h1>
+            </div>
+            <div class="col-5 col-md-4 col-lg-3 counter-container">
+                <h1 class="counter">Timer: <span id="counter">0</span></h1>
+            </div>
+        </div>
         <div class="row">
             <div class="col">
-                <div class="game-container bg-color-game" id="gameboard">
+                <div class="game-container bg-color-game mt-5" id="gameboard">
                     <div class="xo-container text-center"></div>
                     <div class="xo-container text-center"></div>
                     <div class="xo-container text-center"></div>
@@ -57,13 +64,25 @@
         </div>
 
     </div>
-    <div class="container-fluid mt-5 pt-5">
+    <div class="container-fluid mt-5 mb-5">
         <div class="row">
             <div class="col">
-                <button id="restart" class="restartButton">Restart</button>
+                <button id="restart" class="restartButton"><i class="fas fa-redo"></i>
+
+                </button>
             </div>
         </div>
     </div>
+
+    <footer class="bg-color-footer">
+        <div class="container-fulid mt-5">
+            <div class="row">
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
