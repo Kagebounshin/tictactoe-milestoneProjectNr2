@@ -22,14 +22,15 @@ document.getElementById('restart').addEventListener('click', game);
 
 
 // //add click to the xo-containers 
+// https://dev.to/cilly_boloe/addeventlistener-once-js-bits-565d 
+// for only adding the eventlistener once. 
 xo.forEach(container => {
     container.addEventListener('click', clickHandler, {
         once: true
     }); // you can only click on one element once per game. 
 })
 
-// https://dev.to/cilly_boloe/addeventlistener-once-js-bits-565d 
-// for only adding the eventlistener once. 
+
 
 function clickHandler(event) {
     console.log('clicked')
