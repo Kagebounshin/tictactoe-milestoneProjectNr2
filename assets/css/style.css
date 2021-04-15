@@ -6,7 +6,7 @@ body {
     background-color: #7fc3ccc4;
     padding: 0;
     margin: 0;
-    /* overflow-x: hidden; */
+    overflow: hidden;
     color: black;
     font-family: 'Just Me Again Down Here', cursive;
 }
@@ -28,6 +28,12 @@ body {
 
 /* CONTAINERS */
 
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
 .turn-container {
     padding-right: 0;
     z-index: 1;
@@ -48,6 +54,7 @@ body {
     grid-gap: 7px;
     grid-template-columns: repeat(3, 1fr);
     cursor: pointer;
+    z-index: 1;
 }
 
 
@@ -57,24 +64,45 @@ body {
     background-color: white;
     border-radius: 15%;
     box-shadow: 12px 12px 2px 1px rgb(0 0 0 / 83%);
+    z-index: 1;
 }
 
 
 /* NAVBAR */
 
+.navbar {
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 
 .navbar-light .navbar-brand {
     color: black !important;
-
+    margin-left: 1rem;
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: black !important;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-bottom: .5rem;
+}
+
+.nav-link:hover {
+    color: cadetblue;
+    transition: 3s ease-in ease-out;
 }
 
 
 .navbar-light .navbar-toggler {
-    border-color: none !important;
+    border: none !important;
+    margin-right: 1rem;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem;
 }
 
 .navbar-nav {
@@ -83,7 +111,29 @@ body {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    float: right;
+    /* float: right; */
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+.hvr-underline-from-left:before {
+    background: #7fc3ccc4;
+}
+
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+    width: auto;
 }
 
 /* MEDIA BREAKPOINTS */
@@ -173,7 +223,7 @@ body {
     position: relative;
     height: 4rem;
     width: 4rem;
-    left: 50%;
+    left: 52%;
     top: 50%;
     font-weight: 600;
     transform: translate(-50%, -50%);
@@ -181,20 +231,19 @@ body {
     border-radius: 50%;
     background-color: transparent;
     color: black;
-    box-shadow: 8px 5px 2px 1px rgb(0 0 0 / 83%);
+    /* box-shadow: 8px 5px 2px 1px rgb(0 0 0 / 83%); */
 }
 
-button i {
+.hvr-icon-spin {
     font-size: 2rem;
-    margin-top: 2px;
-    color: white;
+    color: black;
+
 }
 
 h1#turn,
 h1.counter {
-    background-color: white;
     text-align: center;
-    box-shadow: 7px 7px 2px 1px rgb(0 0 0 / 83%);
+
 }
 
 /* CLOUD */
@@ -207,8 +256,8 @@ h1.counter {
     margin-left: 15%;
     width: 200px;
     height: 80px;
-    background: #dadada;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    background: #f1f1f1;
+    box-shadow: 10px 10px rgb(0 0 0 / 4%);
     border-radius: 100px;
 }
 
@@ -235,12 +284,21 @@ h1.counter {
     left: 95px;
 }
 
-@keyframes animateCloud {
-    0% {
-        margin-left: -1000px;
-    }
-
-    100% {
-        margin-left: 100%;
-    }
+/* .c2 {
+    margin-left: 40%;
+    margin-top: 30%;
 }
+
+.c3 {
+    margin-left: 50%;
+    margin-top: 90%;
+}
+
+.c4 {
+    margin-top: 50%;
+    margin-left: 10%;
+}
+
+.c5 {
+    margin-left: 50%;
+} */
