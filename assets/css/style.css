@@ -1,3 +1,11 @@
+/* 
+TO DO index.html.
+Add more cloud in different sizes, add animation from left to right.
+Make navlinks work. 
+*/
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
@@ -6,7 +14,7 @@ body {
     background-color: #7fc3ccc4;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    /* overflow-y: hidden; */
     color: black;
     font-family: 'Just Me Again Down Here', cursive;
 }
@@ -88,12 +96,6 @@ body {
     margin-bottom: .5rem;
 }
 
-.nav-link:hover {
-    color: cadetblue;
-    transition: 3s ease-in ease-out;
-}
-
-
 .navbar-light .navbar-toggler {
     border: none !important;
     margin-right: 1rem;
@@ -111,7 +113,6 @@ body {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    /* float: right; */
 }
 
 .navbar-collapse {
@@ -284,21 +285,23 @@ h1.counter {
     left: 95px;
 }
 
-/* .c2 {
-    margin-left: 40%;
-    margin-top: 30%;
+.gameover {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    visibility: hidden;
 }
 
-.c3 {
-    margin-left: 50%;
-    margin-top: 90%;
+.show {
+    visibility: visible;
 }
 
-.c4 {
-    margin-top: 50%;
-    margin-left: 10%;
+.gameover h1 {
+    font-size: 10rem;
+    color: rgb(243, 79, 79);
 }
-
-.c5 {
-    margin-left: 50%;
-} */
