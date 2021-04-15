@@ -18,7 +18,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand hvr-wobble-vertical" href="#index.html">
+            <a class="navbar-brand hvr-wobble-vertical" href="index.html">
                 <h1>Tic-Tac-Toe</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -28,8 +28,9 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
 
-                    <a class="nav-link hvr-underline-from-left" aria-current="page" href="#index.html">Home</a>
-                    <a class="nav-link hvr-underline-from-left" href="#contact.html" aria-hidden="true">Contact</a>
+                    <a class="nav-link hvr-underline-from-left" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link hvr-underline-from-left" aria-current="page" href="tutorial.html">How To Play</a>
+                    <a class="nav-link hvr-underline-from-left" href="contact.html">Contact</a>
 
                 </div>
             </div>
@@ -40,7 +41,7 @@
 
     <!--GAMEAREA -->
 
-    <div class="cloud c1"></div>
+    <div class="cloud"></div>
 
 
     <div class="container-fluid mt-4">
@@ -48,28 +49,31 @@
         <div class="row justify-content-center">
 
             <div class="col-6 col-md-4 col-lg-3 turn-container">
-                <h1 id="turn">It's '' Turn</h1>
+                <h1 id="turn">It's X's Turn</h1>
             </div>
 
             <div class="col-5 col-md-4 col-lg-3 counter-container">
                 <h1 class="counter">Timer: <span id="counter">0</span></h1>
             </div>
         </div>
-        <!-- <div class="cloud c2"></div> -->
+
         <div class="row">
             <div class="col">
+                <div class="gameover">
+                    <h1 class="text-center">GAME OVER!</h1>
+                </div>
                 <div class="game-container bg-color-game mt-4" id="gameboard">
+                    <div class="xo-container text-center hvr-shrink"></div>
+                    <div class="xo-container text-center hvr-shrink"></div>
+                    <div class="xo-container text-center hvr-shrink"></div>
                     <div class="xo-container text-center hvr-shrink">X</div>
-                    <div class="xo-container text-center hvr-shrink"></div>
-                    <div class="xo-container text-center hvr-shrink"></div>
                     <div class="xo-container text-center hvr-shrink">O</div>
                     <div class="xo-container text-center hvr-shrink"></div>
                     <div class="xo-container text-center hvr-shrink"></div>
                     <div class="xo-container text-center hvr-shrink"></div>
                     <div class="xo-container text-center hvr-shrink"></div>
-                    <div class="xo-container text-center hvr-shrink"></div>
                 </div>
-                <!-- <div class="cloud c3"></div> -->
+
             </div>
 
         </div>
