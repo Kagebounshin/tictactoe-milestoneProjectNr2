@@ -1,0 +1,14 @@
+.tutorial-container h1 {
+    font-size: 4rem;
+}
+
+.tutorial-container p {
+    font-size: 2rem;
+}
+
+img,
+svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
