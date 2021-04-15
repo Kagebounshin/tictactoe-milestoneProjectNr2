@@ -1,14 +1,69 @@
 <h1 align="center">TicTacToe</h1>
 
-[View the live project here.](https://codeinstitute.net)
+[View the live project here.]()
 
 Welcome to my second milestone project provided by [Code Institute](https://codeinstitute.net). For this project I am going to do a Tic Tac Toe Game. I hope you will enjoy it!
 
 <h2 align="center"><img src=></h2>
 
-## User Experience (UX)
+## Table Of Content
+1.[**UX**](#user-experience) 
+- [**Strategy**](#strategy)
+- [**Scope**](#scope)
+- [**Structure**](#structure)
+- [**User Stories**](#user-stories)
+- [**Design**](#design)
+- [**Wireframes**](#wireframes)
 
--   ### User stories
+2.[**Features**](#features)
+- [**Existing Features**](#existing-features)
+- [**Features For The Future**](#features-for-the-future)
+
+3.[**Technologies**](#technologies-used)
+
+
+4.[**Testing**](#testing)
+
+5.[**Deployment**](#deployment)
+
+6.[**Credits**](#credits)
+- [**Content**](#content)
+- [**Media**](#media)
+- [**Acknowledgements**](#acknowledgements)
+
+
+
+## User Experience
+
+### Strategy
+
+- My targeted audience for this project is children somewhere between the ages of 4-9 years old. In most cases when two adults plays against each other it ends in a draw, unless your not familiar with the basic strategy of the game. So the Tic-tac-toe game is very simple, so it's well suited for children who dont already know the basic strategy. So I will try to make it appealing to kids at first. Having in mind what kids are interested in now a days, such as sports, tv-series, toys etc. 
+
+- I made up a very simple chart, by asking my own kids and some of their friends. I wanted to know their thought on what they think is important for this project. So they had three choices to make, between "Game Play", "Styling" and the "Contact page". They were going to rank these choices between 1-3.
+ <h2 align="center"><img src="assets/img/img-readme/chartOfImportance.png"></h2>
+
+- The one who got the most points was "Styling". And I intend to agree, if my main target is children, I want it to look interesting and fun. So the kids will keep on playing, and visit the site again. 
+- The second most was the "Game Play" choice. Though I would think it's more important then the styling. Without a functional game, then what's the purpose of the page.
+- Not a shocker that the "Contact Page" got the least points. So I will focus on doing a visually striking and fun game at first. The implementing of a "Contact Page" will maybe be a feature to add in the future. But if I feel that I've got the time to do it, then I probably will. 
+
+### Scope
+
+- So alot of styling and a fun and intuitive gameplay is most important.
+- The first thing thats needed are instructions, what the game is about and how do inte work. I will implement some easy to understand instructions to be shown when they enter the site. The instructions will be picture based, showing them the steps you need to take to win the game. Im thinking three pictures wich shows three winning combinations horizontally, vertically & diagonally. And a picture wich display a tie. Look at the instruction [**wireframe**](#wireframes) to see my idea.
+- To make it more fun to play I will put in a countdown timer, so the choices they make must be made quickly, unless the game ends. 
+- I also going to implement a scoreboard, displaying how many matches each have won, and how many times it  has ended in a tie. 
+
+
+
+
+### Structure
+
+- At the top of the page I will have a navigation bar. You will be able to navigate between the "Game" and the "Contact" page.
+- The "Game" page will be the home page of this site. After you get some game instructions you can choose to start the game. 
+
+
+### User stories
+
 
     - As a First Time Visitor,
 
@@ -18,9 +73,11 @@ Welcome to my second milestone project provided by [Code Institute](https://code
     - As as user,
     
         1. I want the game to be played easily.
-        2. I want feedback once the game is done, such as who won.
-        3. I want to reset the game when the game is finished.
-        4. I want to know if the author has done some other games.  
+        2. I want it to have nice estetics. 
+        3. I want feedback once the game is done, such as who won. 
+        4. I want to restart the game when the game is finished.
+        5. I want to know if the author has done some other games. 
+         
         
 
 -   ### Design
@@ -33,9 +90,11 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 -   ### Wireframes
 
     Home Page.
-    - <img src="assets/img/img-readme/wireframeHome.png">
+    - <img src="assets/img/img-readme/wfHome.png">
     Contact Page.
-    - <img src="assets/img/img-readme/wireframeContact.png">
+    - <img src="assets/img/img-readme/wfContact.png">
+    Instruction modal.
+    - <img src="assets/img/img-readme/wfInstructions.png">
 
 ## Features
 
@@ -54,6 +113,7 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 - [Bootstrap v5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 - [Hover.css](https://ianlunn.github.io/Hover/) - Hover effect on buttons.
 - [fontAwesome](https://fontawesome.com/) - provides icons across the sit
+- [GoogleFonts](https://fonts.google.com/)
 
 ## Testing
 
@@ -139,4 +199,3 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Acknowledgements
 
 - The layout inspration for this README.md is from Code Institute's own [Sample README](https://github.com/Code-Institute-Solutions/SampleREADME).
-

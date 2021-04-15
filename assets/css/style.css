@@ -1,26 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
 
 body {
-    background-color: #fff;
+    background-color: #7fc3ccc4;
     padding: 0;
     margin: 0;
-    overflow-y: hidden;
+    /* overflow-x: hidden; */
     color: black;
+    font-family: 'Just Me Again Down Here', cursive;
 }
 
 /* BACKGROUND COLORS */
 
 .bg-light {
-    background-color: transparent !important;
+    background-color: white !important;
 }
 
 .bg-color-game {
-    background-color: black;
+    background-color: transparent;
+}
+
+.bg-color-footer {
+    background-color: chartreuse;
 }
 
 
 /* CONTAINERS */
+
+.turn-container {
+    padding-right: 0;
+    z-index: 1;
+}
+
+.counter-container {
+    padding-left: 0;
+    z-index: 1;
+}
 
 .game-container {
     position: relative;
@@ -29,17 +45,20 @@ body {
     transform: translate(-50%, -50%);
     font-family: 'Waiting for the Sunrise', cursive;
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 7px;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 8rem;
     cursor: pointer;
 }
+
 
 .xo-container {
     position: relative;
     margin: 0;
     background-color: white;
+    border-radius: 15%;
+    box-shadow: 12px 12px 2px 1px rgb(0 0 0 / 83%);
 }
+
 
 /* NAVBAR */
 
@@ -56,90 +75,172 @@ body {
 
 .navbar-light .navbar-toggler {
     border-color: none !important;
+}
 
-    /* MEDIA BREAKPOINTS */
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    float: right;
+}
 
-    /* Small devices (landscape phones, max 576px) */
+/* MEDIA BREAKPOINTS */
 
-    @media (max-width: 576px) {
-        .game-container {
-            width: 310px;
-            height: 310px;
-            text-align: center;
+/* Small devices (landscape phones, max 576px) */
 
-        }
+@media (max-width: 576px) {
 
-        .xo-container {
-            width: 100px;
-            height: 100px;
-            font-size: 75px;
-        }
-    }
-
-    /* Small devices (landscape phones, 576px and up) */
-
-    @media (min-width: 576px) {
-        .game-container {
-            width: 310px;
-            height: 310px;
-            font-size: 75px;
-
-        }
-
-        .xo-container {
-            width: 100px;
-            height: 100px;
-        }
-    }
-
-    /* Medium devices (tablets, 768px and up) */
-
-    @media (min-width: 768px) {
-
-        .game-container {
-            width: 460px;
-            height: 460px;
-            font-size: 100px;
-        }
-
-        .xo-container {
-            width: 150px;
-            height: 150px;
-        }
-    }
-
-    /* Large devices (desktops, 992px and up) */
-
-    @media (min-width: 992px) {
-
-        .game-container {
-            width: 610px;
-            height: 610px;
-            font-size: 150px;
-        }
-
-        .xo-container {
-            width: 200px;
-            height: 200px;
-        }
-    }
-
-    /* X-Large devices (large desktops, 1200px and up) */
-
-    @media (min-width: 1200px) {}
-
-    /* XX-Large devices (larger desktops, 1400px and up)  */
-
-    @media (min-width: 1400px) {}
-
-
-    /* ADDITIONAL STYLING */
-
-    .text-center {
+    .game-container {
+        width: 310px;
+        height: 310px;
         text-align: center;
+
     }
 
-    button {
-        height: 2rem;
-        width: 10rem;
+    .xo-container {
+        width: 100px;
+        height: 100px;
+        font-size: 75px;
     }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .game-container {
+        width: 310px;
+        height: 310px;
+        font-size: 75px;
+
+    }
+
+    .xo-container {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+
+    .game-container {
+        width: 460px;
+        height: 460px;
+        font-size: 100px;
+    }
+
+    .xo-container {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+
+    .game-container {
+        width: 610px;
+        height: 610px;
+        font-size: 150px;
+    }
+
+    .xo-container {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up)  */
+
+@media (min-width: 1400px) {}
+
+
+/* ADDITIONAL STYLING */
+
+.text-center {
+    text-align: center;
+}
+
+.restartButton {
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    left: 50%;
+    top: 50%;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    color: black;
+    box-shadow: 8px 5px 2px 1px rgb(0 0 0 / 83%);
+}
+
+button i {
+    font-size: 2rem;
+    margin-top: 2px;
+    color: white;
+}
+
+h1#turn,
+h1.counter {
+    background-color: white;
+    text-align: center;
+    box-shadow: 7px 7px 2px 1px rgb(0 0 0 / 83%);
+}
+
+/* CLOUD */
+
+/* https://lauryndbrown.github.io/2017/06/08/creating-clouds-in-css.html */
+
+.cloud {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 15%;
+    width: 200px;
+    height: 80px;
+    background: #dadada;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+}
+
+.cloud::after,
+.cloud::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    background: inherit;
+    border-radius: inherit;
+}
+
+.cloud::after {
+    width: 100px;
+    height: 100px;
+    top: -49px;
+    right: 60px;
+}
+
+.cloud::before {
+    width: 80px;
+    height: 80px;
+    top: -45px;
+    left: 95px;
+}
+
+@keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
