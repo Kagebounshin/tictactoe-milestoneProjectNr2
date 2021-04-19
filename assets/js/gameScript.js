@@ -14,9 +14,9 @@ var xo = Array.from(document.querySelectorAll('.xo-container'));
 document.getElementById('restart').addEventListener('click', game);
 
 // Countdown Timer
-var counter = document.getElementById('counter');
 var seconds = 20;
-counter.innerHtml = seconds;
+var counter;
+
 
 // add click to the xo-containers 
 // https://dev.to/cilly_boloe/addeventlistener-once-js-bits-565d 
@@ -29,8 +29,19 @@ xo.forEach(container => {
 })
 
 
+// countdown timer, wich starts when a player has made it's first move!
+function countDown() {
+    setInterval(function () {
+        if (seconds <= 0) {
+            clearInterval(seconds = 0);
+        }
+        document.getElementById('counter').innerHTML = seconds;
+        seconds -= 1;
+    }, 1000);
+}
+
 function clickHandler(event) {
-    console.log('clicked')
+    countDown()
 }
 
 
