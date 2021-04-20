@@ -5,14 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
     padding: 0;
     margin: 0;
 }
 
-.social-container {
-    background-color: white;
+.social-container p {
+    margin: 0;
 }
+
 
 .social-container ul {
     position: relative;
@@ -28,15 +29,29 @@ body {
 
 .social-container i {
     font-size: 5rem;
-    color: #7fc3ccc4;
+    color: #fff;
+}
+
+.social-container {
+    padding: none;
+}
+
+.form-container {
+    padding: none;
+}
+
+.form-container button i {
+    color: white;
+    font-size: 2rem;
 }
 
 form input,
 form textarea {
-    background-color: #efefef;
+    background-color: #fff;
     color: #212529;
     outline: none;
     font-family: 'Roboto', cursive;
+    box-shadow: 10px 10px rgb(0 0 0 / 4%);
 }
 
 form input {
@@ -44,14 +59,13 @@ form input {
     border: none;
     margin-bottom: 2rem;
     font-size: large;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }
 
 form textarea {
     height: 10rem;
     margin-bottom: 2rem;
     color: #212529;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    border: none;
 }
 
 form ::placeholder {
