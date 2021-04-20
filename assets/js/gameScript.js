@@ -24,8 +24,6 @@ var player1 = 'X';
 var player2 = 'O';
 var turnOrder;
 var seconds = 20;
-var setMark = document.getElementsByClassName(".xo-container");
-
 //get the gameboard containers, make them into an array. 
 var turnMessage = document.getElementById('turn')
 var xo = Array.from(document.querySelectorAll('.xo-container'));
@@ -51,7 +49,7 @@ function countDown() {
     setInterval(function () {
         if (seconds <= 0) {
             clearCountDown()
-            // $('.gameover').addClass("show");
+            $('.gameover').addClass("show");
             console.log("GAME OVER");
         }
         document.getElementById('counter').innerHTML = seconds;
