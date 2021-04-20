@@ -24,6 +24,7 @@ var player1 = 'X';
 var player2 = 'O';
 var turnOrder;
 var seconds = 20;
+var setMark = document.getElementsByClassName(".xo-container");
 
 //get the gameboard containers, make them into an array. 
 var turnMessage = document.getElementById('turn')
@@ -79,9 +80,12 @@ function clickHandler(event) {
 
     if (turnOrder === player1) {
         turnOrder = player2
+        $(this).text(player2)
         turnMessage.innerHTML = "It's " + player1 + "'s turn!";
+
     } else {
         turnOrder = player1
+        $(this).text(player1)
         turnMessage.innerHTML = "It's " + player2 + "'s turn!";
     };
     // Works
@@ -94,9 +98,10 @@ function game() {
         '', '', '',
         '', '', ''
     ];
+
     countDown()
 }
 
 game()
 
-console.log('yeah')
+console.log('hello')
