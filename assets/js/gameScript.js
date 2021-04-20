@@ -5,23 +5,38 @@
 // If No winner, it's a tie.
 // The Game is finished, make it possible to reset the gameboard.
 
+// Winning Types
+
+var winningTypes = [
+    [0, 1, 2],
+    [0, 4, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [3, 4, 5],
+    [6, 7, 8],
+    [2, 4, 6]
+];
+
+
 // The players. 
 var player1 = 'X';
 var player2 = 'O';
-var isTurn;
+var turnOrder;
+var seconds = 20;
+
 //get the gameboard containers, make them into an array. 
 var xo = Array.from(document.querySelectorAll('.xo-container'));
 document.getElementById('restart').addEventListener('click', game);
-document.getElementById('turn').innerHTML = "It's " + isTurn + "'s turn!";
+// document.getElementById('turn').innerHTML = "It's " + isTurn + "'s turn!";
 // Countdown Timer
-var seconds = 20;
 
 
 
-// add click to the xo-containers 
 // https://dev.to/cilly_boloe/addeventlistener-once-js-bits-565d 
 // for only adding the eventlistener once. 
 
+// add 'click' to the xo-containers.  
 xo.forEach(container => {
     container.addEventListener('click', clickHandler, {
         once: true
@@ -48,19 +63,37 @@ function clearCountDown() {
 }
 
 
+// Clickhandler
+// Wich will response to click by user, take turns between the players.  
+
 function clickHandler(event) {
-    console.log('clicked');
 
-}
+    let index;
+    // loop through the array
+    for (i = 0; i < index; i++) {
+        return index;
+    }
 
+    gameboard[index] = turnOrder;
+
+    if (turnOrder === player1) {
+        turnOrder = player2
+        console.log('O')
+    } else {
+        turnOrder = player1
+        console.log('X')
+    };
+    // Works
+};
 
 // The gameboard, 9 empty strings, to fill with X's & O's.
 function game() {
-
-    var gameboard = ['', '', '', '', '', '', '', '', ''];
+    gameboard = [
+        '', '', '',
+        '', '', '',
+        '', '', ''
+    ];
     countDown()
 }
-
-
 
 game()
