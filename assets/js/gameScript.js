@@ -1,13 +1,11 @@
 //TODO 
-// Making your mark on the gameboard, and if you done your mark, you cant change or mark over it. 
-// Taketur ns, X, O ,X etc...
 // Win by having three in a row, horizontally, vertically or diagonally. 
 // If No winner, it's a tie.
 // The Game is finished, make it possible to reset the gameboard.
 
 // Winning Types
 
-var winningTypes = [
+var winOptions = [
     [0, 1, 2],
     [0, 4, 8],
     [0, 3, 6],
@@ -36,7 +34,7 @@ document.getElementById('restart').addEventListener('click', game);
 // https://dev.to/cilly_boloe/addeventlistener-once-js-bits-565d 
 // for only adding the eventlistener once. 
 
-// add 'click' to the xo-containers.  
+// add 'click' to the all the xo-containers.  
 xo.forEach(container => {
     container.addEventListener('click', clickHandler, {
         once: true
@@ -49,7 +47,7 @@ function countDown() {
     setInterval(function () {
         if (seconds <= 0) {
             clearCountDown()
-            $('.gameover').addClass("show");
+            // $('.gameover').addClass("show");
             console.log("GAME OVER");
         }
         document.getElementById('counter').innerHTML = seconds;
@@ -78,15 +76,13 @@ function clickHandler(event) {
 
     if (turnOrder === player1) {
         turnOrder = player2
-        $(this).text(player2)
+        $(this).text(player2) // sets the players mark!
         turnMessage.innerHTML = "It's " + player1 + "'s turn!";
-
     } else {
         turnOrder = player1
         $(this).text(player1)
         turnMessage.innerHTML = "It's " + player2 + "'s turn!";
     };
-    // Works
 };
 
 // The gameboard, 9 empty strings, to fill with X's & O's.
