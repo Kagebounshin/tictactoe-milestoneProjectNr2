@@ -1,6 +1,6 @@
 <h1 align="center">TicTacToe</h1>
 
-[View the live project here.]()
+[View the live project here.](https://kagebounshin.github.io/tictactoe-milestoneProjectNr2/)
 
 Welcome to my second milestone project provided by [Code Institute](https://codeinstitute.net). For this project I am going to do a Tic Tac Toe Game. I hope you will enjoy it!
 
