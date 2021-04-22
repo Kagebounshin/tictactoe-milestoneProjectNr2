@@ -53,12 +53,26 @@
                 <h1 class="counter">Timer: <span id="counter"></span></h1>
             </div>
         </div>
+        <div class="gameover-message">
+            <h1 class="text-center pt-5">No winner!</h1>
+            <p class="text-center">The time has run out.</p>
+            <button id="restart" class="restartButtons mt-5 hvr-sweep-to-top">Restart The Game</button>
+        </div>
+        <div class="tie-message">
+            <h1 class="text-center pt-5">It end in a TIE..</h1>
+            <button id="restart" class="restartButtons mt-5 hvr-sweep-to-top">Restart The Game</button>
+        </div>
+
+        <div class="winning-message">
+            <h1 class="text-center pt-5">The Winner is <span id="displayWinner">X's</span></h1>
+            <p class="text-center">Great job! I'll bet <span id="displayLoser">O</span> wants a rematch, just click the
+                button down below!</p>
+
+            <button id="restart" class="restartButtons mt-5 hvr-sweep-to-top">Restart The Game</button>
+        </div>
 
         <div class="row">
             <div class="col">
-                <div class="gameover">
-                    <h1 class="text-center">GAME OVER!</h1>
-                </div>
 
                 <div class="game-container bg-color-game mt-4" id="gameboard">
                     <div class="xo-container text-center hvr-shrink"></div>
