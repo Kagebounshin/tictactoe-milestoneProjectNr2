@@ -284,26 +284,6 @@ h1.counter {
     left: 95px;
 }
 
-.gameover {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 100;
-    visibility: hidden;
-}
-
-.show {
-    visibility: visible;
-}
-
-.gameover h1 {
-    font-size: 10rem;
-    color: rgb(243, 79, 79);
-}
 
 .color-white {
     color: white;
@@ -315,4 +295,77 @@ span.questionmark {
 
 i.far.fa-smile-beam {
     color: white;
+}
+
+/* MESSAGES */
+
+.gameover-message {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    visibility: hidden;
+    z-index: 100;
+}
+
+.gameover-message h1,
+.tie-message h1,
+.winning-message h1 {
+    font-size: 10rem;
+    color: rgb(243, 79, 79);
+}
+
+.gameover-message p {
+    color: white;
+    font-size: 2rem;
+}
+
+.gameover-message button,
+.tie-message button,
+.winning-message button {
+    border: none;
+    font-size: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2%;
+}
+
+.hvr-sweep-to-top:before {
+    background: rgb(243, 79, 79);
+}
+
+
+
+.show {
+    visibility: visible;
+}
+
+.tie-message {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(255 255 255 / 90%);
+    visibility: hidden;
+    z-index: 100;
+}
+
+.winning-message {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(255 255 255 / 90%);
+    visibility: hidden;
+    z-index: 100;
+}
+
+.winning-message p {
+    font-size: 2rem;
 }
