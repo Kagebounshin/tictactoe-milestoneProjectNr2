@@ -120,3 +120,11 @@ form ::placeholder {
 /* XX-Large devices (larger desktops, 1400px and up)  */
 
 @media (min-width: 1400px) {}
+
+body {
+    background-color: #cc7f7fc4;
+}
+
+.hvr-underline-from-left:before {
+    background: #cc7f7fc4;
+}
