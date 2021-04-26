@@ -9,7 +9,7 @@ function sendEmail(feedbackForm) {
         .then(
             function (response) {
                 let thanks = document.getElementById("thanks-for-feedback");
-                thanks.innerText = "Thank you for the feedback!";
+                thanks.innerText = "Thanks for the feedback!";
                 // https://stackoverflow.com/questions/15343890/clear-input-fields-on-form-submit/15344007
                 // For reseting the form after submitting.
                 var form = document.getElementById("form");
