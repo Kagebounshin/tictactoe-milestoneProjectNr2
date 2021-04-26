@@ -144,12 +144,31 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 
 ### Testing User Stories from User Experience (UX) Section
 
+#### Game Testing
+
+- Make Mark
+    - I enter the site, I'll make my mark anywhere at the gameboard, and an "X" appear
+    - The next mark I make displays an "O". 
+    - Now it is the X's turn again, I try to click where the "O" was marked, nothing happends. I need to choose an unoccupied space at the gameboard. 
+    - I fill up the rest of the gameboard, switching between the X's and O's
+    
+- Take Turns
+    - The turn display shows that the X's goes first
+    - When I make my first mark on the gameboard, an X appears on the clicked element
+    - The turn container switches to display that it's the O's turn
+    - I make a new mark and an O appears on the gameboard.
+    - The turn container switches back to display that it's the X's turn once again
+
+
+
 #### Testing of the contact form
 - When I enter the site, I locate the contact link at the navbar.
 - I click the link and it takes me to the Contact page.
 - The page have a feedback form, before submitting the form, I enter my name, emailaddress and a feedback message. 
 - I click at the "Send" button under the form, The message is sent to my Gmail account, the form is reset back to it's default state, and it displays a message above the form thanking you for submitting. 
 - If I dont fill in the form correctley before submitting, lets say leaving the email input window empty, a message will be displayed saying I need to include a emailaddress if I want to submit the form. 
+
+
 
 
 
