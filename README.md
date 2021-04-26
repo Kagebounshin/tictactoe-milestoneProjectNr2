@@ -143,6 +143,12 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 
 ### Testing User Stories from User Experience (UX) Section
 
+#### Testing of the contact form
+- When I enter the site, I locate the contact link at the navbar.
+- I click the link and it takes me to the Contact page.
+- The page have a feedback form, before submitting the form, I enter my name, emailaddress and a feedback message. 
+- I click at the "Send" button under the form, The message is sent to my Gmail account, the form is reset back to it's default state, and it displays a message above the form thanking you for submitting. 
+- If I dont fill in the form correctley before submitting, lets say leaving the email input window empty, a message will be displayed saying I need to include a emailaddress if I want to submit the form. 
 
 
 
