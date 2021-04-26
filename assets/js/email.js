@@ -6,12 +6,16 @@ function sendEmail(feedbackForm) {
         })
         .then(
             function (response) {
-                console.log("YEASSSS", response);
+                let thanks = document.getElementById("thanks-for-feedback");
+                thanks.innerText = "Thank you for the feedback!";
+                var form = document.getElementById("form");
+                form.reset();
             },
             function (error) {
+                let errorMessage = document.getElementById("error");
+                errorMessage.innerText = "Something went wrong, try again!";
                 console.log("ERROR");
             }
         );
     return false;
-
 };
