@@ -1,6 +1,7 @@
 //TODO 
 // Win by having three in a row, horizontally, vertically or diagonally. 
 // If No winner, it's a tie.
+// Start Timer on first click. 
 // The Game is finished, make it possible to reset the gameboard.
 
 // Winning Types
@@ -23,7 +24,7 @@ var player2 = 'O';
 var turnOrder;
 var seconds = 20;
 //get the gameboard containers, make them into an array. 
-var turnMessage = document.getElementById('turn')
+var turnMessage = document.getElementById('turn-display')
 var xo = Array.from(document.querySelectorAll('.xo-container'));
 document.getElementById('restart').addEventListener('click', game);
 // document.getElementById('turn').innerHTML = "It's " + isTurn + "'s turn!";
@@ -67,7 +68,6 @@ function clearCountDown() {
 function clickHandler(event) {
 
     let index;
-    // loop through the array
     for (i = 0; i < index; i++) {
         return index;
     }
@@ -77,13 +77,14 @@ function clickHandler(event) {
     if (turnOrder === player1) {
         turnOrder = player2
         $(this).text(player2) // sets the players mark!
-        turnMessage.innerHTML = "It's " + player1 + "'s turn!";
+        turnMessage.innerHTML = player1;
     } else {
         turnOrder = player1
         $(this).text(player1)
-        turnMessage.innerHTML = "It's " + player2 + "'s turn!";
+        turnMessage.innerHTML = player2;
     };
 };
+
 
 // The gameboard, 9 empty strings, to fill with X's & O's.
 function game() {
@@ -97,5 +98,3 @@ function game() {
 }
 
 game()
-
-console.log('hello')
