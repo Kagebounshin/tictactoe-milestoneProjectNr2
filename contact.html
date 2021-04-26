@@ -52,11 +52,13 @@
                 <h1 class="text-center mt-5">Did you enjoy the game<span class="questionmark">?</span></h1>
                 <p class="text-center">Please send me some feedback! <i class="far fa-smile-beam"></i></p>
             </div>
-        </div>
 
+        </div>
+        <h1 class="text-center" id="thanks-for-feedback"></h1>
+        <h1 class="text-center" id="error"></h1>
         <div class="row">
             <div class="col mt-5 mb-5">
-                <form onsubmit="return sendEmail(this);" class="text-center">
+                <form id="form" onsubmit="return sendEmail(this);" class="text-center">
                     <input name="name" aria-label="Name:" placeholder="Name:" type="text" required>
                     <br>
                     <input name="email" id="email" aria-label="Email:" placeholder="Email:" type="email" required>
