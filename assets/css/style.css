@@ -369,3 +369,9 @@ i.far.fa-smile-beam {
 .winning-message p {
     font-size: 2rem;
 }
+
+.turn-container span,
+.counter-container span {
+    color: #fff;
+    font-size: 3rem;
+}
