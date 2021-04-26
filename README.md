@@ -127,7 +127,7 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
--   [javaScript]()
+-   [JavaScript]()
 
 ### Frameworks, Libraries & Programs Used
 
@@ -136,6 +136,7 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 - [Hover.css](https://ianlunn.github.io/Hover/) - Hover effect on buttons.
 - [fontAwesome](https://fontawesome.com/) - provides icons across the sit
 - [GoogleFonts](https://fonts.google.com/)
+- [EmailJS](https://www.emailjs.com/) - For the contact form
 
 ## Testing
 
