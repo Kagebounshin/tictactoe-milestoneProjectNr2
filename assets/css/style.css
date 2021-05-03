@@ -17,6 +17,7 @@ body {
     overflow-x: hidden;
     color: black;
     font-family: 'Just Me Again Down Here', cursive;
+    user-select: none;
 }
 
 /* BACKGROUND COLORS */
@@ -73,6 +74,7 @@ body {
     border-radius: 15%;
     box-shadow: 12px 12px 2px 1px rgb(0 0 0 / 83%);
     z-index: 1;
+
 }
 
 
@@ -82,6 +84,7 @@ body {
     width: 100%;
     padding-top: 0px;
     padding-bottom: 0px;
+
 }
 
 .navbar-light .navbar-brand {
@@ -299,13 +302,15 @@ i.far.fa-smile-beam {
 
 /* MESSAGES */
 
-.gameover-message {
+.gameover-message,
+.winning-message,
+.tie-message {
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgb(255 255 255 / 90%);
     visibility: hidden;
     z-index: 100;
 }
@@ -344,7 +349,7 @@ i.far.fa-smile-beam {
     visibility: visible;
 }
 
-.tie-message {
+/* .tie-message {
     position: fixed;
     left: 0;
     top: 0;
@@ -364,7 +369,7 @@ i.far.fa-smile-beam {
     background-color: rgb(255 255 255 / 90%);
     visibility: hidden;
     z-index: 100;
-}
+} */
 
 .winning-message p {
     font-size: 2rem;
