@@ -22,12 +22,15 @@ var player1 = 'X';
 var player2 = 'O';
 var turnOrder = player1;
 var seconds = 20;
-var turnMessage = document.getElementById('turn-display')
 var win;
-var counter;
 //get the gameboard containers, make them into an array. 
 var xoContainer = Array.from(document.querySelectorAll('.xo-container'));
-document.getElementById('restart').addEventListener('click', game);
+var counter = document.getElementById('counter');
+var turnMessage = document.getElementById('turn-display')
+// For the winning messages
+var displayWinner = document.getElementById('displayWinner')
+var displayLooser = document.getElementById('displayLooser')
+var restart = document.getElementById('restart').addEventListener('click', restart);
 
 
 
@@ -81,10 +84,8 @@ function clickHandler(event) {
 
     if (turnOrder === player1) {
         turnOrder = player2
-        console.log(turnOrder)
     } else {
         turnOrder = player1
-        console.log(turnOrder)
     };
 };
 
