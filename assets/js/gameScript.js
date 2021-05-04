@@ -1,7 +1,7 @@
-//TODO 
-// Win by having three in a row, horizontally, vertically or diagonally. 
+//TODO
+// Win by having three in a row, horizontally, vertically or diagonally.
 // If No winner, it's a tie.
-// Start Timer on first click.  once: true should work. 
+// Start Timer on first click.  once: true should work.
 // The Game is finished, make it possible to reset the gameboard.
 
 // Winning Options
@@ -23,7 +23,8 @@ var player2 = 'O';
 var turnOrder = player1;
 var seconds = 20;
 var win;
-//get the gameboard containers, make them into an array. 
+var tie;
+//get the gameboard containers, make them into an array.
 var xoContainer = Array.from(document.querySelectorAll('.xo-container'));
 var counter = document.getElementById('counter');
 var turnMessage = document.getElementById('turn-display')
@@ -41,8 +42,8 @@ function startGame() {
         '', '', ''
     ];
     // Adding eventlistener to the gameboard divs
-    // https://dev.to/cilly_boloe/addeventlistener-once-js-bits-565d 
-    // for only adding the click event once. 
+    // https://dev.to/cilly_boloe/addeventlistener-once-js-bits-565d
+    // for only adding the click event once.
     for (let i = 0; i < xoContainer.length; i++) {
         xoContainer[i].addEventListener('click', clickHandler, {
             once: true
@@ -70,7 +71,7 @@ function clearCountDown() {
 
 
 // Clickhandler
-// Wich will response to click by user, take turns between the players.  
+// Wich will response to click by user, take turns between the players.
 
 function clickHandler(event) {
 
@@ -91,7 +92,19 @@ function clickHandler(event) {
 };
 
 function checkGameWinner() {
+    let winner = null;
 
+    for (let i = 0; i < winOpts.length; i++) {
+        let opt = winOpts[i];
+        if (gameboard[opt[0]] && gameboard[opt[0]] === gameboard[opt[1]] && gameboard[opt[0]] === gameboard[opt[2]]) {
+
+            winner = gameboard[opt[0]];
+        }
+
+    }
+    if (winner) {
+        return console.log(winner);
+    }
 }
 
 function makeMark() {
