@@ -34,20 +34,20 @@ var restart = document.getElementById('restart').addEventListener('click', resta
 
 
 
-function game() {
+function startGame() {
     gameboard = [
         '', '', '',
         '', '', '',
         '', '', ''
     ];
+    // Adding eventlistener to the gameboard divs
     // https://dev.to/cilly_boloe/addeventlistener-once-js-bits-565d 
-    // for only adding the eventlistener once. 
-    // add 'click' to the all the xo-containers.  
-    xoContainer.forEach(container => {
-        container.addEventListener('click', clickHandler, {
+    // for only adding the click event once. 
+    for (let i = 0; i < xoContainer.length; i++) {
+        xoContainer[i].addEventListener('click', clickHandler, {
             once: true
         });
-    })
+    }
     countDown()
 }
 
@@ -74,11 +74,9 @@ function clearCountDown() {
 
 function clickHandler(event) {
 
-    let index = event.target;
-
-    for (i = 0; i < index; i++) {
-        return index;
-    }
+    let index = xoContainer.findIndex((containers) => {
+        return containers === event.target
+    });
 
     gameboard[index] = turnOrder;
 
@@ -86,7 +84,17 @@ function clickHandler(event) {
         turnOrder = player2
     } else {
         turnOrder = player1
-    };
+    }
+    turnMessage.textContent = turnOrder
+    makeMark()
 };
 
-game()
+function makeMark() {
+    // sets the mark on the gameboard
+
+    for (let i = 0; i < xoContainer.length; i++) {
+        xoContainer[i].textContent = gameboard[i]
+    }
+};
+
+startGame()
