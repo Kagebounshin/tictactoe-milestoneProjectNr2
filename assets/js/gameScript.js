@@ -103,12 +103,16 @@ function checkGameWinner() {
 
     }
     if (winner) {
-        return console.log(winner);
+        return winner;
+    } else if (gameboard.includes('')) {
+        return null;
+    } else {
+        return tie;
     }
 }
 
 function makeMark() {
-    // sets the mark on the gameboar
+    // sets the mark on the gameboard
 
     for (let i = 0; i < xoContainer.length; i++) {
         xoContainer[i].textContent = gameboard[i]
