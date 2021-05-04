@@ -58,7 +58,7 @@ function countDown() {
     counter = setInterval(function () {
         if (seconds <= 0) {
             clearCountDown()
-            // $('.gameover-message').addClass("show");
+            $('.gameover-message').addClass("show");
         }
         document.getElementById('counter').innerHTML = seconds;
         seconds -= 1;
@@ -116,6 +116,11 @@ function makeMark() {
 
     for (let i = 0; i < xoContainer.length; i++) {
         xoContainer[i].textContent = gameboard[i]
+    }
+
+    // Display the win/tie messages
+    if (win === tie) {
+        $('.tie-message').addClass('show');
     }
 };
 
