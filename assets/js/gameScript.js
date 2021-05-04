@@ -6,7 +6,7 @@
 
 // Winning Options
 
-var winningTypes = [
+var winOpts = [
     [0, 1, 2],
     [0, 4, 8],
     [0, 3, 6],
@@ -85,12 +85,17 @@ function clickHandler(event) {
     } else {
         turnOrder = player1
     }
-    turnMessage.textContent = turnOrder
+    turnMessage.textContent = turnOrder;
+    win = checkGameWinner()
     makeMark()
 };
 
+function checkGameWinner() {
+
+}
+
 function makeMark() {
-    // sets the mark on the gameboard
+    // sets the mark on the gameboar
 
     for (let i = 0; i < xoContainer.length; i++) {
         xoContainer[i].textContent = gameboard[i]
