@@ -120,6 +120,7 @@ function makeMark() {
 
     // Display the win/tie messages
     if (win === tie) {
+        clearCountDown() // stops the timer
         $('.tie-message').addClass('show');
     }
 };
