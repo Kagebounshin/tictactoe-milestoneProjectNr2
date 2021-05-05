@@ -17,7 +17,6 @@ body {
     color: black;
     font-family: 'Just Me Again Down Here', cursive;
     user-select: none;
-    min-height: fit-content;
 }
 
 /* BACKGROUND COLORS */
@@ -191,6 +190,10 @@ footer.container-fluid.bg-color-footer {
     visibility: visible;
 }
 
+.hide {
+    visibility: hidden;
+}
+
 .winning-message p,
 .gameover-message p,
 .tie-message p {
@@ -310,7 +313,7 @@ h1.counter {
     display: block;
     border: none;
     font-size: 2rem;
-    background-color: white;
+    background-color: transparent;
     border-radius: 2%;
 }
 
