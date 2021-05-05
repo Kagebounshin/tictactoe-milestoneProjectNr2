@@ -86,7 +86,6 @@ function clickHandler(event) {
     } else {
         turnOrder = player1
     }
-    turnMessage.textContent = turnOrder;
     win = checkGameWinner()
     makeMark()
 };
@@ -122,6 +121,18 @@ function makeMark() {
     if (win === tie) {
         clearCountDown() // stops the timer
         $('.tie-message').addClass('show');
+    } else if (win === player1) {
+        clearCountDown()
+        displayWinner.textContent = player1
+        displayLooser.textContent = player2
+        $('.winning-message').addClass("show");
+    } else if (win === player2) {
+        clearCountDown()
+        displayWinner.textContent = player2
+        displayLooser.textContent = player1
+        $('.winning-message').addClass("show");
+    } else {
+        turnMessage.textContent = turnOrder;
     }
 };
 
