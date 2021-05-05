@@ -1,6 +1,4 @@
 //TODO
-// Win by having three in a row, horizontally, vertically or diagonally.
-// If No winner, it's a tie.
 // Start Timer on first click.  once: true should work.
 // The Game is finished, make it possible to reset the gameboard.
 
@@ -31,16 +29,13 @@ var turnMessage = document.getElementById('turn-display')
 // For the winning messages
 var displayWinner = document.getElementById('displayWinner')
 var displayLooser = document.getElementById('displayLooser')
-var restart = document.getElementById('restart').addEventListener('click', restart);
+document.getElementById('restart').addEventListener('click', restartGame)
 
 
+startGame()
 
 function startGame() {
-    gameboard = [
-        '', '', '',
-        '', '', '',
-        '', '', ''
-    ];
+
     // Adding eventlistener to the gameboard divs
     // https://dev.to/cilly_boloe/addeventlistener-once-js-bits-565d
     // for only adding the click event once.
@@ -49,7 +44,13 @@ function startGame() {
             once: true
         });
     }
-    countDown()
+
+    gameboard = [
+        '', '', '',
+        '', '', '',
+        '', '', ''
+    ];
+    // countDown(
 }
 
 
@@ -63,6 +64,7 @@ function countDown() {
         document.getElementById('counter').innerHTML = seconds;
         seconds -= 1;
     }, 1000);
+
 }
 
 function clearCountDown() {
@@ -75,8 +77,8 @@ function clearCountDown() {
 
 function clickHandler(event) {
 
-    let index = xoContainer.findIndex((containers) => {
-        return containers === event.target
+    let index = xoContainer.findIndex((xoContainers) => {
+        return xoContainers === event.target
     });
 
     gameboard[index] = turnOrder;
@@ -91,18 +93,17 @@ function clickHandler(event) {
 };
 
 function checkGameWinner() {
-    let winner = null;
+    let gameWinner = null;
 
     for (let i = 0; i < winOpts.length; i++) {
         let opt = winOpts[i];
         if (gameboard[opt[0]] && gameboard[opt[0]] === gameboard[opt[1]] && gameboard[opt[0]] === gameboard[opt[2]]) {
 
-            winner = gameboard[opt[0]];
+            gameWinner = gameboard[opt[0]];
         }
-
     }
-    if (winner) {
-        return winner;
+    if (gameWinner) {
+        return gameWinner;
     } else if (gameboard.includes('')) {
         return null;
     } else {
@@ -112,7 +113,6 @@ function checkGameWinner() {
 
 function makeMark() {
     // sets the mark on the gameboard
-
     for (let i = 0; i < xoContainer.length; i++) {
         xoContainer[i].textContent = gameboard[i]
     }
@@ -125,7 +125,7 @@ function makeMark() {
         clearCountDown()
         displayWinner.textContent = player1
         displayLooser.textContent = player2
-        $('.winning-message').addClass("show");
+        $('.winning-message').addClass('show');
     } else if (win === player2) {
         clearCountDown()
         displayWinner.textContent = player2
@@ -136,4 +136,6 @@ function makeMark() {
     }
 };
 
-startGame()
+function restartGame() {
+
+}
