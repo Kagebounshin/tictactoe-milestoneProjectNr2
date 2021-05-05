@@ -17,6 +17,7 @@ body {
     color: black;
     font-family: 'Just Me Again Down Here', cursive;
     user-select: none;
+    min-height: fit-content;
 }
 
 /* BACKGROUND COLORS */
@@ -29,7 +30,16 @@ body {
     background-color: transparent;
 }
 
+.bg-color-footer {
+    background-color: white;
+}
+
 /* CONTAINERS */
+footer.container-fluid.bg-color-footer {
+    position: absolute;
+    bottom: 0;
+    height: 62px;
+}
 
 .container-fluid {
     padding: 0;
@@ -251,7 +261,7 @@ body {
 
 @media (min-width: 992px) {
 
-    .game-container {
+    /* .game-container {
         width: 610px;
         height: 610px;
         font-size: 150px;
@@ -260,7 +270,7 @@ body {
     .xo-container {
         width: 200px;
         height: 200px;
-    }
+    } */
 }
 
 /* ADDITIONAL STYLING */
@@ -293,6 +303,15 @@ h1#turn,
 h1.counter {
     text-align: center;
 
+}
+
+.bgButton {
+    margin: 0 auto;
+    display: block;
+    border: none;
+    font-size: 2rem;
+    background-color: white;
+    border-radius: 2%;
 }
 
 /* CLOUD */
