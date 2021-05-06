@@ -51,7 +51,7 @@ function startGame() {
     for (let i = 0; i < restart.length; i++) {
         restart[i].addEventListener('click', restartGame);
     }
-    // countDown()
+    countDown()
 }
 
 
@@ -141,6 +141,7 @@ function makeMark() {
 function restartGame() {
     win = 0;
     tie = 0;
+    seconds = 20;
     turnOrder = player1;
     $('.winning-message').removeClass("show");
     $('.tie-message').removeClass('show');
