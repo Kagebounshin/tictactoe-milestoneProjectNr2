@@ -46,15 +46,15 @@ footer.container-fluid.bg-color-footer {
     width: 100%;
 }
 
-.turn-container {
+.turn-container,
+.counter-container,
+.score-container {
     padding-right: 0;
     z-index: 1;
+    text-align: center;
 }
 
-.counter-container {
-    padding-left: 0;
-    z-index: 1;
-}
+
 
 .game-container {
     position: relative;
@@ -283,30 +283,22 @@ footer.container-fluid.bg-color-footer {
     text-align: center;
 }
 
-.restartButton {
+/* .restartIcon {
     position: relative;
+    display: block;
+    margin: 0 auto;
     height: 4rem;
     width: 4rem;
-    left: 52%;
-    top: 50%;
     font-weight: 600;
-    transform: translate(-50%, -50%);
     border: none;
     border-radius: 50%;
     background-color: transparent;
     color: black;
-    /* box-shadow: 8px 5px 2px 1px rgb(0 0 0 / 83%); */
-}
+} */
 
 .hvr-icon-spin {
     font-size: 2rem;
     color: black;
-}
-
-h1#turn,
-h1.counter {
-    text-align: center;
-
 }
 
 .bgButton {
@@ -357,7 +349,8 @@ h1.counter {
 }
 
 
-.color-white {
+.color-white,
+.text-white {
     color: white;
 }
 
