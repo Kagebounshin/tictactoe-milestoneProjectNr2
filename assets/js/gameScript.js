@@ -30,7 +30,15 @@ var turnMessage = document.getElementById('turn-display');
 var displayWinner = document.getElementById('displayWinner');
 var displayLooser = document.getElementById('displayLooser');
 var restart = document.querySelectorAll('#restart')
+var xWin = document.getElementById('xWin');
+var oWin = document.getElementById('oWin');
+var xScore = 0;
+var oScore = 0;
 
+// Adding eventlisteners to the restartbuttons
+for (let i = 0; i < restart.length; i++) {
+    restart[i].addEventListener('click', restartGame);
+}
 
 function startGame() {
     // Adding eventlistener to the gameboard divs
@@ -47,12 +55,7 @@ function startGame() {
         '', '', '',
         '', '', ''
     ];
-
-    // Adding eventlisteners to the restartbuttons
-    for (let i = 0; i < restart.length; i++) {
-        restart[i].addEventListener('click', restartGame);
-    }
-
+    countDown()
 }
 
 
@@ -129,11 +132,15 @@ function makeMark() {
         displayWinner.textContent = player1
         displayLooser.textContent = player2
         $('.winning-message').addClass('show');
+        xScore++
+        xWin.innerHTML = xScore;
     } else if (win === player2) {
         clearCountDown()
         displayWinner.textContent = player2
         displayLooser.textContent = player1
         $('.winning-message').addClass("show");
+        oScore++
+        oWin.innerHTML = oScore;
     } else {
         turnMessage.textContent = turnOrder;
     }
