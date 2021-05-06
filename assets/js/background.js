@@ -1,8 +1,8 @@
 var bgButton = document.getElementById('bgButton');
 bgButton.addEventListener("click", bgChange);
-var bgColors = ['#585353', '#7bc36e', 'red', '#7fc3ccc4', '#963385', '#cc7f7fc4', '#e4e300c4', 'black'];
+var bgColors = ['#7fc3ccc4', '#847fccc4', '#cc7f7fc4', '#7fcc81c4', '#c7cc7fc4', '#a9a9a9b3', 'ff0000'];
 
-var colors = ['#585353', '#7bc36e', 'red', '#7fc3ccc4', '#963385', '#cc7f7fc4', '#e4e300c4', 'black'];
+var colors = ['#1099ab', '#2c2961', '#b55353', '#1a691c', '#4c5014c4', '#484848', '#710808', 'black'];
 
 function bgChange() {
 
