@@ -47,7 +47,7 @@ function startGame() {
         '', '', '',
         '', '', ''
     ];
-
+    // Adding eventlisteners to the restartbuttons
     for (let i = 0; i < restart.length; i++) {
         restart[i].addEventListener('click', restartGame);
     }
@@ -139,6 +139,16 @@ function makeMark() {
 };
 
 function restartGame() {
+    win = 0;
+    tie = 0;
+    turnOrder = player1;
+    $('.winning-message').removeClass("show");
+    $('.tie-message').removeClass('show');
+    $('.gameover-message').removeClass("show");
+    for (let i = 0; i < xoContainer.length; i++) {
+        xoContainer[i].textContent = '';
+    }
+    startGame()
 
 }
 
