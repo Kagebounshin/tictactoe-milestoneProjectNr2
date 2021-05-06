@@ -89,17 +89,24 @@
         </div>
 
     </div>
-    <div class="container-fluid mt-1 mb-5">
-        <div class="row">
-            <div class="col">
-                <button id="restart" class="restartButton mt-5 hvr-icon-spin"></button>
+    <div class="container-fluid">
+        <div class="row justify-content-center score-container">
+
+            <div class="col-12 mt-5">
+                <h1 id="score">Score!</h1>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <h1 id="score"><span class="text-white">X</span>: <span id="xWin">1</span></h1>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <h1 id="score"><span class="text-white">O</span>: <span id="oWin">4</span></h1>
             </div>
         </div>
     </div>
 
+
     <footer class="container-fluid bg-color-footer">
         <button id="bgButton" class="bgButton hvr-wobble-vertical">Change Background</button>
-
     </footer>
     <script src="assets/js/background.js"></script>
     <script src="assets/js/audio.js"></script>
