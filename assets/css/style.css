@@ -167,7 +167,7 @@ footer.container-fluid.bg-color-footer {
 .tie-message h1,
 .winning-message h1 {
     font-size: 10rem;
-    color: rgb(243, 79, 79);
+    color: black;
 }
 
 .gameover-message button,
@@ -183,7 +183,8 @@ footer.container-fluid.bg-color-footer {
 }
 
 .hvr-sweep-to-top:before {
-    background: rgb(243, 79, 79);
+    background: black;
+    color: white;
 }
 
 .show {
