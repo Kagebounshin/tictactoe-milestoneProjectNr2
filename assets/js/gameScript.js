@@ -15,27 +15,24 @@ var winOpts = [
     [2, 4, 6]
 ];
 
-
 var player1 = 'X';
 var player2 = 'O';
 var turnOrder = player1;
 var seconds = 20;
 var win;
 var tie;
+
 //get the gameboard containers, make them into an array.
 var xoContainer = Array.from(document.querySelectorAll('.xo-container'));
 var counter = document.getElementById('counter');
-var turnMessage = document.getElementById('turn-display')
+var turnMessage = document.getElementById('turn-display');
 // For the winning messages
-var displayWinner = document.getElementById('displayWinner')
-var displayLooser = document.getElementById('displayLooser')
-document.getElementById('restart').addEventListener('click', restartGame)
+var displayWinner = document.getElementById('displayWinner');
+var displayLooser = document.getElementById('displayLooser');
+var restart = document.querySelectorAll('#restart')
 
-
-startGame()
 
 function startGame() {
-
     // Adding eventlistener to the gameboard divs
     // https://dev.to/cilly_boloe/addeventlistener-once-js-bits-565d
     // for only adding the click event once.
@@ -50,7 +47,11 @@ function startGame() {
         '', '', '',
         '', '', ''
     ];
-    // countDown(
+
+    for (let i = 0; i < restart.length; i++) {
+        restart[i].addEventListener('click', restartGame);
+    }
+    // countDown()
 }
 
 
@@ -90,6 +91,7 @@ function clickHandler(event) {
     }
     win = checkGameWinner()
     makeMark()
+
 };
 
 function checkGameWinner() {
@@ -139,3 +141,6 @@ function makeMark() {
 function restartGame() {
 
 }
+
+
+startGame()
