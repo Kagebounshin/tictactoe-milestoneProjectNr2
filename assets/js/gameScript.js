@@ -47,11 +47,12 @@ function startGame() {
         '', '', '',
         '', '', ''
     ];
+
     // Adding eventlisteners to the restartbuttons
     for (let i = 0; i < restart.length; i++) {
         restart[i].addEventListener('click', restartGame);
     }
-    countDown()
+
 }
 
 
@@ -143,6 +144,7 @@ function restartGame() {
     tie = 0;
     seconds = 20;
     turnOrder = player1;
+    turnMessage.textContent = turnOrder;
     $('.winning-message').removeClass("show");
     $('.tie-message').removeClass('show');
     $('.gameover-message').removeClass("show");
