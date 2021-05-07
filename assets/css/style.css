@@ -191,10 +191,6 @@ footer.container-fluid.bg-color-footer {
     visibility: visible;
 }
 
-.hide {
-    visibility: hidden;
-}
-
 .winning-message p,
 .gameover-message p,
 .tie-message p {
