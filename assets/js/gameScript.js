@@ -58,7 +58,7 @@ function startGame() {
         '', '', '',
         '', '', ''
     ];
-    // countDown()
+    countDown()
 }
 
 // countdown timer
@@ -161,6 +161,8 @@ function restartGame() {
         xoContainer[i].textContent = '';
     }
     startGame()
+
 }
+
 
 startGame()
