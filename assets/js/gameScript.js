@@ -30,15 +30,18 @@ var turnMessage = document.getElementById('turn-display');
 var displayWinner = document.getElementById('displayWinner');
 var displayLooser = document.getElementById('displayLooser');
 var restart = document.querySelectorAll('#restart')
-var xWin = document.getElementById('xWin');
-var oWin = document.getElementById('oWin');
-var xScore = 0;
-var oScore = 0;
 
 // Adding eventlisteners to the restartbuttons
 for (let i = 0; i < restart.length; i++) {
     restart[i].addEventListener('click', restartGame);
 }
+
+var xWin = document.getElementById('xWin');
+var oWin = document.getElementById('oWin');
+var xScore = 0;
+var oScore = 0;
+
+
 
 function startGame() {
     // Adding eventlistener to the gameboard divs
@@ -55,9 +58,8 @@ function startGame() {
         '', '', '',
         '', '', ''
     ];
-    countDown()
+    // countDown()
 }
-
 
 // countdown timer
 function countDown() {
@@ -159,8 +161,6 @@ function restartGame() {
         xoContainer[i].textContent = '';
     }
     startGame()
-
 }
-
 
 startGame()
