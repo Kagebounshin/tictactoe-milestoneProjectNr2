@@ -80,11 +80,22 @@ footer.container-fluid.bg-color-footer {
 }
 
 .turn-container span,
-.counter-container span {
+.counter-container span,
+.score-container span:first-child {
     color: #fff;
     font-size: 3rem;
+    font-family: 'Waiting for the Sunrise', cursive;
 }
 
+.score-container span:nth-child(2) {
+    font-size: 3rem;
+    font-family: 'Waiting for the Sunrise', cursive;
+    color: #ffda26;
+}
+
+.score-container h1 {
+    font-size: 3rem;
+}
 
 /* NAVBAR */
 
@@ -92,7 +103,6 @@ footer.container-fluid.bg-color-footer {
     width: 100%;
     padding-top: 0px;
     padding-bottom: 0px;
-
 }
 
 .navbar-light .navbar-brand {
@@ -195,6 +205,10 @@ footer.container-fluid.bg-color-footer {
 .gameover-message p,
 .tie-message p {
     font-size: 2rem;
+}
+
+.winning-message span {
+    font-family: 'Waiting for the Sunrise', cursive;
 }
 
 
