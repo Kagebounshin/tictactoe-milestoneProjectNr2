@@ -17,6 +17,7 @@ body {
     color: black;
     font-family: 'Just Me Again Down Here', cursive;
     user-select: none;
+    touch-action: manipulation;
 }
 
 /* BACKGROUND COLORS */
@@ -134,7 +135,7 @@ footer.container-fluid.bg-color-footer {
 }
 
 .hvr-underline-from-left:before {
-    background: #7fc3ccc4;
+    background: black;
 }
 
 .hvr-underline-from-left {
@@ -225,7 +226,6 @@ footer.container-fluid.bg-color-footer {
     .tie-message h1,
     .winning-message h1 {
         font-size: 5rem;
-        color: rgb(243, 79, 79);
     }
 }
 
