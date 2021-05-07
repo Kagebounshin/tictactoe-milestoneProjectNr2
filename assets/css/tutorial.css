@@ -11,6 +11,11 @@ FIX RESPONSIVNESS */
     font-family: 'Roboto', cursive;
 }
 
+.tutorial-container span {
+    color: #fff;
+    font-size: 3rem;
+}
+
 img,
 svg {
     display: block;
