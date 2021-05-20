@@ -17,7 +17,7 @@
     <!-- NAVBAR -->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+        <div class="container-fluid navbar-container">
             <a class="navbar-brand hvr-wobble-vertical" href="index.html">
                 <h1>Tic-Tac-Toe</h1>
             </a>
@@ -27,11 +27,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-
-                    <a class="nav-link hvr-underline-from-left" aria-current="page" href="index.html">The Game</a>
-                    <a class="nav-link hvr-underline-from-left" aria-current="page" href="tutorial.html">How To Play</a>
-                    <a class="nav-link hvr-underline-from-left" href="contact.html">Contact</a>
-
+                    <a class="nav-link hvr-underline-reveal" aria-current="page" href="index.html">The
+                        Game</a>
+                    <a class="nav-link hvr-underline-reveal" aria-current="page" href="tutorial.html">How To
+                        Play</a>
+                    <a class="nav-link hvr-underline-reveal" href="contact.html">Contact</a>
                 </div>
             </div>
         </div>
@@ -42,22 +42,23 @@
     <!--GAMEAREA -->
 
     <div class="container-fluid mt-4">
-
         <div class="row justify-content-center">
-
+            <!-- DISPLAYS TURNORDER -->
             <div class="col-6 col-md-4 col-lg-3 turn-container">
                 <h1 id="turn">It's <span id="turn-display">X</span>'s turn!</h1>
             </div>
-
+            <!-- DISPLAYS COUNTER -->
             <div class="col-5 col-md-4 col-lg-3 counter-container">
                 <h1 class="counter">Timer: <span id="counter"></span></h1>
             </div>
         </div>
+        <!-- GAMEOVER/TIE/WIN MESSAGES -->
         <div class="gameover-message">
             <h1 class="text-center pt-5">No winner!</h1>
             <p class="text-center">The time has run out.</p>
             <button id="restart" class="restartButtons mt-5 hvr-sweep-to-top">Restart The Game</button>
         </div>
+
         <div class="tie-message">
             <h1 class="text-center pt-5">It's a TIE</h1>
             <p class="text-center">No winner!<br></p>
@@ -69,9 +70,9 @@
             <p class="text-center">I'll bet <span id="displayLooser"></span> wants a rematch!</p>
             <button id="restart" class="restartButtons mt-5 hvr-sweep-to-top">Restart The Game</button>
         </div>
+        <!-- GAMEBOARD -->
         <div class="row">
             <div class="col">
-
                 <div class="game-container bg-color-game mt-4" id="gameboard">
                     <div class="xo-container text-center hvr-shrink"></div>
                     <div class="xo-container text-center hvr-shrink"></div>
@@ -83,15 +84,12 @@
                     <div class="xo-container text-center hvr-shrink"></div>
                     <div class="xo-container text-center hvr-shrink"></div>
                 </div>
-
             </div>
-
         </div>
-
     </div>
+    <!-- SCORE COUNTER -->
     <div class="container-fluid">
         <div class="row justify-content-center score-container">
-
             <div class="col-12 mt-5">
                 <h1 id="score">Score!</h1>
             </div>
@@ -103,11 +101,11 @@
             </div>
         </div>
     </div>
-
-
+    <!-- FOOTER / CHANGE BACKGROUND BUTTON -->
     <footer class="container-fluid bg-color-footer">
         <button id="bgButton" class="bgButton hvr-wobble-vertical">Change Background</button>
     </footer>
+
     <script src="assets/js/background.js"></script>
     <script src="assets/js/audio.js"></script>
     <script src="assets/js/gameScript.js"></script>
