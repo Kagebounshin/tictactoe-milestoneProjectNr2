@@ -67,13 +67,18 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 
 - Game Page
 
-    - The "Game" page will be the home page of this site. After you get some game instructions you can choose to start playing the game.
+    - The "Game" page will be the home page of this site.
     - The gameboard will be displayed at the center of the page. The board will have a 3x3 grid, all with equally sized squares, in these squares you will put your X's & O's. When you hover over the diffrent squares they will respond. So you'll know wich square your about to put your mark on. 
     - Above the gameboard to the left there will be a text wich will display who's turn it is. 
     - Above the gameboard to the right, there the countdown timer will be.
     - Below the gameboard there will be a restart button.
     - Below the gameboard there will also be a scoreboard.
     - At the end of the game, the winner will be displayed, and you will be able to restart the game by the click of a button.
+
+- Tutorial Page
+    - If your not entirely sure on how to play Tic-Tac-Toe, dont worry, I've implemented and easy to understand tutorial page.
+    - The page display pictures on the three diffrent ways you can win, and how a possible "Tie" situation looks like. 
+    - And it explains the timer and the turn containers. 
 
 - Contact Page
     - The "Contact" Page will have a form centered at the page. there will be a simple looking form, were you can enter your name, email, and feedback.
@@ -111,15 +116,11 @@ Welcome to my second milestone project provided by [Code Institute](https://code
     
     1. I want the game to be played easily.
     2. I want it to have nice estetics. 
-    3. I want feedback once the game is done, such as who won. 
+    3. I want feedback once the game is done, such as who won, and a score counter. 
     4. I want to restart the game when the game is finished.
     5. I want to know if the author has done some other games. 
          
-    
-    
-
 ## Features
-
 
 ## Technologies Used
 
@@ -159,6 +160,14 @@ Welcome to my second milestone project provided by [Code Institute](https://code
     - I make a new mark and an O appears on the gameboard.
     - The turn container switches back to display that it's the X's turn once again
 
+- Score Counter
+    - I play a game and player "X" wins.
+    - The score counter for player "X" increases with 1.
+    - I play a game and player "O" wins.
+    - The score counter for player "O" increases with 1.
+    - I play a game and make it a "Tie".
+    - The Score is unchanged
+
 - Restart Button
     - I wait for the time to run out, so I can see the game over message.
     - I click the restart button and the game restarts
@@ -169,10 +178,6 @@ Welcome to my second milestone project provided by [Code Institute](https://code
     - I play a game and I make it a "Tie".
     - I click the restart button and the game restarts
     
-
-
-
-
 #### Testing of the contact form
 - When I enter the site, I locate the contact link at the navbar.
 - I click the link and it takes me to the Contact page.
@@ -244,13 +249,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
-
-
 ### Content
-
-
-
--   Psychological properties of colours text in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
 
 ### Media
 
