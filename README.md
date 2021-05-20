@@ -159,6 +159,18 @@ Welcome to my second milestone project provided by [Code Institute](https://code
     - I make a new mark and an O appears on the gameboard.
     - The turn container switches back to display that it's the X's turn once again
 
+- Restart Button
+    - I wait for the time to run out, so I can see the game over message.
+    - I click the restart button and the game restarts
+    - I play a game and winning with player "X".
+    - I click the restart button and the game restarts
+    - I play a game and winning with player "O".
+    - I click the restart button and the game restarts
+    - I play a game and I make it a "Tie".
+    - I click the restart button and the game restarts
+    
+
+
 
 
 #### Testing of the contact form
