@@ -36,12 +36,6 @@ body {
 
 /* CONTAINERS */
 
-footer.container-fluid.bg-color-footer {
-    position: absolute;
-    bottom: 0;
-    height: 62px;
-}
-
 .container-fluid {
     padding: 0;
     margin: 0;
@@ -69,7 +63,6 @@ footer.container-fluid.bg-color-footer {
     z-index: 1;
 }
 
-
 .xo-container {
     position: relative;
     margin: 0;
@@ -95,6 +88,12 @@ footer.container-fluid.bg-color-footer {
 
 .score-container h1 {
     font-size: 3rem;
+}
+
+footer.container-fluid.bg-color-footer {
+    position: absolute;
+    bottom: 0;
+    height: 62px;
 }
 
 /* NAVBAR */
@@ -273,8 +272,6 @@ footer.container-fluid.bg-color-footer {
         height: 150px;
     }
 }
-
-@media (min-width: 992px) {}
 
 /* ADDITIONAL STYLING */
 

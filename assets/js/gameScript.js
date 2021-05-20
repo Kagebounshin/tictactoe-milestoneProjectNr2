@@ -58,7 +58,7 @@ function startGame() {
         '', '', '',
         '', '', ''
     ];
-    countDown()
+    // countDown()
 }
 
 // countdown timer
@@ -149,6 +149,7 @@ function makeMark() {
 };
 
 function restartGame() {
+
     win = 0;
     tie = 0;
     seconds = 20;
