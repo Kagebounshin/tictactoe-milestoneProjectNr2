@@ -105,6 +105,10 @@ footer.container-fluid.bg-color-footer {
     padding-bottom: 0px;
 }
 
+.navbar.bg-light {
+    background-color: white !important;
+}
+
 .navbar-light .navbar-brand {
     color: black !important;
     margin-left: 1rem;
@@ -112,7 +116,7 @@ footer.container-fluid.bg-color-footer {
 
 .navbar-light .navbar-nav .nav-link {
     color: black !important;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin-left: 1rem;
     margin-bottom: .5rem;
 }
@@ -143,11 +147,11 @@ footer.container-fluid.bg-color-footer {
     margin-right: 1.5rem;
 }
 
-.hvr-underline-from-left:before {
+.hvr-underline-reveal:before {
     background: black;
 }
 
-.hvr-underline-from-left {
+.hvr-underline-reveal {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -270,16 +274,12 @@ footer.container-fluid.bg-color-footer {
     }
 }
 
+@media (min-width: 992px) {}
 
 /* ADDITIONAL STYLING */
 
 .text-center {
     text-align: center;
-}
-
-.hvr-icon-spin {
-    font-size: 2rem;
-    color: black;
 }
 
 .bgButton {
