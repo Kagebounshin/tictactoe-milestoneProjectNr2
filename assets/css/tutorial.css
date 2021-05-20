@@ -30,3 +30,7 @@ hr {
     margin-right: auto;
     opacity: 1 !important;
 }
+
+.hvr-underline-reveal:before {
+    background: #7fc3ccc4;
+}
