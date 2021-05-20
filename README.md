@@ -40,7 +40,7 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 
 ### Strategy
 
-- My targeted audience for this project is children somewhere between the ages of 4-9 years old. In most cases when two adults plays against each other it ends in a draw, unless your not familiar with the basic strategy of the game. So the Tic-tac-toe game is very simple, so it's well suited for children who dont already know the basic strategy. So I will try to make it appealing to kids at first. Having in mind what kids are interested in now a days, such as sports, tv-series, toys etc. 
+- My targeted audience for this project is children somewhere between the ages of 4-9 years old. In most cases when two adults plays against each other it ends in a draw, unless your not familiar with the basic strategy of the game. So the Tic-tac-toe game is very simple, so it's well suited for children who dont already know the basic strategy. So I will try to make it appealing to kids at first. Having in mind what kids are interested in now a days, games, toys, etc. 
 
 - I made up a very simple chart, by asking my own kids and some of their friends. I wanted to know their thought on what they think is important for this project. So they had three choices to make, between "Game Play", "Styling" and the "Contact page". They were going to rank these choices between 1-3.
  <h2 align="center"><img src="assets/img/img-readme/chartOfImportance.png"></h2>
@@ -52,9 +52,12 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 ### Scope
 
 - So alot of styling and a fun and intuitive gameplay is most important.
-- The first thats needed are instructions, what the game is about and how does it work. Ofcourse it's a simple game, but when you are aproaching children I think it's best to be as clear as you can be, sort out the questions they may have, before you even start the game. I will implement some easy to understand instructions to be shown when they enter the site. The instructions will be picture based, showing them the steps you need to take to win the game. Im thinking three pictures wich shows three winning combinations horizontally, vertically & diagonally. And a picture wich display a tie. Look at the instruction [**wireframe**](#wireframes) to get my idea.
-- To make it more fun to play I will put in a countdown timer, so the choices they make must be made quickly, if the time runs out, the game stops, and it's a tie. Choose to restart, and finish the game before the timer runs out.
-- I also going to implement a scoreboard, displaying how many matches each of the players have won, and how many times it has ended in a tie. So that you'll get that competetive feeling. 
+- The first thats needed are instructions, what the game is about and how does it work. Ofcourse it's a simple game, but when you are aproaching children I think it's best to be as clear as you can be, sort out the questions they may have, before you even start the game. 
+I will implement some easy to understand instructions to be shown when they enter the site. The instructions will be picture based, showing them the steps you need to take to win the game. 
+I'm thinking three pictures wich displays three winning combinations horizontally, vertically & diagonally. And a picture wich displays a tie. Look at the instruction [**wireframe**](#wireframes) to see my idea.
+- There will be a text displaying whos turn it is. 
+- To make it more fun to play I will put in a countdown timer, so the choices they make must be made quickly, if the time runs out, the game stops, and it's game over.
+- I also going to implement a scoreboard, displaying how many matches each of the players have won. So that you'll get that competetive feeling. 
 
 ### Structure
 
@@ -100,6 +103,12 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 
 -   ### Design
     -   #### Colour Scheme
+        - Game Page
+            - 
+        - Tutorial Page
+            -
+        - Contact Page
+            -
         
     -   #### Typography
         
@@ -111,16 +120,24 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 
     1. I want to get clear instructions on how the site works, what you can do, and how to do it.
     2. I want to easily navigate my way through the website. 
+    3. 
 
 - As as user,
     
     1. I want the game to be played easily.
     2. I want it to have nice estetics. 
-    3. I want feedback once the game is done, such as who won, and a score counter. 
+    3. I want feedback once the game is done, such as who won, and whats the score. 
     4. I want to restart the game when the game is finished.
     5. I want to know if the author has done some other games. 
          
 ## Features
+
+- Navbar
+    - The three diffrent pages on the site has the same looking Navbar, except some minor styling changes. The Navbrand takes you to the game page.
+
+- Game Page
+    - The game page has a text wich displays whos turn it is. The Game is set to start with the player "X" as default. When you start playing the turn text switches between the player "X" & "O" depending whos turn it is.
+    - 
 
 ## Technologies Used
 
@@ -184,10 +201,6 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 - The page have a feedback form, before submitting the form, I enter my name, emailaddress and a feedback message. 
 - I click at the "Send" button under the form, The message is sent to my Gmail account, the form is reset back to it's default state, and it displays a message above the form thanking you for submitting. 
 - If I dont fill in the form correctley before submitting, lets say leaving the email input window empty, a message will be displayed saying I need to include a emailaddress if I want to submit the form. 
-
-
-
-
 
 ### Further Testing
 
