@@ -245,6 +245,26 @@ footer.container-fluid.bg-color-footer {
         bottom: 0;
         height: 62px;
     }
+
+    .turn-container h1,
+    .counter-container h1,
+    .score-container h1 {
+        font-size: 1rem;
+    }
+
+    .bgButton {
+        font-size: 1rem;
+    }
+
+    .turn-container span,
+    .counter-container span,
+    .score-container span:first-child {
+        font-size: 1.5rem;
+    }
+
+    .score-container span:nth-child(2) {
+        font-size: 1.5rem;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
