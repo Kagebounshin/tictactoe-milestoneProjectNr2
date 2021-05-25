@@ -83,7 +83,7 @@ body {
 .score-container span:nth-child(2) {
     font-size: 3rem;
     font-family: 'Waiting for the Sunrise', cursive;
-    color: #ffda26;
+    color: black;
 }
 
 .score-container h1 {
@@ -238,6 +238,12 @@ footer.container-fluid.bg-color-footer {
     .tie-message h1,
     .winning-message h1 {
         font-size: 5rem;
+    }
+
+    footer.container-fluid.bg-color-footer {
+        position: relative;
+        bottom: 0;
+        height: 62px;
     }
 }
 
