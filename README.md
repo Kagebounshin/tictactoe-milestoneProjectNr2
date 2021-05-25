@@ -138,13 +138,19 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 - Game Page
     - The game page has a text wich displays whos turn it is. The Game is set to start with the player "X" as default. When you start playing the turn text switches between the player "X" & "O" depending whos turn it is.
     - There is a "Timer" wich count down from 20. If the timer run out, it display's a gameover message. 
-    - The Gameboard is at the center of the screen, the 9 diffrent spaces where you can make your mark has a hover effect on them, the effect slitly shrink the hovered space. 
+    - The Gameboard is at the center of the screen, the 9 diffrent spaces where you can make your mark has a hover effect on them, the effect slitly shrinks the hovered space. 
     - Below the gameboard there is a score counter, wich displaye's the score for player "X" and player "O". 
     - At the bottom of the page, there is a "Change Background" button, and guess what, it changes the background of the page. 
 
 - Tutorial Page
 
 - Contact Page
+
+## Features for the future
+
+- I would like to implement so that the players can set there name, so that the turn order is displayed with the players names instead of the "X" and the "O".
+- I would like to implement audio to the gameboard, so when any tile is clicked, a click sound is played. 
+- 
 
 
 
