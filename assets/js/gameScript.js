@@ -53,7 +53,7 @@ function startGame() {
         '', '', '',
         '', '', ''
     ];
-    countDown()
+    // countDown()
 }
 
 // countdown timer
@@ -147,7 +147,7 @@ function makeMark() {
     }
 };
 
-// Restarts the game, set the game back to its default state
+// Restarts the game, set the game back to it's default state
 function restartGame() {
     win = 0;
     tie = 0;
