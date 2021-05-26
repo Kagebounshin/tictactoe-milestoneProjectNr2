@@ -1,6 +1,6 @@
 var bgButton = document.getElementById('bgButton');
 bgButton.addEventListener("click", bgChange);
-var bgColors = ['#7fc3ccc4', '#847fccc4', '#cc7f7fc4', '#7fcc81c4', '#c7cc7fc4', '#a9a9a9b3', 'ff0000'];
+var bgColors = ['#7fc3ccc4', '#25876f', '#3451c6', '#d45b64', '#ba50f7', '#fc9819', '#ffbd89', '#25876f'];
 
 function bgChange() {
     var random = Math.floor(Math.random() * bgColors.length);
