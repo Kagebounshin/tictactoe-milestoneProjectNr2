@@ -10,7 +10,7 @@ Add more cloud in different sizes, add animation from left to right.
 @import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
 
 body {
-    background-color: #7fc3ccc4;
+    background-color: #25876f;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -68,7 +68,7 @@ body {
     margin: 0;
     background-color: white;
     border-radius: 15%;
-    box-shadow: 12px 12px 2px 1px rgb(0 0 0 / 83%);
+    box-shadow: 12px 12px 2px 1px rgb(0 0 0 / 65%);
     z-index: 1;
 }
 
@@ -196,8 +196,7 @@ footer.container-fluid.bg-color-footer {
 }
 
 .hvr-sweep-to-top:before {
-    background: black;
-    color: white;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .show {
@@ -257,13 +256,13 @@ footer.container-fluid.bg-color-footer {
     }
 
     .turn-container span,
-    .counter-container span,
-    .score-container span:first-child {
+    .counter-container span {
         font-size: 1.5rem;
     }
 
+    .score-container span:first-child,
     .score-container span:nth-child(2) {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 
@@ -274,7 +273,6 @@ footer.container-fluid.bg-color-footer {
         width: 310px;
         height: 310px;
         font-size: 75px;
-
     }
 
     .xo-container {
@@ -309,9 +307,9 @@ footer.container-fluid.bg-color-footer {
     margin: 0 auto;
     display: block;
     border: none;
-    font-size: 2rem;
-    background-color: transparent;
-    border-radius: 2%;
+    font-size: 1.8rem;
+    background-color: white;
+    box-shadow: 5px 5px rgb(0 0 0 / 65%);
 }
 
 .color-white,
