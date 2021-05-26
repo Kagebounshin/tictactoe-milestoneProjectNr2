@@ -16,22 +16,24 @@ body {
     text-align: center;
     letter-spacing: 10px;
     color: #212529;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    float: right;
 }
 
 .social-container i {
-    font-size: 5rem;
+    font-size: 2rem;
     color: #fff;
 }
 
 .social-container {
-    padding: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6rem;
 }
 
 .form-container {
-    padding: none;
+    position: relative;
+    min-height: 100vh;
 }
 
 .form-container button i {
@@ -108,18 +110,16 @@ form ::placeholder {
 
 }
 
-/* X-Large devices (large desktops, 1200px and up) */
-
-@media (min-width: 1200px) {}
-
-/* XX-Large devices (larger desktops, 1400px and up)  */
-
-@media (min-width: 1400px) {}
 
 body {
-    background-color: #cc7f7fc4;
+    background-color: #fc9819;
 }
 
 .hvr-underline-reveal:before {
-    background: #cc7f7fc4;
+    background: #fc9819;
+}
+
+.sendButton {
+    background-color: white;
+    box-shadow: 5px 5px rgb(0 0 0 / 4%);
 }
