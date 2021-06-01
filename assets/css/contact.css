@@ -8,7 +8,6 @@ body {
     margin: 0;
 }
 
-
 .social-container ul {
     position: relative;
     list-style-type: none;
@@ -36,14 +35,9 @@ body {
     min-height: 100vh;
 }
 
-.form-container button i {
-    color: white;
-    font-size: 2rem;
-}
-
 form input,
 form textarea {
-    background-color: #fff;
+    background-color: #fff8e6;
     color: #212529;
     outline: none;
     font-family: 'Roboto', cursive;
@@ -120,6 +114,6 @@ body {
 }
 
 .sendButton {
-    background-color: white;
+    background-color: #fff8e6;
     box-shadow: 5px 5px rgb(0 0 0 / 4%);
 }

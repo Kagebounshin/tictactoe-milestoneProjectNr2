@@ -22,10 +22,6 @@ body {
 
 /* BACKGROUND COLORS */
 
-.bg-light {
-    background-color: white !important;
-}
-
 .bg-color-game {
     background-color: transparent;
 }
@@ -66,7 +62,7 @@ body {
 .xo-container {
     position: relative;
     margin: 0;
-    background-color: white;
+    background-color: #fff8e6;
     border-radius: 15%;
     box-shadow: 12px 12px 2px 1px rgb(0 0 0 / 65%);
     z-index: 1;
@@ -105,7 +101,7 @@ footer.container-fluid.bg-color-footer {
 }
 
 .navbar.bg-light {
-    background-color: white !important;
+    background-color: #fff8e6 !important;
 }
 
 .navbar-light .navbar-brand {
@@ -308,7 +304,7 @@ footer.container-fluid.bg-color-footer {
     display: block;
     border: none;
     font-size: 1.8rem;
-    background-color: white;
+    background-color: #fff8e6;
     box-shadow: 5px 5px rgb(0 0 0 / 65%);
 }
 
