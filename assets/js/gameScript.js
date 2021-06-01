@@ -1,6 +1,7 @@
-//TODO
-// Start Timer on first click.  once: true should work.
-// The Game is finished, make it possible to reset the gameboard.
+// The fundamentals for this game's structure was obtained from 
+// https://javascript.plainenglish.io/the-worlds-most-empowering-tic-tac-toe-javascript-tutorial-a889e4c20883
+// A very good tutorial on how to get down the basic of a Tic-Tac-Toe game
+
 
 // Winning Options
 
@@ -21,7 +22,7 @@ var turnOrder = player1;
 var seconds = 20;
 var win;
 var tie;
-//get the gameboard containers, make them into an array.
+//Get the gameboard containers, make them into an array.
 var xoContainer = Array.from(document.querySelectorAll('.xo-container'));
 var counter = document.getElementById('counter');
 var turnMessage = document.getElementById('turn-display');
@@ -38,8 +39,9 @@ var oWin = document.getElementById('oWin');
 var xScore = 0;
 var oScore = 0;
 
-// Adding eventlistener to the gameboard divs
+
 function startGame() {
+    // Adding eventlistener to the gameboard divs
     // https://dev.to/cilly_boloe/addeventlistener-once-js-bits-565d
     // for only adding the click event once.
     for (let i = 0; i < xoContainer.length; i++) {
@@ -53,10 +55,10 @@ function startGame() {
         '', '', '',
         '', '', ''
     ];
-    // countDown()
+    countDown()
 }
 
-// countdown timer
+// Countdown timer
 function countDown() {
     counter = setInterval(function () {
         if (seconds <= 0) {
@@ -64,10 +66,7 @@ function countDown() {
             $('.gameover-message').addClass("show");
         }
         if (seconds < 4) {
-            $('#counter').css({
-                'color': 'red',
-                'font-size': '150%'
-            })
+            $('#counter').css('color', 'red')
         }
         document.getElementById('counter').innerHTML = seconds;
         seconds -= 1;
@@ -95,8 +94,8 @@ function clickHandler(event) {
     }
     win = checkGameWinner()
     makeMark()
-
 };
+
 
 function checkGameWinner() {
     let gameWinner = null;
@@ -117,7 +116,7 @@ function checkGameWinner() {
 }
 
 
-// sets the mark on the gameboard
+// Set's the mark on the gameboard
 function makeMark() {
 
     for (let i = 0; i < xoContainer.length; i++) {
@@ -126,7 +125,7 @@ function makeMark() {
 
     // Display the win/tie messages
     if (win === tie) {
-        clearCountDown() // stops the timer
+        clearCountDown() // Stops the timer
         $('.tie-message').addClass('show');
     } else if (win === player1) {
         clearCountDown()
@@ -147,7 +146,7 @@ function makeMark() {
     }
 };
 
-// Restarts the game, set the game back to it's default state
+// Restarts the game, sets the game back to it's default state
 function restartGame() {
     win = 0;
     tie = 0;
@@ -157,10 +156,7 @@ function restartGame() {
     $('.winning-message').removeClass("show");
     $('.tie-message').removeClass('show');
     $('.gameover-message').removeClass("show");
-    $('#counter').css({
-        'color': '',
-        'font-size': ''
-    })
+    $('#counter').css('color', '')
     for (let i = 0; i < xoContainer.length; i++) {
         xoContainer[i].textContent = '';
     }
