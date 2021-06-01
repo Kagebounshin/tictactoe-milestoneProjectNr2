@@ -119,8 +119,7 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 - As a First Time Visitor,
 
     1. I want to get clear instructions on how the site works, what you can do, and how to do it.
-    2. I want to easily navigate my way through the website. 
-    3. 
+    2. I want to easily navigate my way through the website.  
 
 - As as user,
     
@@ -143,6 +142,7 @@ I'm thinking three pictures wich displays three winning combinations horizontall
     - At the bottom of the page, there is a "Change Background" button, and guess what, it changes the background of the page. 
 
 - Tutorial Page
+    -
 
 - Contact Page
 
@@ -150,8 +150,9 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
 - I would like to implement so that the players can set there name, so that the turn order is displayed with the players names instead of the "X" and the "O".
 - I would like to implement audio to the gameboard, so when any tile is clicked, a click sound is played. 
-- 
 
+
+---
 
 
 ## Technologies Used
@@ -160,16 +161,34 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
--   [JavaScript]()
+-   [JavaScript](https://www.javascript.com/)
 
 ### Frameworks, Libraries & Programs Used
 
 - [jQuery](https://jquery.com/)
+
 - [Bootstrap v5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+
 - [Hover.css](https://ianlunn.github.io/Hover/) - Hover effect on buttons.
+
 - [fontAwesome](https://fontawesome.com/) - provides icons across the sit
+
 - [GoogleFonts](https://fonts.google.com/)
-- [EmailJS](https://www.emailjs.com/) - For the contact form
+
+* [Git](https://git-scm.com/) - Git was used for version control.
+
+* [GitHub](https://github.com/) - GitHub was used to store the project.
+
+* [GitHubPages](https://pages.github.com/) - Deployment
+
+* [Balsamiq](https://balsamiq.com/) - Balsamiq was used to create the wireframes during the design process.
+
+* [Am I Responsive](http://ami.responsivedesign.is/#) - Tested responsivness & the images at the top of the readMe.
+
+- [EmailJS](https://www.emailjs.com/) - For the contact form.
+
+
+---
 
 ## Testing
 
@@ -224,46 +243,49 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 ### Known Bugs
 
 
+---
 
 ## Deployment
-
+ 
 ### GitHub Pages
 
-The project was deployed to GitHub Pages using the following steps...
+My project was deployed to GitHub Pages, following these steps..
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+1. Log in to [GitHub](https://github.com/) and locate the [GitHub Repository](https://kagebounshin.github.io/tictactoe-milestoneProjectNr2/).
+2. At the top of the Repository, locate the "Settings" Button on the menu.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+5. The page will refresh.
+6. Scroll back down through the page to locate the now published site in the "GitHub Pages" section.
+
 
 ### Forking the GitHub Repository
 
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+By forking the GitHub Repository you can make a copy of the original repository to your GitHub account to just view or make changes without affecting the original. Use these steps or press this [link](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-3. You should now have a copy of the original repository in your GitHub account.
+1. Log in to [GitHub](https://github.com/) and locate the [GitHub Repository](https://github.com/Kagebounshin/neverday-milestone-project-1).
+2. In the top-right corner of the page, click Fork.
+3. Now you will have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. Under the repository name, click "Clone or download".
+Follow these steps or press this [link](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop).
+
+1. Log in to GitHub and locate the [GitHub Repository](https://kagebounshin.github.io/tictactoe-milestoneProjectNr2)
+2. Above the list of files, click "Code".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4. Open Git Bash
 5. Change the current working directory to the location where you want the cloned directory to be made.
 6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://kagebounshin.github.io/tictactoe-milestoneProjectNr2
 ```
 
-7. Press Enter. Your local clone will be created.
+7. Press Enter to create your local clone.
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://kagebounshin.github.io/tictactoe-milestoneProjectNr2
 > Cloning into `CI-Clone`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
@@ -271,18 +293,19 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 > Unpacking objects: 100% (10/10), done.
 ```
 
-Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+---
 
 ## Credits
 
 ### Code
 
+- The Structure for this game was obtained from [Anna Peterson](https://medium.com/@annapeterson89) and her tutorial "[The World’s Most Empowering Tic-Tac-Toe JavaScript Tutorial](https://javascript.plainenglish.io/the-worlds-most-empowering-tic-tac-toe-javascript-tutorial-a889e4c20883)". 
+
 ### Content
-
-### Media
-
 
 
 ### Acknowledgements
 
 - The layout inspration for this README.md is from Code Institute's own [Sample README](https://github.com/Code-Institute-Solutions/SampleREADME).
+
+- Thanks to [Anna Peterson](https://medium.com/@annapeterson89) for making it easy to understand the structure of a Tic-Tac-Toe game. 
