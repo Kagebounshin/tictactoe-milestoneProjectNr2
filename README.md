@@ -132,7 +132,8 @@ I'm thinking three pictures wich displays three winning combinations horizontall
         <img src="assets/img/img-readme/D45B64.png">
         <img src="assets/img/img-readme/ffbd89.png">
         <img src="assets/img/img-readme/ba50f7.png">
-        
+        <img src="assets/img/img-readme/fff8e6.png">
+        <img src="assets/img/img-readme/000000.png">
 
         The Gameboard has the #fff8e6 color as background, and the box shadow is faded to 65% from the color #000000 (black).
 
