@@ -102,15 +102,31 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 ### Surface 
 
 -   ### Design
-    -   #### Colour Scheme
+    - #### Colour Scheme
         - Game Page
-            - 
+         
+        At the Game Page you can click a button wich will randomly change the background color, the colors that the background randomly changes to is dispayed below this text.
+            
+        <img src="assets/img/img-readme/25876f.png">
+        <img src="assets/img/img-readme/7fc3cc.png">
+        <img src="assets/img/img-readme/fc9819.png">
+        <img src="assets/img/img-readme/3451c6.png">
+        <img src="assets/img/img-readme/D45B64.png">
+        <img src="assets/img/img-readme/ffbd89.png">
+        <img src="assets/img/img-readme/ba50f7.png">
+        
         - Tutorial Page
-            -
+            
+        <img src="assets/img/img-readme/7fc3cc.png">
+        
         - Contact Page
-            -
+            
+        <img src="assets/img/img-readme/fc9819.png">
+
+        
         
     -   #### Typography
+
         
 
 ### User stories
