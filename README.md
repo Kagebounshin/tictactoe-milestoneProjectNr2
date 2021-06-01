@@ -171,19 +171,21 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
 - [Hover.css](https://ianlunn.github.io/Hover/) - Hover effect on buttons.
 
-- [fontAwesome](https://fontawesome.com/) - provides icons across the sit
+- [FontAwesome](https://fontawesome.com/) - provides icons across the sit
 
 - [GoogleFonts](https://fonts.google.com/)
 
-* [Git](https://git-scm.com/) - Git was used for version control.
+- [Git](https://git-scm.com/) - Git was used for version control.
 
-* [GitHub](https://github.com/) - GitHub was used to store the project.
+- [GitHub](https://github.com/) - GitHub was used to store the project.
 
-* [GitHubPages](https://pages.github.com/) - Deployment
+- [GitHubPages](https://pages.github.com/) - Deployment
 
-* [Balsamiq](https://balsamiq.com/) - Balsamiq was used to create the wireframes during the design process.
+- [Balsamiq](https://balsamiq.com/) - Balsamiq was used to create the wireframes.
 
-* [Am I Responsive](http://ami.responsivedesign.is/#) - Tested responsivness & the images at the top of the readMe.
+- [Am I Responsive](http://ami.responsivedesign.is/#) - Tested responsivness & the images at the top of the readMe.
+
+- [Color Hex](https://www.color-hex.com/) - The color images wich are displayed at the [**Design**](#design) section of this readMe.
 
 - [EmailJS](https://www.emailjs.com/) - For the contact form.
 
