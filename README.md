@@ -103,6 +103,24 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
 -   ### Design
     - #### Colour Scheme
+        - Text Colors
+
+        The body element of all the pages is set to have the color #000000, Have styles some text across the pages white the colr #ffffff. 
+        
+        The form at the contact page has the color #212529 set to it's text.
+
+        <img src="assets/img/img-readme/000000.png">
+        <img src="assets/img/img-readme/ffffff.png">
+        <img src="assets/img/img-readme/212529.png">
+        
+        
+        - Navbar
+
+        The Navbar has the #fff8e6 background across all pages, I wanted a more smooth and pleasing color instead of a basic #fff. And the text has the #000000 color.  
+       
+        
+        <img src="assets/img/img-readme/fff8e6.png">
+
         - Game Page
          
         At the Game Page you can click a button wich will randomly change the background color, the colors that the background randomly changes to is dispayed below this text.
@@ -114,17 +132,27 @@ I'm thinking three pictures wich displays three winning combinations horizontall
         <img src="assets/img/img-readme/D45B64.png">
         <img src="assets/img/img-readme/ffbd89.png">
         <img src="assets/img/img-readme/ba50f7.png">
+        <img src="assets/img/img-readme/fff8e6.png">
+        <img src="assets/img/img-readme/000000.png">
+
+        The Gameboard has the #fff8e6 color as background, and the box shadow is faded to 65% from the color #000000 (black).
+
+        The Button wich changes the background of the page has the same background color as the gamboard #fff8e6, and the box shadow is faded to 65% from the color #000000 (black).
         
         - Tutorial Page
-            
+
+        The background for the tutorial page is set to the #7fc3cc.
+
         <img src="assets/img/img-readme/7fc3cc.png">
         
         - Contact Page
-            
+
+        The background for the contact page is set to #fc9819.
+
         <img src="assets/img/img-readme/fc9819.png">
 
-        
-        
+
+
     -   #### Typography
 
         
