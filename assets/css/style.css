@@ -324,3 +324,7 @@ span.questionmark {
 i.far.fa-smile-beam {
     color: white;
 }
+
+.uppercase {
+    text-transform: uppercase;
+}
