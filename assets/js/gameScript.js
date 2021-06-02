@@ -34,6 +34,8 @@ var restart = document.querySelectorAll('#restart')
 for (let i = 0; i < restart.length; i++) {
     restart[i].addEventListener('click', restartGame);
 }
+
+// For the scoreboard
 var xWin = document.getElementById('xWin');
 var oWin = document.getElementById('oWin');
 var xScore = 0;
