@@ -92,6 +92,11 @@ footer.container-fluid.bg-color-footer {
     height: 62px;
 }
 
+.error-container {
+    text-align: center;
+    font-family: 'Roboto', cursive;
+}
+
 /* NAVBAR */
 
 .navbar {
