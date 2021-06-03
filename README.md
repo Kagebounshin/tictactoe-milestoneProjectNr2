@@ -34,9 +34,28 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 - [**Media**](#media)
 - [**Acknowledgements**](#acknowledgements)
 
-
+---
 
 ## User Experience
+
+
+### User stories
+
+
+- As a First Time Visitor,
+
+    1. I want to get clear instructions on how the site works, what you can do, and how to do it.
+    2. I want to easily navigate my way through the website.  
+
+- As as user,
+    
+    1. I want the game to be played easily.
+    2. I want it to have nice estetics. 
+    3. I want feedback once the game is done, such as who won, and whats the score. 
+    4. I want to restart the game when the game is finished.
+    5. I want to know if the author has done some other games. 
+
+---
 
 ### Strategy
 
@@ -155,23 +174,6 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
     -   #### Typography
 
-        
-
-### User stories
-
-
-- As a First Time Visitor,
-
-    1. I want to get clear instructions on how the site works, what you can do, and how to do it.
-    2. I want to easily navigate my way through the website.  
-
-- As as user,
-    
-    1. I want the game to be played easily.
-    2. I want it to have nice estetics. 
-    3. I want feedback once the game is done, such as who won, and whats the score. 
-    4. I want to restart the game when the game is finished.
-    5. I want to know if the author has done some other games. 
          
 ## Features
 
