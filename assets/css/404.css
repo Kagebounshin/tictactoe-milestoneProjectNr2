@@ -2,6 +2,17 @@ body {
     background-color: #fff8e6;
 }
 
+.error-container {
+    text-align: center;
+    font-family: 'Roboto', cursive;
+}
+
 .error-container h1 {
     font-size: 5rem;
+}
+
+
+.arrow {
+    margin-top: 4rem;
+    font-size: 4rem;
 }
