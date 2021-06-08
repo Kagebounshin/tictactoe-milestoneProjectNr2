@@ -28,7 +28,6 @@ var counter = document.getElementById('counter');
 var turnMessage = document.getElementById('turn-display');
 // For the winning messages
 var displayWinner = document.getElementById('displayWinner');
-var displayLooser = document.getElementById('displayLooser');
 var restart = document.querySelectorAll('#restart')
 // Adding eventlisteners to the restartbuttons
 for (let i = 0; i < restart.length; i++) {
@@ -163,14 +162,12 @@ function gameMsg() {
     } else if (win === player1) {
         clearCountDown()
         displayWinner.textContent = player1
-        displayLooser.textContent = player2
         $('.winning-message').addClass('show');
         xScore++
         xWin.innerHTML = xScore;
     } else if (win === player2) {
         clearCountDown()
         displayWinner.textContent = player2
-        displayLooser.textContent = player1
         $('.winning-message').addClass("show");
         oScore++
         oWin.innerHTML = oScore;

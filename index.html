@@ -51,24 +51,7 @@
                 <h1 class="counter">Timer: <span id="counter">20</span></h1>
             </div>
         </div>
-        <!-- GAMEOVER/TIE/WIN MESSAGES -->
-        <div class="gameover-message">
-            <h1 class="text-center pt-5">No winner!</h1>
-            <p class="text-center">The time has run out.</p>
-            <button id="restart" class="restartButtons mt-5 hvr-sweep-to-top">Restart The Game</button>
-        </div>
 
-        <div class="tie-message">
-            <h1 class="text-center pt-5">It's a TIE</h1>
-            <p class="text-center">No winner!<br></p>
-            <button id="restart" class="restartButtons mt-5 hvr-sweep-to-top">Restart The Game</button>
-        </div>
-
-        <div class="winning-message">
-            <h1 class="text-center pt-5"><span id="displayWinner"></span> wins!</h1>
-            <p class="text-center">I'll bet <span id="displayLooser"></span> wants a rematch!</p>
-            <button id="restart" class="restartButtons mt-5 hvr-sweep-to-top">Restart The Game</button>
-        </div>
         <!-- GAMEBOARD -->
         <div class="row">
             <div class="col">
@@ -100,6 +83,33 @@
             </div>
         </div>
     </div>
+
+    <!-- GAMEOVER/TIE/WIN MESSAGES -->
+    <div class="gameover-message">
+        <div class="modal-content">
+            <h1 class="text-center pt-5">Game Over!</h1>
+            <p class="text-center">The time has run out.</p>
+            <button id="restart" class="restartButton">Play Again?</button>
+        </div>
+    </div>
+
+    <div class="tie-message">
+        <div class="modal-content">
+            <h1 class="text-center pt-5">Game Over!</h1>
+            <p class="text-center">It's a TIE!<br></p>
+            <button id="restart" class="restartButton">Play Again?</button>
+        </div>
+    </div>
+
+    <div class="winning-message">
+        <div class="modal-content">
+            <h1 class="text-center pt-5">Game Over!</h1>
+            <p class="text-center"><span id="displayWinner"></span> wins!</p>
+            <button id="restart" class="restartButton">Play Again?</button>
+        </div>
+    </div>
+
+
 
     <script src="assets/js/background.js"></script>
     <script src="assets/js/gameScript.js"></script>

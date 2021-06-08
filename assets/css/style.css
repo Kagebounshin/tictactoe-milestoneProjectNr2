@@ -167,7 +167,7 @@ footer.container-fluid.bg-color-footer {
     top: 0;
     bottom: 0;
     right: 0;
-    background-color: rgb(255 255 255 / 90%);
+    background-color: rgb(0 0 0 / 40%);
     visibility: hidden;
     z-index: 100;
 }
@@ -175,20 +175,8 @@ footer.container-fluid.bg-color-footer {
 .gameover-message h1,
 .tie-message h1,
 .winning-message h1 {
-    font-size: 10rem;
+    font-size: 4rem;
     color: black;
-}
-
-.gameover-message button,
-.tie-message button,
-.winning-message button {
-    border: none;
-    font-size: 2rem;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 2%;
 }
 
 .hvr-sweep-to-top:before {
@@ -199,15 +187,36 @@ footer.container-fluid.bg-color-footer {
     visibility: visible;
 }
 
-.winning-message p,
-.gameover-message p,
-.tie-message p {
-    font-size: 2rem;
-}
-
 .winning-message span {
     font-family: 'Waiting for the Sunrise', cursive;
 }
+
+.modal-content {
+    position: relative;
+    background: #fff8e6;
+    margin: 20% auto;
+    padding: 0;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    box-shadow: 12px 12px 2px 1px rgb(0 0 0 / 65%);
+}
+
+.restartButton {
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    font-size: 2rem;
+    color: black;
+    border: 3px solid black;
+    border-radius: 32px;
+}
+
+.restartButton:hover {
+    color: #fff8e6;
+    background-color: black;
+}
+
 
 
 /* MEDIA BREAKPOINTS */
