@@ -34,7 +34,3 @@ hr {
 body {
     background-color: #7fc3ccc4;
 }
-
-.hvr-underline-reveal:before {
-    background: #7fc3ccc4;
-}

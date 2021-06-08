@@ -109,10 +109,6 @@ body {
     background-color: #fc9819;
 }
 
-.hvr-underline-reveal:before {
-    background: #fc9819;
-}
-
 .sendButton {
     background-color: #fff8e6;
     box-shadow: 5px 5px rgb(0 0 0 / 4%);
