@@ -83,39 +83,16 @@ function clearCountDown() {
 // Wich will response to click by user, take turns between the players.
 function clickHandler(event) {
 
-    let index = xoContainer.findIndex((xoContainers) => {
+    index = xoContainer.findIndex((xoContainers) => {
         return xoContainers === event.target
     });
 
     gameboard[index] = turnOrder;
-
-    if (turnOrder === player1) {
-        turnOrder = player2
-    } else {
-        turnOrder = player1
-    }
     win = checkGameWinner()
     makeMark()
+    switchTurn()
+    computerMove()
 };
-
-
-function checkGameWinner() {
-    let gameWinner = null;
-
-    for (let i = 0; i < winOpts.length; i++) {
-        let opt = winOpts[i];
-        if (gameboard[opt[0]] && gameboard[opt[0]] === gameboard[opt[1]] && gameboard[opt[0]] === gameboard[opt[2]]) {
-            gameWinner = gameboard[opt[0]];
-        }
-    }
-    if (gameWinner) {
-        return gameWinner;
-    } else if (gameboard.includes('')) {
-        return null;
-    } else {
-        return tie;
-    }
-}
 
 
 // Set's the mark on the gameboard
@@ -147,6 +124,52 @@ function makeMark() {
         turnMessage.textContent = turnOrder;
     }
 };
+
+function computerMove() {
+    var emptyContainers = [];
+    var random;
+
+
+    for (var i = 0; i < xoContainer.length; i++) {
+        if (xoContainer[i].textContent === '') {
+            emptyContainers.push(xoContainer[i])
+        }
+    };
+
+    random = Math.ceil(Math.random() * emptyContainers.length) - 1;
+    emptyContainers[random] = player2;
+
+    win = checkGameWinner()
+    switchTurn()
+};
+
+function switchTurn() {
+
+    if (turnOrder === player1) {
+        turnOrder = player2
+    } else {
+        turnOrder = player1
+    }
+
+}
+
+function checkGameWinner() {
+    let gameWinner = null;
+
+    for (let i = 0; i < winOpts.length; i++) {
+        let opt = winOpts[i];
+        if (gameboard[opt[0]] && gameboard[opt[0]] === gameboard[opt[1]] && gameboard[opt[0]] === gameboard[opt[2]]) {
+            gameWinner = gameboard[opt[0]];
+        }
+    }
+    if (gameWinner) {
+        return gameWinner;
+    } else if (gameboard.includes('')) {
+        return null;
+    } else {
+        return tie;
+    }
+}
 
 // Restarts the game, sets the game back to it's default state
 function restartGame() {
