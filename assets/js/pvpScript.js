@@ -1,10 +1,7 @@
 // The fundamentals for this game's structure was obtained from 
 // https://javascript.plainenglish.io/the-worlds-most-empowering-tic-tac-toe-javascript-tutorial-a889e4c20883
 // A very good tutorial on how to get down the basic of a Tic-Tac-Toe game
-
-
 // Winning Options
-
 var winOpts = [
     [0, 1, 2],
     [0, 4, 8],
@@ -15,7 +12,6 @@ var winOpts = [
     [6, 7, 8],
     [2, 4, 6]
 ];
-
 var player1 = 'X';
 var player2 = 'O';
 var turnOrder = player1;
@@ -40,7 +36,6 @@ var oWin = document.getElementById('oWin');
 var xScore = 0;
 var oScore = 0;
 
-
 function startGame() {
     // Adding eventlistener to the gameboard divs
     // https://dev.to/cilly_boloe/addeventlistener-once-js-bits-565d
@@ -50,7 +45,6 @@ function startGame() {
             once: true
         });
     }
-
     gameboard = [
         '', '', '',
         '', '', '',
@@ -58,7 +52,6 @@ function startGame() {
     ];
     countDown()
 }
-
 // Countdown timer
 function countDown() {
     counter = setInterval(function () {
@@ -77,64 +70,24 @@ function countDown() {
 function clearCountDown() {
     clearInterval(counter);
 }
-
 // Clickhandler
-// Wich will response to click by user.
+// Wich will response to click by user, take turns between the players.
 function clickHandler(event) {
-
-    index = xoContainer.findIndex((xoContainers) => {
+    let index = xoContainer.findIndex((xoContainers) => {
         return xoContainers === event.target
     });
-
     gameboard[index] = turnOrder;
-
-    makeMark()
-    computerMove()
-}
-
-
-// Set's the mark on the gameboard
-function makeMark() {
-
-    for (let i = 0; i < xoContainer.length; i++) {
-        xoContainer[i].textContent = gameboard[i];
-    }
-    switchTurn()
-
-};
-
-function computerMove() {
-    var emptyContainers = [];
-    var random;
-
-    for (let i = 0; i < xoContainer.length; i++) {
-        if (xoContainer[i].textContent === '') {
-            emptyContainers.push(xoContainer[i])
-        }
-    };
-
-    random = Math.ceil(Math.random() * emptyContainers.length) - 1;
-    emptyContainers[random].textContent = player2;
-    switchTurn()
-};
-
-// Take turns between players. 
-function switchTurn() {
-
     if (turnOrder === player1) {
         turnOrder = player2
     } else {
         turnOrder = player1
     }
-
     win = checkGameWinner()
-    gameMsg()
-}
+    makeMark()
+};
 
-// Check for a winner 
 function checkGameWinner() {
     let gameWinner = null;
-
     for (let i = 0; i < winOpts.length; i++) {
         let opt = winOpts[i];
         if (gameboard[opt[0]] && gameboard[opt[0]] === gameboard[opt[1]] && gameboard[opt[0]] === gameboard[opt[2]]) {
@@ -149,8 +102,11 @@ function checkGameWinner() {
         return tie;
     }
 }
-
-function gameMsg() {
+// Set's the mark on the gameboard
+function makeMark() {
+    for (let i = 0; i < xoContainer.length; i++) {
+        xoContainer[i].textContent = gameboard[i]
+    }
     // Display the win/tie messages
     if (win === tie) {
         clearCountDown() // Stops the timer
@@ -171,7 +127,6 @@ function gameMsg() {
         turnMessage.textContent = turnOrder;
     }
 };
-
 // Restarts the game, sets the game back to it's default state
 function restartGame() {
     win = 0;
@@ -188,5 +143,4 @@ function restartGame() {
     }
     startGame()
 }
-
 startGame()
