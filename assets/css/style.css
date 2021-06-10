@@ -179,8 +179,11 @@ footer.container-fluid.bg-color-footer {
     color: black;
 }
 
-.hvr-sweep-to-top:before {
-    background: rgba(0, 0, 0, 0.3);
+.gameover-message p,
+.tie-message p,
+.winning-message p {
+    font-size: 3rem;
+    color: black;
 }
 
 .show {
@@ -215,6 +218,7 @@ footer.container-fluid.bg-color-footer {
 .restartButton:hover {
     color: #fff8e6;
     background-color: black;
+    transition: 0.3s;
 }
 
 
@@ -241,13 +245,14 @@ footer.container-fluid.bg-color-footer {
     .gameover-message h1,
     .tie-message h1,
     .winning-message h1 {
-        font-size: 5rem;
+        font-size: 2rem;
+        padding-top: 2.5rem !important;
     }
 
-    footer.container-fluid.bg-color-footer {
-        position: relative;
-        bottom: 0;
-        height: 62px;
+    .gameover-message p,
+    .tie-message p,
+    .winning-message p {
+        font-size: 2rem;
     }
 
     .turn-container h1,
@@ -268,6 +273,11 @@ footer.container-fluid.bg-color-footer {
     .score-container span:first-child,
     .score-container span:nth-child(2) {
         font-size: 1rem;
+    }
+
+    .modal-content {
+        width: 250px;
+        height: 250px;
     }
 }
 
