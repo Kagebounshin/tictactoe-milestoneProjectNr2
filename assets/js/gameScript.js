@@ -89,7 +89,6 @@ function clickHandler(event) {
     gameboard[index] = turnOrder;
 
     makeMark()
-    switchTurn()
 }
 
 
@@ -99,9 +98,8 @@ function makeMark() {
     for (let i = 0; i < xoContainer.length; i++) {
         xoContainer[i].textContent = gameboard[i]
     }
-    switchTurn()
     computerMove()
-
+    switchTurn()
 };
 
 function computerMove() {
@@ -115,7 +113,7 @@ function computerMove() {
     };
 
     random = Math.ceil(Math.random() * emptyContainers.length) - 1;
-    emptyContainers[random].textContent = turnOrder;
+    emptyContainers[random].textContent = player2;
     switchTurn()
 };
 
