@@ -79,7 +79,7 @@ function clearCountDown() {
 }
 
 // Clickhandler
-// Wich will response to click by user, take turns between the players.
+// Wich will response to click by user.
 function clickHandler(event) {
 
     index = xoContainer.findIndex((xoContainers) => {
@@ -99,8 +99,6 @@ function makeMark() {
     for (let i = 0; i < xoContainer.length; i++) {
         xoContainer[i].textContent = gameboard[i]
     }
-
-
     switchTurn()
     computerMove()
 
@@ -110,7 +108,6 @@ function computerMove() {
     var emptyContainers = [];
     var random;
 
-
     for (var i = 0; i < xoContainer.length; i++) {
         if (xoContainer[i].textContent === '') {
             emptyContainers.push(xoContainer[i])
@@ -118,11 +115,11 @@ function computerMove() {
     };
 
     random = Math.ceil(Math.random() * emptyContainers.length) - 1;
-    emptyContainers[random] = player2;
-
+    emptyContainers[random].textContent = turnOrder;
     switchTurn()
 };
 
+// Take turns between players. 
 function switchTurn() {
 
     if (turnOrder === player1) {
@@ -133,9 +130,9 @@ function switchTurn() {
 
     win = checkGameWinner()
     gameMsg()
-
 }
 
+// Check for a winner 
 function checkGameWinner() {
     let gameWinner = null;
 
