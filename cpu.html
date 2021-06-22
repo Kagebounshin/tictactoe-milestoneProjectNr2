@@ -44,31 +44,31 @@
     <div class="container-fluid mt-4">
         <div class="row justify-content-center">
             <!-- DISPLAYS TURNORDER -->
-            <div class="col-6 col-md-4 col-lg-3 turn-container">
-                <h1 id="turn">It's <span id="turn-display">X</span>'s turn!</h1>
-            </div>
-            <!-- DISPLAYS COUNTER -->
-            <div class="col-5 col-md-4 col-lg-3 counter-container">
-                <h1 class="counter">Timer: <span id="counter">20</span></h1>
-            </div>
-        </div>
 
-        <!-- GAMEBOARD -->
-        <div class="row">
-            <div class="col">
-                <div class="game-container bg-color-game mt-2" id="gameboard">
-                    <div class="xo-container text-center hvr-shrink"></div>
-                    <div class="xo-container text-center hvr-shrink"></div>
-                    <div class="xo-container text-center hvr-shrink"></div>
-                    <div class="xo-container text-center hvr-shrink"></div>
-                    <div class="xo-container text-center hvr-shrink"></div>
-                    <div class="xo-container text-center hvr-shrink"></div>
-                    <div class="xo-container text-center hvr-shrink"></div>
-                    <div class="xo-container text-center hvr-shrink"></div>
-                    <div class="xo-container text-center hvr-shrink"></div>
-                </div>
+            <div class="col-12 turn-container">
+                <h1 id="turn">Player vs CPU,<br> You start as Player <span id="turn-display">X</span>!
+                </h1>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- GAMEBOARD -->
+    <div class="row">
+        <div class="col">
+            <div class="game-container bg-color-game mt-2" id="gameboard">
+                <div class="xo-container text-center hvr-shrink"></div>
+                <div class="xo-container text-center hvr-shrink"></div>
+                <div class="xo-container text-center hvr-shrink"></div>
+                <div class="xo-container text-center hvr-shrink"></div>
+                <div class="xo-container text-center hvr-shrink"></div>
+                <div class="xo-container text-center hvr-shrink"></div>
+                <div class="xo-container text-center hvr-shrink"></div>
+                <div class="xo-container text-center hvr-shrink"></div>
+                <div class="xo-container text-center hvr-shrink"></div>
             </div>
         </div>
+    </div>
     </div>
     <!-- SCORE COUNTER -->
     <div class="container-fluid">
@@ -77,10 +77,10 @@
                 <h1 id="score">Score!</h1>
             </div>
             <div class="col-6 col-md-4 col-lg-3">
-                <h1 id="score"><span>X</span>: <span id="xWin">0</span></h1>
+                <h1 id="score"><span>You</span>: <span id="xWin">0</span></h1>
             </div>
             <div class="col-6 col-md-4 col-lg-3">
-                <h1 id="score"><span>O</span>: <span id="oWin">0</span></h1>
+                <h1 id="score"><span>CPU</span>: <span id="oWin">0</span></h1>
             </div>
         </div>
     </div>

@@ -17,22 +17,23 @@ var winOpts = [
 ];
 
 var player1 = 'X';
-var player2 = 'O';
-var turnOrder = player1;
-var seconds = 20;
+var cpu = 'O';
+var mark = player1;
 var win;
 var tie;
+var gameboard;
 //Get the gameboard containers, make them into an array.
 var xoContainer = Array.from(document.querySelectorAll('.xo-container'));
-var counter = document.getElementById('counter');
-var turnMessage = document.getElementById('turn-display');
-// For the winning messages
-var displayWinner = document.getElementById('displayWinner');
+
+// Choosing all the restart buttons,
+// and adding eventlisteners
 var restart = document.querySelectorAll('#restart')
-// Adding eventlisteners to the restartbuttons
 for (let i = 0; i < restart.length; i++) {
     restart[i].addEventListener('click', restartGame);
 }
+
+// For the winning messages
+var displayWinner = document.getElementById('displayWinner');
 
 // For the scoreboard
 var xWin = document.getElementById('xWin');
@@ -42,97 +43,93 @@ var oScore = 0;
 
 
 function startGame() {
-    // Adding eventlistener to the gameboard divs
-    // https://dev.to/cilly_boloe/addeventlistener-once-js-bits-565d
-    // for only adding the click event once.
-    for (let i = 0; i < xoContainer.length; i++) {
-        xoContainer[i].addEventListener('click', clickHandler, {
-            once: true
-        });
-    }
 
     gameboard = [
         '', '', '',
         '', '', '',
         '', '', ''
     ];
-    countDown()
+
+    for (let i = 0; i < xoContainer.length; i++) {
+
+        xoContainer[i].addEventListener('click', clickHandler, true);
+
+    }
+
 }
 
-// Countdown timer
-function countDown() {
-    counter = setInterval(function () {
-        if (seconds <= 0) {
-            clearCountDown()
-            $('.gameover-message').addClass("show");
-        }
-        if (seconds < 4) {
-            $('#counter').css('color', 'red')
-        }
-        document.getElementById('counter').innerHTML = seconds;
-        seconds -= 1;
-    }, 1000);
-}
 
-function clearCountDown() {
-    clearInterval(counter);
-}
 
-// Clickhandler
 // Wich will response to click by user.
 function clickHandler(event) {
 
     index = xoContainer.findIndex((xoContainers) => {
-        return xoContainers === event.target
+        return xoContainers === event.target;
     });
 
-    gameboard[index] = turnOrder;
+    gameboard[index] = player1;
 
-    makeMark()
-    computerMove()
+
+    playerMove()
+
 }
 
-
 // Set's the mark on the gameboard
-function makeMark() {
+function playerMove() {
 
-    for (let i = 0; i < xoContainer.length; i++) {
-        xoContainer[i].textContent = gameboard[i];
-    }
-    switchTurn()
-
-};
-
-function computerMove() {
-    var emptyContainers = [];
-    var random;
 
     for (let i = 0; i < xoContainer.length; i++) {
         if (xoContainer[i].textContent === '') {
-            emptyContainers.push(xoContainer[i])
+            xoContainer[i].textContent = gameboard[i];
         }
-    };
+    }
 
-    random = Math.ceil(Math.random() * emptyContainers.length) - 1;
-    emptyContainers[random].textContent = player2;
+
+
+
     switchTurn()
+    computerMove()
+
 };
 
-// Take turns between players. 
 function switchTurn() {
+    if (mark === player1) {
+        mark = cpu
 
-    if (turnOrder === player1) {
-        turnOrder = player2
     } else {
-        turnOrder = player1
+        mark = player1;
     }
 
     win = checkGameWinner()
     gameMsg()
 }
 
+
+function computerMove() {
+    var random;
+
+    random = Math.ceil(Math.random() * gameboard.length) - 1;
+
+    for (let i = 0; i < gameboard.length; i++) {
+        if (xoContainer[i].textContent === '') {
+            gameboard[random] = cpu
+
+        } else if (random === 'X') {
+            return null
+        }
+    }
+
+
+    console.log(gameboard)
+}
+
+
+
+
 // Check for a winner 
 function checkGameWinner() {
+
+
     let gameWinner = null;
 
     for (let i = 0; i < winOpts.length; i++) {
@@ -148,27 +145,23 @@ function checkGameWinner() {
     } else {
         return tie;
     }
+
 }
 
 function gameMsg() {
     // Display the win/tie messages
     if (win === tie) {
-        clearCountDown() // Stops the timer
         $('.tie-message').addClass('show');
-    } else if (win === player1) {
-        clearCountDown()
-        displayWinner.textContent = player1
+    } else if (win === 'X') {
+        displayWinner.textContent = 'You';
         $('.winning-message').addClass('show');
         xScore++
         xWin.innerHTML = xScore;
-    } else if (win === player2) {
-        clearCountDown()
-        displayWinner.textContent = player2
+    } else if (win === 'O') {
+        displayWinner.textContent = 'CPU';
         $('.winning-message').addClass("show");
         oScore++
         oWin.innerHTML = oScore;
-    } else {
-        turnMessage.textContent = turnOrder;
     }
 };
 
@@ -176,17 +169,14 @@ function gameMsg() {
 function restartGame() {
     win = 0;
     tie = 0;
-    seconds = 20;
-    turnOrder = player1;
-    turnMessage.textContent = turnOrder;
+    mark = player1;
     $('.winning-message').removeClass("show");
     $('.tie-message').removeClass('show');
     $('.gameover-message').removeClass("show");
-    $('#counter').css('color', '')
     for (let i = 0; i < xoContainer.length; i++) {
         xoContainer[i].textContent = '';
     }
+
     startGame()
 }
-
 startGame()
