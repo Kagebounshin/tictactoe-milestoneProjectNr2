@@ -1,6 +1,7 @@
 // The fundamentals for this game's structure was obtained from 
 // https://javascript.plainenglish.io/the-worlds-most-empowering-tic-tac-toe-javascript-tutorial-a889e4c20883
 // A very good tutorial on how to get down the basic of a Tic-Tac-Toe game
+
 // Winning Options
 var winOpts = [
     [0, 1, 2],
@@ -77,23 +78,33 @@ function clickHandler(event) {
         return xoContainers === event.target
     });
     gameboard[index] = turnOrder;
+
+    switchTurn()
+};
+
+function switchTurn() {
+
     if (turnOrder === player1) {
         turnOrder = player2
     } else {
         turnOrder = player1
     }
+
     win = checkGameWinner()
     makeMark()
-};
+}
 
 function checkGameWinner() {
+
     let gameWinner = null;
+
     for (let i = 0; i < winOpts.length; i++) {
         let opt = winOpts[i];
         if (gameboard[opt[0]] && gameboard[opt[0]] === gameboard[opt[1]] && gameboard[opt[0]] === gameboard[opt[2]]) {
             gameWinner = gameboard[opt[0]];
         }
     }
+
     if (gameWinner) {
         return gameWinner;
     } else if (gameboard.includes('')) {
@@ -104,6 +115,7 @@ function checkGameWinner() {
 }
 // Set's the mark on the gameboard
 function makeMark() {
+
     for (let i = 0; i < xoContainer.length; i++) {
         xoContainer[i].textContent = gameboard[i]
     }
@@ -126,9 +138,11 @@ function makeMark() {
     } else {
         turnMessage.textContent = turnOrder;
     }
+
 };
 // Restarts the game, sets the game back to it's default state
 function restartGame() {
+
     win = 0;
     tie = 0;
     seconds = 20;
@@ -141,6 +155,7 @@ function restartGame() {
     for (let i = 0; i < xoContainer.length; i++) {
         xoContainer[i].textContent = '';
     }
+
     startGame()
 }
 startGame()
