@@ -50,10 +50,12 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 - As as user,
     
     1. I want the game to be played easily.
-    2. I want it to have nice estetics. 
-    3. I want feedback once the game is done, such as who won, and whats the score. 
-    4. I want to restart the game when the game is finished.
-    5. I want to know if the author has done some other games. 
+    2. I want to be able to play against a friend.
+    3. I want to be able to play against the computer.
+    4. I want it to have nice estetics. 
+    5. I want feedback once the game is done, such as who won, and whats the score. 
+    6. I want to restart the game when the game is finished.
+    7. I want to know if the author has done some other games. 
 
 ---
 
@@ -140,9 +142,9 @@ I'm thinking three pictures wich displays three winning combinations horizontall
         
         <img src="assets/img/img-readme/fff8e6.png">
 
-        - Game Page
+        - Game Pages
          
-        At the Game Page you can click a button wich will randomly change the background color, the colors that the background randomly changes to is dispayed below this text.
+        At the game pages & the contact page you can click a button wich will randomly change the background color, the colors wich the background can randomly changes to is displayed below this text.
             
         <img src="assets/img/img-readme/25876f.png">
         <img src="assets/img/img-readme/7fc3cc.png">
@@ -164,12 +166,7 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
         <img src="assets/img/img-readme/7fc3cc.png">
         
-        - Contact Page
-
-        The background for the contact page is set to #fc9819.
-
-        <img src="assets/img/img-readme/fc9819.png">
-
+        
 
 
     -   #### Typography
@@ -288,8 +285,11 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
 
 
-### Known Bugs
+### Bugs
 
+- At the player vs computer page, after a game was finished (not after every game), and when you have clicked the "Play Again" button, the new board already had the 'X' set to it (see the picture down below). If you refreashed the page it went back to the default stage, but after a few matches the bug was back. 
+
+- <img src="assets/img/img-readme/gamebug1.png">
 
 ---
 
@@ -346,6 +346,8 @@ $ git clone https://kagebounshin.github.io/tictactoe-milestoneProjectNr2
 ## Credits
 
 ### Code
+
+- The computerMove function was inspired from [this](https://www.youtube.com/watch?v=sNO5awLw9h0) Tic-Tac-Toe tutorial. 
 
 - The Structure for this game was obtained from [Anna Peterson](https://medium.com/@annapeterson89) and her tutorial "[The World’s Most Empowering Tic-Tac-Toe JavaScript Tutorial](https://javascript.plainenglish.io/the-worlds-most-empowering-tic-tac-toe-javascript-tutorial-a889e4c20883)". 
 
