@@ -87,7 +87,7 @@ function playerMove() {
 
 
     switchTurn()
-
+    // The  delay timer for the computerMove was obtained from this tutorial, with some modifications  https://www.youtube.com/watch?v=sNO5awLw9h0
     let delayTime = ((Math.random() * 1000) + 200).toFixed();
     setTimeout(function () {
         computerMove()
@@ -95,10 +95,8 @@ function playerMove() {
 
 };
 
-
-
 function computerMove() {
-
+    // This randomly generated computerMove function was inspired from this tutorial https://www.youtube.com/watch?v=sNO5awLw9h0
     let arr = [];
     for (let i in xoContainer) {
         if (xoContainer[i].innerHTML === '') {
@@ -115,9 +113,6 @@ function computerMove() {
     }
 
     xoContainer[random].style.pointerEvents = "none";
-
-    console.log(arr)
-    console.log(gameboard)
 
     win = checkGameWinner()
     gameMsg()
@@ -179,7 +174,7 @@ function gameMsg() {
 // Restarts the game, sets the game back to it's default state
 function restartGame() {
     for (let i in xoContainer) {
-        xoContainer[i].style.pointerEvents = 'auto'
+        xoContainer[i].style.pointerEvents = 'initial'
         xoContainer[i].textContent = '';
 
     }
