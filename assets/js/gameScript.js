@@ -22,6 +22,7 @@ var mark = player1;
 var win;
 var tie;
 var gameboard;
+
 //Get the gameboard containers, make them into an array.
 var xoContainer = Array.from(document.querySelectorAll('.xo-container'));
 
@@ -50,10 +51,10 @@ function startGame() {
         '', '', ''
     ];
 
-    for (let i = 0; i < xoContainer.length; i++) {
-
-        xoContainer[i].addEventListener('click', clickHandler, true);
-
+    for (let i in xoContainer) {
+        xoContainer[i].addEventListener('click', clickHandler, {
+            once: true
+        });
     }
 
 }
@@ -61,68 +62,91 @@ function startGame() {
 
 
 // Wich will response to click by user.
-function clickHandler(event) {
+function clickHandler(element) {
 
     index = xoContainer.findIndex((xoContainers) => {
-        return xoContainers === event.target;
+        return xoContainers === element.target;
     });
 
-    gameboard[index] = player1;
+    gameboard[index] = mark;
 
 
     playerMove()
+    win = checkGameWinner()
+    gameMsg()
 
 }
 
 // Set's the mark on the gameboard
 function playerMove() {
+    gameboard.forEach(function (mark, idx) {
+        xoContainer[idx].textContent = mark
 
-
-    for (let i = 0; i < xoContainer.length; i++) {
-        if (xoContainer[i].textContent === '') {
-            xoContainer[i].textContent = gameboard[i];
-        }
-    }
-
-
+    });
 
 
     switchTurn()
-    computerMove()
+
+    let delayTime = ((Math.random() * 1000) + 200).toFixed();
+    setTimeout(function () {
+        computerMove()
+    }, delayTime)
 
 };
 
-function switchTurn() {
-    if (mark === player1) {
-        mark = cpu
 
-    } else {
-        mark = player1;
-    }
-
-    win = checkGameWinner()
-    gameMsg()
-}
 
 
 function computerMove() {
-    var random;
-
-    random = Math.ceil(Math.random() * gameboard.length) - 1;
-
-    for (let i = 0; i < gameboard.length; i++) {
-        if (xoContainer[i].textContent === '') {
-            gameboard[random] = cpu
-
-        } else if (random === 'X') {
-            return null
+    let arr = [];
+    for (let i in gameboard) {
+        if (xoContainer[i].textContent == '') {
+            arr.push(i)
         }
     }
 
+    let randomXO = arr[Math.floor(Math.random() * arr.length)];
+    if (arr.length > 0) {
+        xoContainer[randomXO].textContent = mark
+
+    }
+    xoContainer[randomXO].style.pointerEvents = "none";
 
     console.log(gameboard)
+
+    // var random; 
+    // random = Math.floor(Math.random() * gameboard.length);
+
+
+    // // gameboard.forEach(function (mark, idx) {
+
+    // //     var random;
+    // //     random = Math.floor(Math.random() * xoContainer.length);
+    // //     random = xoContainer[idx]
+    // //     xoContainer[idx].textContent = mark
+    // // });
+    // for (let i in xoContainer) {
+
+
+    //     xoContainer[random].textContent = mark;
+
+
+    // }
+
+
+    switchTurn()
+
 }
 
+function switchTurn() {
+
+    if (mark === player1) {
+        mark = cpu
+    } else {
+        mark = player1
+    }
+
+}
 
 
 
@@ -132,7 +156,7 @@ function checkGameWinner() {
 
     let gameWinner = null;
 
-    for (let i = 0; i < winOpts.length; i++) {
+    for (let i in winOpts) {
         let opt = winOpts[i];
         if (gameboard[opt[0]] && gameboard[opt[0]] === gameboard[opt[1]] && gameboard[opt[0]] === gameboard[opt[2]]) {
             gameWinner = gameboard[opt[0]];
@@ -167,13 +191,14 @@ function gameMsg() {
 
 // Restarts the game, sets the game back to it's default state
 function restartGame() {
-    win = 0;
-    tie = 0;
-    mark = player1;
     $('.winning-message').removeClass("show");
     $('.tie-message').removeClass('show');
     $('.gameover-message').removeClass("show");
-    for (let i = 0; i < xoContainer.length; i++) {
+    win = 0;
+    tie = 0;
+    mark = player1;
+
+    for (let i in xoContainer) {
         xoContainer[i].textContent = '';
     }
 
