@@ -13,6 +13,7 @@ var winOpts = [
     [6, 7, 8],
     [2, 4, 6]
 ];
+
 var player1 = 'X';
 var player2 = 'O';
 var turnOrder = player1;
@@ -41,7 +42,7 @@ function startGame() {
     // Adding eventlistener to the gameboard divs
     // https://dev.to/cilly_boloe/addeventlistener-once-js-bits-565d
     // for only adding the click event once.
-    for (let i = 0; i < xoContainer.length; i++) {
+    for (let i in xoContainer) {
         xoContainer[i].addEventListener('click', clickHandler, {
             once: true
         });
@@ -98,7 +99,7 @@ function checkGameWinner() {
 
     let gameWinner = null;
 
-    for (let i = 0; i < winOpts.length; i++) {
+    for (let i in winOpts) {
         let opt = winOpts[i];
         if (gameboard[opt[0]] && gameboard[opt[0]] === gameboard[opt[1]] && gameboard[opt[0]] === gameboard[opt[2]]) {
             gameWinner = gameboard[opt[0]];
@@ -116,7 +117,7 @@ function checkGameWinner() {
 // Set's the mark on the gameboard
 function makeMark() {
 
-    for (let i = 0; i < xoContainer.length; i++) {
+    for (let i in xoContainer) {
         xoContainer[i].textContent = gameboard[i]
     }
     // Display the win/tie messages
@@ -151,8 +152,8 @@ function restartGame() {
     $('.winning-message').removeClass("show");
     $('.tie-message').removeClass('show');
     $('.gameover-message').removeClass("show");
-    $('#counter').css('color', '')
-    for (let i = 0; i < xoContainer.length; i++) {
+    $('#counter').css('color')
+    for (let i in xoContainer) {
         xoContainer[i].textContent = '';
     }
 
