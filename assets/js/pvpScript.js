@@ -152,7 +152,7 @@ function restartGame() {
     $('.winning-message').removeClass("show");
     $('.tie-message').removeClass('show');
     $('.gameover-message').removeClass("show");
-    $('#counter').css('color')
+    $('#counter').css('color', '')
     for (let i in xoContainer) {
         xoContainer[i].textContent = '';
     }

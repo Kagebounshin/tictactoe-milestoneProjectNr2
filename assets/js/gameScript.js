@@ -62,10 +62,10 @@ function startGame() {
 
 
 // Wich will response to click by user.
-function clickHandler(element) {
+function clickHandler(e) {
 
     index = xoContainer.findIndex((xoContainers) => {
-        return xoContainers === element.target;
+        return xoContainers === e.target;
     });
 
     gameboard[index] = mark;
@@ -79,8 +79,9 @@ function clickHandler(element) {
 
 // Set's the mark on the gameboard
 function playerMove() {
-    gameboard.forEach(function (mark, idx) {
-        xoContainer[idx].textContent = mark
+
+    gameboard.forEach(function (mark, index) {
+        xoContainer[index].innerHTML = mark
 
     });
 
@@ -96,47 +97,34 @@ function playerMove() {
 
 
 
-
 function computerMove() {
+
     let arr = [];
-    for (let i in gameboard) {
-        if (xoContainer[i].textContent == '') {
+    for (let i in xoContainer) {
+        if (xoContainer[i].innerHTML === '') {
             arr.push(i)
         }
     }
 
-    let randomXO = arr[Math.floor(Math.random() * arr.length)];
+    let random = arr[Math.floor(Math.random() * arr.length)];
     if (arr.length > 0) {
-        xoContainer[randomXO].textContent = mark
+
+        xoContainer[random].innerHTML = mark;
+        gameboard.splice(random, 1, mark)
 
     }
-    xoContainer[randomXO].style.pointerEvents = "none";
 
+    xoContainer[random].style.pointerEvents = "none";
+
+    console.log(arr)
     console.log(gameboard)
 
-    // var random; 
-    // random = Math.floor(Math.random() * gameboard.length);
-
-
-    // // gameboard.forEach(function (mark, idx) {
-
-    // //     var random;
-    // //     random = Math.floor(Math.random() * xoContainer.length);
-    // //     random = xoContainer[idx]
-    // //     xoContainer[idx].textContent = mark
-    // // });
-    // for (let i in xoContainer) {
-
-
-    //     xoContainer[random].textContent = mark;
-
-
-    // }
-
-
+    win = checkGameWinner()
+    gameMsg()
     switchTurn()
 
 }
+
 
 function switchTurn() {
 
@@ -147,7 +135,6 @@ function switchTurn() {
     }
 
 }
-
 
 
 // Check for a winner 
@@ -191,17 +178,19 @@ function gameMsg() {
 
 // Restarts the game, sets the game back to it's default state
 function restartGame() {
-    $('.winning-message').removeClass("show");
-    $('.tie-message').removeClass('show');
-    $('.gameover-message').removeClass("show");
+    for (let i in xoContainer) {
+        xoContainer[i].style.pointerEvents = 'auto'
+        xoContainer[i].textContent = '';
+
+    }
     win = 0;
     tie = 0;
     mark = player1;
 
-    for (let i in xoContainer) {
-        xoContainer[i].textContent = '';
-    }
 
+    $('.winning-message').removeClass("show");
+    $('.tie-message').removeClass('show');
+    $('.gameover-message').removeClass("show");
     startGame()
 }
 startGame()
