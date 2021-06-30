@@ -170,7 +170,6 @@ footer.container-fluid.bg-color-footer {
     background-color: rgb(0 0 0 / 40%);
     visibility: hidden;
     z-index: 100;
-    transition: all 0.2s ease;
 }
 
 .gameover-message h1,
@@ -188,8 +187,9 @@ footer.container-fluid.bg-color-footer {
 }
 
 .show {
+    transition: all 3s ease;
     visibility: visible;
-    transition: all 0.2s ease;
+
 }
 
 .winning-message span {
@@ -220,7 +220,6 @@ footer.container-fluid.bg-color-footer {
 .restartButton:hover {
     color: #fff8e6;
     background-color: black;
-    transition: 0.3s;
 }
 
 
