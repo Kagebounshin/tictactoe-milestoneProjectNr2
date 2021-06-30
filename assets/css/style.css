@@ -280,9 +280,12 @@ footer.container-fluid.bg-color-footer {
     }
 
     .turn-container h1,
-    .counter-container h1,
+    .counter-container h1 {
+        font-size: 2rem;
+    }
+
     .score-container h1 {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .bgButton {
@@ -291,12 +294,12 @@ footer.container-fluid.bg-color-footer {
 
     .turn-container span,
     .counter-container span {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .score-container span:first-child,
     .score-container span:nth-child(2) {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .modal-content {
@@ -311,6 +314,8 @@ footer.container-fluid.bg-color-footer {
         height: 400px;
     }
 }
+
+@media (max-height: 250px) {}
 
 /* Small devices (landscape phones, 576px and up) */
 
