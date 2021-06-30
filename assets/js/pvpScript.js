@@ -3,6 +3,13 @@
 // A very good tutorial on how to get down the basic of a Tic-Tac-Toe game
 
 // Winning Options
+
+
+
+window.onload = function () {
+    $('.welcome-message').addClass('show');
+};
+
 var winOpts = [
     [0, 1, 2],
     [0, 4, 8],
@@ -17,7 +24,7 @@ var winOpts = [
 var player1 = 'X';
 var player2 = 'O';
 var turnOrder = player1;
-var seconds = 20;
+var seconds = 15;
 var win;
 var tie;
 //Get the gameboard containers, make them into an array.
@@ -27,6 +34,7 @@ var turnMessage = document.getElementById('turn-display');
 // For the winning messages
 var displayWinner = document.getElementById('displayWinner');
 var restart = document.querySelectorAll('#restart')
+
 // Adding eventlisteners to the restartbuttons
 for (let i = 0; i < restart.length; i++) {
     restart[i].addEventListener('click', restartGame);
@@ -39,20 +47,25 @@ var xScore = 0;
 var oScore = 0;
 
 function startGame() {
+    $('.welcome-message').removeClass("show");
     // Adding eventlistener to the gameboard divs
     // https://dev.to/cilly_boloe/addeventlistener-once-js-bits-565d
     // for only adding the click event once.
+
     for (let i in xoContainer) {
         xoContainer[i].addEventListener('click', clickHandler, {
             once: true
         });
+
     }
     gameboard = [
         '', '', '',
         '', '', '',
         '', '', ''
     ];
+
     countDown()
+
 }
 // Countdown timer
 function countDown() {
@@ -87,12 +100,13 @@ function switchTurn() {
 
     if (turnOrder === player1) {
         turnOrder = player2
+
     } else {
         turnOrder = player1
     }
 
     win = checkGameWinner()
-    makeMark()
+    playerMark()
 }
 
 function checkGameWinner() {
@@ -109,13 +123,14 @@ function checkGameWinner() {
     if (gameWinner) {
         return gameWinner;
     } else if (gameboard.includes('')) {
+
         return null;
     } else {
         return tie;
     }
 }
 // Set's the mark on the gameboard
-function makeMark() {
+function playerMark() {
 
     for (let i in xoContainer) {
         xoContainer[i].textContent = gameboard[i]
@@ -143,20 +158,21 @@ function makeMark() {
 };
 // Restarts the game, sets the game back to it's default state
 function restartGame() {
+    for (let i in xoContainer) {
+        xoContainer[i].textContent = '';
+    }
 
+    seconds = 15;
     win = 0;
     tie = 0;
-    seconds = 20;
+
     turnOrder = player1;
     turnMessage.textContent = turnOrder;
     $('.winning-message').removeClass("show");
     $('.tie-message').removeClass('show');
     $('.gameover-message').removeClass("show");
     $('#counter').css('color', '')
-    for (let i in xoContainer) {
-        xoContainer[i].textContent = '';
-    }
+
 
     startGame()
 }
-startGame()
