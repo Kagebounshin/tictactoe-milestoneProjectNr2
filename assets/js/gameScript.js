@@ -60,7 +60,6 @@ function startGame() {
 }
 
 
-
 // Wich will response to click by user.
 function clickHandler(e) {
 
@@ -70,12 +69,9 @@ function clickHandler(e) {
 
     gameboard[index] = mark;
 
-
     playerMove()
-    win = checkGameWinner()
-    gameMsg()
-
 }
+
 
 // Set's the mark on the gameboard
 function playerMove() {
@@ -83,20 +79,23 @@ function playerMove() {
     gameboard.forEach(function (mark, index) {
         xoContainer[index].innerHTML = mark
 
+
     });
 
-
     switchTurn()
-    // The  delay timer for the computerMove was obtained from this tutorial, with some modifications  https://www.youtube.com/watch?v=sNO5awLw9h0
+    // The  delay timer for the computerMove was obtained from this tutorial,
+    // with some modifications  https://www.youtube.com/watch?v=sNO5awLw9h0
     let delayTime = ((Math.random() * 1000) + 200).toFixed();
     setTimeout(function () {
-        computerMove()
+        if (win != 'X') {
+            computerMove()
+        }
     }, delayTime)
-
 };
 
 function computerMove() {
-    // This randomly generated computerMove function was inspired from this tutorial https://www.youtube.com/watch?v=sNO5awLw9h0
+    // This randomly generated computerMove function was inspired from this tutorial, 
+    // with some modifications https://www.youtube.com/watch?v=sNO5awLw9h0
     let arr = [];
     for (let i in xoContainer) {
         if (xoContainer[i].innerHTML === '') {
@@ -109,15 +108,11 @@ function computerMove() {
 
         xoContainer[random].innerHTML = mark;
         gameboard.splice(random, 1, mark)
-
     }
-
     xoContainer[random].style.pointerEvents = "none";
 
-    win = checkGameWinner()
-    gameMsg()
-    switchTurn()
 
+    switchTurn()
 }
 
 
@@ -128,15 +123,13 @@ function switchTurn() {
     } else {
         mark = player1
     }
-
+    win = checkGameWinner()
+    gameMsg()
 }
 
-
-// Check for a winner 
 function checkGameWinner() {
 
-
-    let gameWinner = null;
+    var gameWinner = null;
 
     for (let i in winOpts) {
         let opt = winOpts[i];
@@ -146,12 +139,12 @@ function checkGameWinner() {
     }
     if (gameWinner) {
         return gameWinner;
+
     } else if (gameboard.includes('')) {
         return null;
     } else {
         return tie;
     }
-
 }
 
 function gameMsg() {
@@ -174,18 +167,18 @@ function gameMsg() {
 // Restarts the game, sets the game back to it's default state
 function restartGame() {
     for (let i in xoContainer) {
-        xoContainer[i].style.pointerEvents = 'initial'
+        xoContainer[i].style.pointerEvents = ''
         xoContainer[i].textContent = '';
-
     }
-    win = 0;
-    tie = 0;
-    mark = player1;
-
 
     $('.winning-message').removeClass("show");
     $('.tie-message').removeClass('show');
     $('.gameover-message').removeClass("show");
+
+    mark = player1
+    win = 0;
+    tie = 0;
+
     startGame()
 }
 startGame()
