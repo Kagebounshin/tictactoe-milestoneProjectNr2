@@ -166,10 +166,7 @@ function gameMsg() {
 
 // Restarts the game, sets the game back to it's default state
 function restartGame() {
-    for (let i in xoContainer) {
-        xoContainer[i].style.pointerEvents = ''
-        xoContainer[i].textContent = '';
-    }
+
 
     $('.winning-message').removeClass("show");
     $('.tie-message').removeClass('show');
@@ -178,6 +175,11 @@ function restartGame() {
     mark = player1
     win = 0;
     tie = 0;
+
+    for (let i in xoContainer) {
+        xoContainer[i].style.pointerEvents = ''
+        xoContainer[i].textContent = '';
+    }
 
     startGame()
 }
