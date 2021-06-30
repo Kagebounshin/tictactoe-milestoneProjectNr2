@@ -214,7 +214,7 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
 - [Hover.css](https://ianlunn.github.io/Hover/) - Hover effect on buttons.
 
-- [FontAwesome](https://fontawesome.com/) - provides icons across the sit
+- [FontAwesome](https://fontawesome.com/) - provides icons across the site
 
 - [GoogleFonts](https://fonts.google.com/)
 
@@ -232,6 +232,7 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
 - [EmailJS](https://www.emailjs.com/) - For the contact form.
 
+- [favicon.ico Generator](https://www.favicon.cc/) - For creating the favicon.
 
 ---
 
@@ -280,6 +281,7 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 - The page have a feedback form, before submitting the form, I enter my name, emailaddress and a feedback message. 
 - I click at the "Send" button under the form, The message is sent to my Gmail account, the form is reset back to it's default state, and it displays a message above the form thanking you for submitting. 
 - If I dont fill in the form correctley before submitting, lets say leaving the email input window empty, a message will be displayed saying I need to include a emailaddress if I want to submit the form. 
+- The icons at the bottom takes you to where you excpect. 
 
 ### Further Testing
 
@@ -345,9 +347,12 @@ $ git clone https://kagebounshin.github.io/tictactoe-milestoneProjectNr2
 
 ## Credits
 
+
 ### Code
 
 - The computerMove function was inspired from [this](https://www.youtube.com/watch?v=sNO5awLw9h0) Tic-Tac-Toe tutorial. 
+
+- How to add a [Favicon](https://www.digitalocean.com/community/tutorials/how-to-add-a-favicon-to-your-website-with-html) by [Erin Glass](https://www.digitalocean.com/community/users/eglass)
 
 - The Structure for this game was obtained from [Anna Peterson](https://medium.com/@annapeterson89) and her tutorial "[The World’s Most Empowering Tic-Tac-Toe JavaScript Tutorial](https://javascript.plainenglish.io/the-worlds-most-empowering-tic-tac-toe-javascript-tutorial-a889e4c20883)". 
 
