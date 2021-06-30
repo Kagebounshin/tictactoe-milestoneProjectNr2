@@ -122,6 +122,7 @@ function switchTurn() {
         mark = cpu
     } else {
         mark = player1
+
     }
     win = checkGameWinner()
     gameMsg()
@@ -158,7 +159,7 @@ function gameMsg() {
         xWin.innerHTML = xScore;
     } else if (win === 'O') {
         displayWinner.textContent = 'CPU';
-        $('.winning-message').addClass("show");
+        $('.winning-message').addClass('show');
         oScore++
         oWin.innerHTML = oScore;
     }
@@ -166,7 +167,10 @@ function gameMsg() {
 
 // Restarts the game, sets the game back to it's default state
 function restartGame() {
-
+    for (let i in xoContainer) {
+        xoContainer[i].style.pointerEvents = ''
+        xoContainer[i].textContent = '';
+    }
 
     $('.winning-message').removeClass("show");
     $('.tie-message').removeClass('show');
@@ -176,10 +180,6 @@ function restartGame() {
     win = 0;
     tie = 0;
 
-    for (let i in xoContainer) {
-        xoContainer[i].style.pointerEvents = ''
-        xoContainer[i].textContent = '';
-    }
 
     startGame()
 }
