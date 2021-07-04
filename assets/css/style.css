@@ -274,9 +274,12 @@ footer.container-fluid.bg-color-footer {
 
     .gameover-message p,
     .tie-message p,
-    .winning-message p,
-    .welcome-message p {
+    .winning-message p {
         font-size: 2rem;
+    }
+
+    .welcome-message p {
+        font-size: 1.6rem;
     }
 
     .turn-container h1,

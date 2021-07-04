@@ -1,10 +1,18 @@
-/* TO DO 
-FIX RESPONSIVNESS */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
+
+body {
+    background-color: #7fc3ccc4;
+}
 
 .tutorial-container h1 {
     font-size: 3.5rem;
 }
+
+.tutorial-container h2 {
+    font-size: 2.5rem;
+}
+
 
 .tutorial-container p {
     font-size: 2rem;
@@ -14,6 +22,14 @@ FIX RESPONSIVNESS */
 .tutorial-container span {
     color: #fff;
     font-size: 3rem;
+    font-family: 'Waiting for the Sunrise', cursive;
+}
+
+.tutorial-container span:nth-child(2),
+span:nth-child(4) {
+    font-size: 3rem;
+    font-family: 'Waiting for the Sunrise', cursive;
+    color: black;
 }
 
 img,
@@ -29,8 +45,4 @@ hr {
     margin-left: auto;
     margin-right: auto;
     opacity: 1 !important;
-}
-
-body {
-    background-color: #7fc3ccc4;
 }

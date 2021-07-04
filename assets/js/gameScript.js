@@ -1,7 +1,9 @@
 // The fundamentals for this game's structure was obtained from 
 // https://javascript.plainenglish.io/the-worlds-most-empowering-tic-tac-toe-javascript-tutorial-a889e4c20883
 // A very good tutorial on how to get down the basic of a Tic-Tac-Toe game
-
+window.onload = function () {
+    $('.welcome-message').addClass('show');
+};
 
 // Winning Options
 
@@ -18,7 +20,7 @@ var winOpts = [
 
 var player1 = 'X';
 var cpu = 'O';
-var mark = player1;
+var mark;
 var win;
 var tie;
 var gameboard;
@@ -32,7 +34,7 @@ var restart = document.querySelectorAll('#restart')
 for (let i = 0; i < restart.length; i++) {
     restart[i].addEventListener('click', restartGame);
 }
-
+var turnMessage = document.getElementById('turn-display');
 // For the winning messages
 var displayWinner = document.getElementById('displayWinner');
 
@@ -45,6 +47,8 @@ var oScore = 0;
 
 function startGame() {
 
+    $('.welcome-message').removeClass("show");
+
     gameboard = [
         '', '', '',
         '', '', '',
@@ -56,7 +60,26 @@ function startGame() {
             once: true
         });
     }
+    countDown()
+}
 
+
+function countDown() {
+    counter = setInterval(function () {
+        if (seconds <= 0) {
+            clearCountDown()
+            $('.gameover-message').addClass("show");
+        }
+        if (seconds < 4) {
+            $('#counter').css('color', 'red')
+        }
+        document.getElementById('counter').innerHTML = seconds;
+        seconds -= 1;
+    }, 1000);
+}
+
+function clearCountDown() {
+    clearInterval(counter);
 }
 
 
@@ -81,8 +104,8 @@ function playerMove() {
 
 
     });
-
     switchTurn()
+
     // The  delay timer for the computerMove was obtained from this tutorial,
     // with some modifications  https://www.youtube.com/watch?v=sNO5awLw9h0
     let delayTime = ((Math.random() * 1000) + 200).toFixed();
@@ -91,12 +114,14 @@ function playerMove() {
             computerMove()
         }
     }, delayTime)
+
 };
 
 function computerMove() {
     // This randomly generated computerMove function was inspired from this tutorial, 
     // with some modifications https://www.youtube.com/watch?v=sNO5awLw9h0
-    let arr = [];
+    mark = cpu
+    var arr = [];
     for (let i in xoContainer) {
         if (xoContainer[i].innerHTML === '') {
             arr.push(i)
@@ -108,11 +133,14 @@ function computerMove() {
 
         xoContainer[random].innerHTML = mark;
         gameboard.splice(random, 1, mark)
+        console.log(xoContainer[random])
     }
+
+
     xoContainer[random].style.pointerEvents = "none";
 
-
     switchTurn()
+
 }
 
 
@@ -120,9 +148,9 @@ function switchTurn() {
 
     if (mark === player1) {
         mark = cpu
+
     } else {
         mark = player1
-
     }
     win = checkGameWinner()
     gameMsg()
@@ -151,36 +179,42 @@ function checkGameWinner() {
 function gameMsg() {
     // Display the win/tie messages
     if (win === tie) {
+        clearCountDown() // Stops the timer
         $('.tie-message').addClass('show');
     } else if (win === 'X') {
+        clearCountDown()
         displayWinner.textContent = 'You';
         $('.winning-message').addClass('show');
         xScore++
         xWin.innerHTML = xScore;
     } else if (win === 'O') {
+        clearCountDown()
         displayWinner.textContent = 'CPU';
         $('.winning-message').addClass('show');
         oScore++
         oWin.innerHTML = oScore;
+    } else {
+        turnMessage.textContent = mark;
     }
 };
 
 // Restarts the game, sets the game back to it's default state
 function restartGame() {
-    for (let i in xoContainer) {
-        xoContainer[i].style.pointerEvents = ''
-        xoContainer[i].textContent = '';
-    }
-
-    $('.winning-message').removeClass("show");
-    $('.tie-message').removeClass('show');
-    $('.gameover-message').removeClass("show");
-
+    seconds = 10;
     mark = player1
     win = 0;
     tie = 0;
 
+    for (let i in xoContainer) {
+        xoContainer[i].style.pointerEvents = ''
+        xoContainer[i].innerHTML = '';
+        xoContainer[i].textContent = '';
+    }
+    $('.winning-message').removeClass("show");
+    $('.tie-message').removeClass('show');
+    $('.gameover-message').removeClass("show");
+    $('#counter').css('color', '')
 
     startGame()
+
 }
-startGame()
