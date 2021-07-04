@@ -160,3 +160,13 @@ form ::placeholder {
     }
 
 }
+
+/* ADDITIONAL STYLING */
+
+span.questionmark {
+    color: white;
+}
+
+i.far.fa-smile-beam {
+    color: white;
+}
