@@ -23,7 +23,7 @@ var winOpts = [
 
 var player1 = 'X';
 var player2 = 'O';
-var turnOrder = player1;
+var mark = player1;
 var seconds = 15;
 var win;
 var tie;
@@ -65,7 +65,6 @@ function startGame() {
     ];
 
     countDown()
-
 }
 // Countdown timer
 function countDown() {
@@ -91,18 +90,18 @@ function clickHandler(event) {
     let index = xoContainer.findIndex((xoContainers) => {
         return xoContainers === event.target
     });
-    gameboard[index] = turnOrder;
+    gameboard[index] = mark;
 
     switchTurn()
 };
 
 function switchTurn() {
 
-    if (turnOrder === player1) {
-        turnOrder = player2
+    if (mark === player1) {
+        mark = player2
 
     } else {
-        turnOrder = player1
+        mark = player1
     }
 
     win = checkGameWinner()
@@ -152,7 +151,7 @@ function playerMark() {
         oScore++
         oWin.innerHTML = oScore;
     } else {
-        turnMessage.textContent = turnOrder;
+        turnMessage.textContent = mark;
     }
 
 };
@@ -165,9 +164,9 @@ function restartGame() {
     seconds = 15;
     win = 0;
     tie = 0;
+    mark = player1;
+    turnMessage.textContent = mark;
 
-    turnOrder = player1;
-    turnMessage.textContent = turnOrder;
     $('.winning-message').removeClass("showMessage");
     $('.tie-message').removeClass('showMessage');
     $('.gameover-message').removeClass("showMessage");
