@@ -57,6 +57,7 @@ Welcome to my second milestone project provided by [Code Institute](https://code
     6. I want to restart the game when the game is finished.
     7. I want to know if the author has done some other games. 
 
+
 ---
 
 ### Strategy
@@ -158,8 +159,6 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
         The Gameboard has the #fff8e6 color as background, and the box shadow is faded to 65% from the color #000000 (black).
 
-        The Button wich changes the background of the page has the same background color as the gamboard #fff8e6, and the box shadow is faded to 65% from the color #000000 (black).
-        
         - Tutorial Page
 
         The background for the tutorial page is set to the #7fc3cc.
@@ -175,24 +174,29 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 ## Features
 
 - Navbar
-    - The three diffrent pages on the site has the same looking Navbar, except some minor styling changes. The Navbrand takes you to the game page.
+    - The four diffrent pages on the site has the same looking Navbar, except some minor styling changes. The Navbrand takes you to the Player vs Player gamepage. 
+    - There is a "Change Background" button, and guess what, it changes the background of the page. But only for the Game Pages and the Contact page.  
 
-- Game Page
-    - The game page has a text wich displays whos turn it is. The Game is set to start with the player "X" as default. When you start playing the turn text switches between the player "X" & "O" depending whos turn it is.
-    - There is a "Timer" wich count down from 20. If the timer run out, it display's a gameover message. 
+
+- Game Pages
     - The Gameboard is at the center of the screen, the 9 diffrent spaces where you can make your mark has a hover effect on them, the effect slitly shrinks the hovered space. 
-    - Below the gameboard there is a score counter, wich displaye's the score for player "X" and player "O". 
-    - At the bottom of the page, there is a "Change Background" button, and guess what, it changes the background of the page. 
+    - The game pages has a text wich displays whos turn it is. The Game is set to start with the player "X" as default. When you start playing, the text switches between the player "X" & "O" depending whos turn it is.
+    - There is a "Timer" wich count down from 15 on the Player vs Player page, and 10 for the Player vs Computer page. If the timer run out, it display's a gameover message. 
+    - Below the gameboards there is a score counter, wich display's the score for player for both players. To get one point you need to win the match, if the game ends in a tie, nobody gets a score. 
 
 - Tutorial Page
-    -
+    - Here are four pictures wich displays three ways to win a game, horizontally, vertically & diagonally. And a picture wich displays a tie.
+    - Below the pictures I explain the Countdown timer, turn display & Score counter. 
 
 - Contact Page
+    - Send feedback to me, or visit me on any of the social media buttons below the form. 
 
 ## Features for the future
 
 - I would like to implement so that the players can set there name, so that the turn order is displayed with the players names instead of the "X" and the "O".
-- I would like to implement audio to the gameboard, so when any tile is clicked, a click sound is played. 
+- I would like to implement audio to the gameboard, so when any tile is clicked, a click sound is played. Or when the countdown timer has a few secounds left.
+- At the Player vs Computer page, I would like you to choose if you want to be the 'X' or the 'O'. 
+- I Would like to implement difficulties, easy, medium or hard. Lets say if you where to choose hard, the computer would be harder to beat. 
 
 
 ---
@@ -242,6 +246,9 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
 ### Testing User Stories from User Experience (UX) Section
 
+- You enter the site you , a modal will great you, at the top of the modal it says "Tic-Tac-Toe". And below the modals header some informative text, And then you are good to go. 
+
+
 #### Game Testing
 
 - Make Mark
@@ -289,7 +296,7 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
 ### Bugs
 
-- At the player vs computer page, after a game was finished (not after every game), and when you have clicked the "Play Again" button, the new board already had the 'X' set to it (see the picture down below). If you refreashed the page it went back to the default stage, but after a few matches the bug was back. 
+- At the player vs computer page, after a game was finished (not after every game), and when you have clicked the "Play Again" button, the new board already had the 'X' randomly set to it (see the picture down below). If you refreashed the page it went back to the default stage, but after a few matches the bug was back. I havn't resolved that bug yet. But since you are the 'X' by default. I've added a line of code inside the computerMove function, so the computer is always set to the 'O'. This was the code I used "mark = cpu" on line 123 inside the gameScript.js. So whenever it feels like it, the computer makes the first mark on the gameboard. 
 
 - <img src="assets/img/img-readme/gamebug1.png">
 
