@@ -94,7 +94,7 @@
 .showMessage {
     visibility: visible;
     animation-name: fade;
-    animation-duration: 700ms;
+    animation-duration: 1s;
     /* animation-timing-function: linear; */
     /* animation-fill-mode: forwards; */
 }
