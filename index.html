@@ -11,18 +11,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css" />
     <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/tutorial.css" rel="stylesheet">
+
+    <link href="assets/css/welcome.css" rel="stylesheet">
+
 
 </head>
 
 <body>
-
     <!-- NAVBAR -->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand hvr-wobble-vertical" href="index.html">
-                <h1>Tic-Tac-Toe</h1>
+                <h1>XO</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,72 +31,71 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link hvr-underline-reveal" aria-current="page" href="index.html">How To Play</a>
+                    <a class="nav-link hvr-underline-reveal" aria-current="page" href="tutorial.html">How To Play</a>
                     <a class="nav-link hvr-underline-reveal" aria-current="page" href="pvp.html">PvP</a>
                     <a class="nav-link hvr-underline-reveal" aria-current="page" href="cpu.html">CPU</a>
 
                     <a class="nav-link hvr-underline-reveal" href="contact.html" aria-hidden="true">Contact</a>
+                    <a id="bgButton" class="nav-link hvr-underline-reveal" href="#">Background</a>
 
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="container-fluid tutorial-container mt-5 mb-5">
+    <div class="container-fluid welcome-container">
         <div class="row">
-            <div class="col">
-                <h1 class="text-center">How To Play</h1>
-                <hr>
-            </div>
-        </div>
+            <div class="col-12 mt-5">
+
+                <h1 class="text-center"><span>Tic</span><span>Tac</span><span>Toe</span></h1>
 
 
-        <div class="row justify-content-center">
-            <div class="col col-md-6 col-lg-4 col-xl-3">
-                <h1 class="text-center">Win Horizontally!</h1>
-                <img src="assets/img/img-tutorial/win1.png" alt="">
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <h2 class="text-center"><a class="hvr-underline-reveal" href="tutorial.html">How To Play</a>
+                        </h2>
+                    </div>
+                </div>
 
-            </div>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <h2 class="text-center"><a class="hvr-underline-reveal" href="pvp.html">Player Vs Player</a>
+                        </h2>
+                    </div>
+                    <div class="col-12 mt-2">
+                        <h2 class="text-center"><a class="hvr-underline-reveal" href="cpu.html">Player Vs Computer</a>
+                        </h2>
+                    </div>
+                </div>
 
-            <div class="col col-md-6 col-lg-4 col-xl-3">
-                <h1 class="text-center">Win Vertically!</h1>
-                <img src="assets/img/img-tutorial/win2.png" alt="">
-
-            </div>
-            <div class="col col-md-6 col-lg-4 col-xl-3">
-                <h1 class="text-center">Win Diagonally!</h1>
-                <img src="assets/img/img-tutorial/win3.png" alt="">
-
-            </div>
-
-            <div class="col col-md-6 col-lg-4 col-xl-3">
-                <h1 class="text-center">Tie, NO winner!</h1>
-                <img src="assets/img/img-tutorial/tie.png" alt="">
 
             </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <p class="text-center pt-2">When the timer reaches 0,<br> GAME OVER!</p>
-                <h2 class="text-center pt-2">Timer: <span>0</span></h1>
 
-            </div>
-            <div class="col-12 col-md-4">
-                <p class="text-center pt-2">Shows whose turn!</p>
-                <h2 class="text-center pt-2">It's <span>X</span>'s Turn</h1>
-            </div>
 
-            <div class="col-12 col-md-4">
-                <p class="text-center pt-2">Shows the Score!</p>
-                <h2 class="text-center pt-2"><span>X</span>: <span>13</span> <span>O</span>: <span>37</span></h1>
-            </div>
         </div>
 
     </div>
+
+    <div class="container-fluid social-container bg-color-social mt-5">
+        <div class="row justify-content-center">
+            <div class="col">
+                <ul>
+                    <li><a href="https://github.com/Kagebounshin/Kagebounshin" class="social-link text-center"
+                            target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://se.linkedin.com/in/kristoffer-heiskanen-390739204" class="social-link"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.instagram.com/kagebounshin/" class="social-link" target="_blank"><i
+                                class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/background.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/0030311fd7.js"></script>
+
 
 </body>
 
