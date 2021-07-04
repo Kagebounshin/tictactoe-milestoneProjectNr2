@@ -5,6 +5,8 @@ body {
     background-color: #7fc3ccc4;
 }
 
+/* CONTAINERS */
+
 .tutorial-container h1 {
     font-size: 3.5rem;
 }
@@ -12,7 +14,6 @@ body {
 .tutorial-container h2 {
     font-size: 2.5rem;
 }
-
 
 .tutorial-container p {
     font-size: 2rem;
@@ -31,6 +32,8 @@ span:nth-child(4) {
     font-family: 'Waiting for the Sunrise', cursive;
     color: black;
 }
+
+/* ADDITIONAL CONTENT */
 
 img,
 svg {
