@@ -100,6 +100,11 @@ footer.container-fluid.bg-color-footer {
     padding-bottom: 0px;
 }
 
+.navbar-brand {
+    margin-top: 6px;
+    font-family: 'Waiting for the Sunrise', cursive;
+}
+
 .navbar.bg-light {
     background-color: #fff8e6 !important;
 }
