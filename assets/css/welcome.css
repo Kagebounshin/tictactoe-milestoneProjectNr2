@@ -4,6 +4,9 @@ body {
     background-color: #fff8e6;
 }
 
+/* 
+CONTAINERS */
+
 .welcome-container {
     font-family: 'Roboto', cursive;
 }
@@ -11,7 +14,6 @@ body {
 .welcome-container h1 {
     font-size: 10rem;
 }
-
 
 .welcome-container span {
     opacity: 0;
@@ -83,6 +85,9 @@ body {
     list-style: none
 }
 
+/* Social icons was styled with some help from Robson Vinicius at Codepen 
+https://codepen.io/robsonvinicius/pen/bGpKQrw */
+
 .social-link {
     display: inline-flex;
     width: 4rem;
@@ -135,13 +140,11 @@ body {
 
 .social-container i:hover {
     color: #fff8e6;
-
 }
 
+/* MEDIA BREAKPOINTS */
 
-
-
-@media (min-width: 576px) {
+@media (max-width: 768px) {
     .welcome-container h1 {
         font-size: 5rem;
     }
