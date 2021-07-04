@@ -4,7 +4,7 @@
 
 Welcome to my second milestone project provided by [Code Institute](https://codeinstitute.net). For this project I am going to do a Tic Tac Toe Game. I hope you will enjoy it!
 
-<h2 align="center"><img src="assets/img/img-readme/amIResponsive.png"></h2>
+<h2 align="center"><img src="assets/img/img-readme/amIRespons.png"></h2>
 
 ## Table Of Content
 1.[**UX**](#user-experience) 
