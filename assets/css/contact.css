@@ -5,7 +5,6 @@ body {
     background-color: #fc9819;
 }
 
-
 /* CONTAINERS */
 
 .form-container {
@@ -32,10 +31,8 @@ body {
     list-style: none
 }
 
-
 /* Social icons was styled with some help from Robson Vinicius at Codepen 
 https://codepen.io/robsonvinicius/pen/bGpKQrw */
-
 
 .social-link {
     display: inline-flex;
@@ -84,8 +81,6 @@ https://codepen.io/robsonvinicius/pen/bGpKQrw */
 .social-container i:hover {
     color: black;
 }
-
-
 
 /* FORM */
 
