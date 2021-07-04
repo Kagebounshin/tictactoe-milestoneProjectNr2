@@ -135,13 +135,11 @@ function computerMove() {
         gameboard.splice(random, 1, mark)
     }
 
-
     xoContainer[random].style.pointerEvents = "none";
 
     switchTurn()
 
 }
-
 
 function switchTurn() {
 
@@ -173,8 +171,6 @@ function checkGameWinner() {
     } else {
         return tie;
     }
-
-
 }
 
 function gameMsg() {
@@ -216,5 +212,4 @@ function restartGame() {
     $('#counter').css('color', '')
 
     startGame()
-
 }
