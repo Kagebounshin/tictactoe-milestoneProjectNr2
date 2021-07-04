@@ -5,8 +5,13 @@ body {
     background-color: #fc9819;
 }
 
-/* Social container was styled with some help from Robson Vinicius at Codepen 
-https://codepen.io/robsonvinicius/pen/bGpKQrw */
+
+/* CONTAINERS */
+
+.form-container {
+    position: relative;
+    min-height: 100vh;
+}
 
 .social-container {
     width: 100%;
@@ -26,6 +31,11 @@ https://codepen.io/robsonvinicius/pen/bGpKQrw */
 .social-container li {
     list-style: none
 }
+
+
+/* Social icons was styled with some help from Robson Vinicius at Codepen 
+https://codepen.io/robsonvinicius/pen/bGpKQrw */
+
 
 .social-link {
     display: inline-flex;
@@ -75,10 +85,9 @@ https://codepen.io/robsonvinicius/pen/bGpKQrw */
     color: black;
 }
 
-.form-container {
-    position: relative;
-    min-height: 100vh;
-}
+
+
+/* FORM */
 
 form input,
 form textarea {
@@ -107,6 +116,14 @@ form ::placeholder {
     color: #212529;
 }
 
+.sendButton {
+    background-color: #fff8e6;
+    box-shadow: 5px 5px rgb(0 0 0 / 4%);
+}
+
+/* MEDIA BREAKPOINTS */
+
+/* Small devices (landscape phones, max 576px) */
 
 @media (max-width: 576px) {
 
@@ -147,9 +164,4 @@ form ::placeholder {
         width: 50%;
     }
 
-}
-
-.sendButton {
-    background-color: #fff8e6;
-    box-shadow: 5px 5px rgb(0 0 0 / 4%);
 }
