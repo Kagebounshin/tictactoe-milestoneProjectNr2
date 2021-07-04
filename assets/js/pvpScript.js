@@ -7,7 +7,7 @@
 
 
 window.onload = function () {
-    $('.welcome-message').addClass('show');
+    $('.welcome-message').addClass('showMessage');
 };
 
 var winOpts = [
@@ -47,7 +47,7 @@ var xScore = 0;
 var oScore = 0;
 
 function startGame() {
-    $('.welcome-message').removeClass("show");
+    $('.welcome-message').removeClass("showMessage");
     // Adding eventlistener to the gameboard divs
     // https://dev.to/cilly_boloe/addeventlistener-once-js-bits-565d
     // for only adding the click event once.
@@ -72,7 +72,7 @@ function countDown() {
     counter = setInterval(function () {
         if (seconds <= 0) {
             clearCountDown()
-            $('.gameover-message').addClass("show");
+            $('.gameover-message').addClass("showMessage");
         }
         if (seconds < 4) {
             $('#counter').css('color', 'red')
@@ -138,17 +138,17 @@ function playerMark() {
     // Display the win/tie messages
     if (win === tie) {
         clearCountDown() // Stops the timer
-        $('.tie-message').addClass('show');
+        $('.tie-message').addClass('showMessage');
     } else if (win === player1) {
         clearCountDown()
         displayWinner.textContent = player1
-        $('.winning-message').addClass('show');
+        $('.winning-message').addClass('showMessage');
         xScore++
         xWin.innerHTML = xScore;
     } else if (win === player2) {
         clearCountDown()
         displayWinner.textContent = player2
-        $('.winning-message').addClass("show");
+        $('.winning-message').addClass("showMessage");
         oScore++
         oWin.innerHTML = oScore;
     } else {
@@ -168,9 +168,9 @@ function restartGame() {
 
     turnOrder = player1;
     turnMessage.textContent = turnOrder;
-    $('.winning-message').removeClass("show");
-    $('.tie-message').removeClass('show');
-    $('.gameover-message').removeClass("show");
+    $('.winning-message').removeClass("showMessage");
+    $('.tie-message').removeClass('showMessage');
+    $('.gameover-message').removeClass("showMessage");
     $('#counter').css('color', '')
 
 

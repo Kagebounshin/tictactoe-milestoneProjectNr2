@@ -91,10 +91,12 @@
     color: black;
 }
 
-.show {
-    transition: all 3s ease;
+.showMessage {
     visibility: visible;
-
+    animation-name: fade;
+    animation-duration: 700ms;
+    /* animation-timing-function: linear; */
+    /* animation-fill-mode: forwards; */
 }
 
 .winning-message span {
@@ -250,5 +252,17 @@
     .xo-container {
         width: 150px;
         height: 150px;
+    }
+}
+
+/* ANIMATIONS */
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }

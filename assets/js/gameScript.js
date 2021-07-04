@@ -2,7 +2,7 @@
 // https://javascript.plainenglish.io/the-worlds-most-empowering-tic-tac-toe-javascript-tutorial-a889e4c20883
 // A very good tutorial on how to get down the basic of a Tic-Tac-Toe game
 window.onload = function () {
-    $('.welcome-message').addClass('show');
+    $('.welcome-message').addClass('showMessage');
 };
 
 // Winning Options
@@ -47,7 +47,7 @@ var oScore = 0;
 
 function startGame() {
 
-    $('.welcome-message').removeClass("show");
+    $('.welcome-message').removeClass("showMessage");
 
     gameboard = [
         '', '', '',
@@ -68,7 +68,7 @@ function countDown() {
     counter = setInterval(function () {
         if (seconds <= 0) {
             clearCountDown()
-            $('.gameover-message').addClass("show");
+            $('.gameover-message').addClass("showMessage");
         }
         if (seconds < 4) {
             $('#counter').css('color', 'red')
@@ -133,7 +133,6 @@ function computerMove() {
 
         xoContainer[random].innerHTML = mark;
         gameboard.splice(random, 1, mark)
-        console.log(xoContainer[random])
     }
 
 
@@ -174,23 +173,25 @@ function checkGameWinner() {
     } else {
         return tie;
     }
+
+
 }
 
 function gameMsg() {
     // Display the win/tie messages
     if (win === tie) {
         clearCountDown() // Stops the timer
-        $('.tie-message').addClass('show');
+        $('.tie-message').addClass('showMessage');
     } else if (win === 'X') {
         clearCountDown()
         displayWinner.textContent = 'You';
-        $('.winning-message').addClass('show');
+        $('.winning-message').addClass('showMessage');
         xScore++
         xWin.innerHTML = xScore;
     } else if (win === 'O') {
         clearCountDown()
         displayWinner.textContent = 'CPU';
-        $('.winning-message').addClass('show');
+        $('.winning-message').addClass('showMessage');
         oScore++
         oWin.innerHTML = oScore;
     } else {
@@ -208,11 +209,10 @@ function restartGame() {
     for (let i in xoContainer) {
         xoContainer[i].style.pointerEvents = ''
         xoContainer[i].innerHTML = '';
-        xoContainer[i].textContent = '';
     }
-    $('.winning-message').removeClass("show");
-    $('.tie-message').removeClass('show');
-    $('.gameover-message').removeClass("show");
+    $('.winning-message').removeClass("showMessage");
+    $('.tie-message').removeClass('showMessage');
+    $('.gameover-message').removeClass("showMessage");
     $('#counter').css('color', '')
 
     startGame()
