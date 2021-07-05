@@ -2,13 +2,11 @@
 // https://javascript.plainenglish.io/the-worlds-most-empowering-tic-tac-toe-javascript-tutorial-a889e4c20883
 // A very good tutorial on how to get down the basic of a Tic-Tac-Toe game
 
-// Winning Options
-
-
-
 window.onload = function () {
     $('.welcome-message').addClass('showMessage');
 };
+
+// Winning Options
 
 var winOpts = [
     [0, 1, 2],
