@@ -258,12 +258,41 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
 - [W3C Markup Validator](https://validator.w3.org/) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkagebounshin.github.io%2Ftictactoe-milestoneProjectNr2%2F)
 - [W3C CSS Validator]() - No Errors Found
 
+### Lighthouse Testing
+
+---
+
+- Home Page
+    - Mobile <img src="assets/img/img-readme/lightHomeMobile.png">
+    - Desktop <img src="assets/img/img-readme/lightHomeDesk.png">
+    ---
+- Player VS Player (Game Page)
+    - Mobile <img src="assets/img/img-readme/lightPVPMobile.png">
+    - Desktop <img src="assets/img/img-readme/lightPVPDesk.png">
+    ---
+- Player VS Computer (Game Page)
+    - Mobile <img src="assets/img/img-readme/lightPVCMobile.png">
+    - Desktop <img src="assets/img/img-readme/lightPVCDesk.png">
+    ---
+- Tutorial Page
+    - Mobile <img src="assets/img/img-readme/lightTutMobile.png">
+    - Desktop <img src="assets/img/img-readme/lightTutDesk.png">
+    ---
+- Contact Page
+    - Mobile <img src="assets/img/img-readme/lightHomeMobile.png">
+    - Desktop <img src="assets/img/img-readme/lightHomeMobile.png">
+---
+
+
+
+
 ### Testing User Stories from User Experience (UX) Section
 
 - You enter the site you , a modal will great you, at the top of the modal it says "Tic-Tac-Toe". And below the modals header some informative text, And then you are good to go. 
 
+---
 
-#### Game Testing
+### Game Testing
 
 - Make Mark
     - I enter the site, I'll make my mark anywhere at the gameboard, and an "X" appear
@@ -295,8 +324,10 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
     - I click the restart button and the game restarts
     - I play a game and I make it a "Tie".
     - I click the restart button and the game restarts
+
+---
     
-#### Testing of the contact form
+### Testing of the contact form
 - When I enter the site, I locate the contact link at the navbar.
 - I click the link and it takes me to the Contact page.
 - The page have a feedback form, before submitting the form, I enter my name, emailaddress and a feedback message. 
