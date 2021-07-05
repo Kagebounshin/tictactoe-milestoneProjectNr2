@@ -279,8 +279,8 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
     - Desktop <img src="assets/img/img-readme/lightTutDesk.png">
     ---
 - Contact Page
-    - Mobile <img src="assets/img/img-readme/lightHomeMobile.png">
-    - Desktop <img src="assets/img/img-readme/lightHomeMobile.png">
+    - Mobile <img src="assets/img/img-readme/lightContactMobile.png">
+    - Desktop <img src="assets/img/img-readme/lightContactDesk.png">
 ---
 
 
