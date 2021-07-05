@@ -175,22 +175,24 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 ## Features
 
 - Navbar
-    - The four diffrent pages on the site has the same looking Navbar, except some minor styling changes. The Navbrand takes you to the Player vs Player gamepage. 
-    - There is a "Change Background" button, and guess what, it changes the background of the page. But only for the Game Pages and the Contact page.  
+    - All the pages has the same looking Navbar. The Navbrand takes you to the Homepage. 
+    - There is a "Background" button, and guess what, it changes the background of the page (not implemented on the tutorial page).  
 
-
+- Home Page
+    - The home page has a header text wich reads 'Tic Tac Toe',
+    beneath that header are links to the tutorial page and the two diffrent game pages. Below all of that are  links to my gitHub, linkedIn and Instagram accounts.
 - Game Pages
-    - The Gameboard is at the center of the screen, the 9 diffrent spaces where you can make your mark has a hover effect on them, the effect slitly shrinks the hovered space. 
+    - The Gameboard is at the center of the screen, the 9 diffrent spaces where you can make your mark has a hover effect on them, the effect slightly shrinks the hovered space. 
     - The game pages has a text wich displays whos turn it is. The Game is set to start with the player "X" as default. When you start playing, the text switches between the player "X" & "O" depending whos turn it is.
-    - There is a "Timer" wich count down from 15 on the Player vs Player page, and 10 for the Player vs Computer page. If the timer run out, it display's a gameover message. 
-    - Below the gameboards there is a score counter, wich display's the score for player for both players. To get one point you need to win the match, if the game ends in a tie, nobody gets a score. 
+    - There is a "Timer" wich count down from 15 on the Player vs Player page, and 10 for the Player vs Computer page. If the timer run out, the game is over. 
+    - Below the gameboards there is a score counter, wich display's the score for both players. To get one point you need to win the match, if the game ends in a tie, nobody gets a score. 
 
 - Tutorial Page
     - Here are four pictures wich displays three ways to win a game, horizontally, vertically & diagonally. And a picture wich displays a tie.
-    - Below the pictures I explain the Countdown timer, turn display & Score counter. 
+    - Below the pictures is explainations forr the Countdown timer, turn display & Score counter. 
 
 - Contact Page
-    - Send feedback to me, or visit me on any of the social media buttons below the form. 
+    - Send feedback to me, or visit me on gitHub, Instagram or LinkedIn. 
 
 ## Features for the future
 
