@@ -201,6 +201,7 @@ function restartGame() {
     mark = player1
     win = 0;
     tie = 0;
+    turnMessage.textContent = mark;
 
     for (let i in xoContainer) {
         xoContainer[i].style.pointerEvents = ''
