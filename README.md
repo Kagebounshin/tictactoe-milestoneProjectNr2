@@ -45,11 +45,8 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 - As a First Time Visitor,
 
     1. I want to get clear instructions on how the site works, what you can do, and how to do it.
-    2. I want to easily navigate my way through the website.  
-
-- As as user,
-    
-    1. I want the game to be played easily.
+    2. I want to easily navigate my way through the website. 
+     1. I want the game to be played easily.
     2. I want to be able to play against a friend.
     3. I want to be able to play against the computer.
     4. I want it to have nice estetics. 
@@ -58,9 +55,11 @@ Welcome to my second milestone project provided by [Code Institute](https://code
     7. I want to know if the author has done some other games. 
 
 
----
+
 
 ### Strategy
+
+---
 
 - My targeted audience for this project is children somewhere between the ages of 4-9 years old. In most cases when two adults plays against each other it ends in a draw, unless your not familiar with the basic strategy of the game. So the Tic-tac-toe game is very simple, so it's well suited for children who dont already know the basic strategy. So I will try to make it appealing to kids at first. Having in mind what kids are interested in now a days, games, toys, etc. 
 
@@ -73,6 +72,8 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 
 ### Scope
 
+---
+
 - So alot of styling and a fun and intuitive gameplay is most important.
 - The first thats needed are instructions, what the game is about and how does it work. Ofcourse it's a simple game, but when you are approaching children I think it's best to be as clear as you can be, sort out the questions they may have, before you even start the game. 
 I will implement some easy to understand instructions to be shown when they enter the site. The instructions will be picture based, showing them the steps you need to take to win the game. 
@@ -83,6 +84,7 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
 ### Structure
 
+---
 
 - Navbar
     - At the top of the page I will have a navigation bar. There will not be much to navigate between at first just the "Game" and the "Contact" page. 
@@ -111,6 +113,8 @@ I'm thinking three pictures wich displays three winning combinations horizontall
     - Below the form their will be links to my LinkedIn, gitHub & Instagram.
 
 ### Skeleton
+---
+
 
 -   ### Wireframes
 
@@ -123,13 +127,15 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
 ### Surface 
 
+---
+
 -   ### Design
     - #### Colour Scheme
         - Text Colors
 
-        The body element of all the pages is set to have the color #000000, Have styles some text across the pages white the colr #ffffff. 
+        The text color of all the pages is set to have the color black (#000000). On the game pages there are some text styled with the color white (#ffffff). 
         
-        The form at the contact page has the color #212529 set to it's text.
+        The text in the form at the contact page has as more grey (#212529) color set to it.
 
         <img src="assets/img/img-readme/000000.png">
         <img src="assets/img/img-readme/ffffff.png">
@@ -138,9 +144,8 @@ I'm thinking three pictures wich displays three winning combinations horizontall
         
         - Navbar
 
-        The Navbar has the #fff8e6 background across all pages, I wanted a more smooth and pleasing color instead of a basic #fff. And the text has the #000000 color.  
+        The Navbar has a cream white (#fff8e6) background, I wanted a more smooth and pleasing color instead of a basic white (#ffffff). 
        
-        
         <img src="assets/img/img-readme/fff8e6.png">
 
         - Game Pages
@@ -157,20 +162,22 @@ I'm thinking three pictures wich displays three winning combinations horizontall
         <img src="assets/img/img-readme/fff8e6.png">
         <img src="assets/img/img-readme/000000.png">
 
-        The Gameboard has the #fff8e6 color as background, and the box shadow is faded to 65% from the color #000000 (black).
+        The Gameboard has the cream white (#fff8e6) color as background, and the box shadow is faded to 65% from the color black (#000000).
 
         - Tutorial Page
 
-        The background for the tutorial page is set to the #7fc3cc.
+        The background for the tutorial page is set to a light blue color(#7fc3cc). 
 
         <img src="assets/img/img-readme/7fc3cc.png">
-        
+---
 -   #### Typography
 
     - The fonts I've used across the site are from [Google Fonts](https://fonts.google.com/). The fonts are, 'Just Me Again Down Here', 'Waiting for the Sunrise' & 'Roboto'. 
     - ['Just Me Again Down Here'](https://fonts.google.com/specimen/Just+Me+Again+Down+Here?query=Just+Me+Again+Down+Here) is used as the main font, the links on the navbar, and most of the informative paragraphs across the site. 
     - ['Waiting for the Sunrise'](https://fonts.google.com/specimen/Waiting+for+the+Sunrise?query=Waiting+for+the+Sunrise) is used for the X's and O's, the secounds on the countdown timers & the numbers on the scoreboards.
     - [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto) is used for the "Tic Tac Toe" header on the homepage, and the text inside the form on the contact page. I thought that the header looked much more nice with a diffrent font, I wanted it to stand out from the rest of the site. And for the form I wanted to have this font because it's more readable then the main font, nice to have when you're typing. 
+
+---
          
 ## Features
 
@@ -194,6 +201,9 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 - Contact Page
     - Send feedback to me, or visit me on gitHub, Instagram or LinkedIn. 
 
+- Extra
+    - Responsive
+
 ## Features for the future
 
 - I would like to implement so that the players can set there name, so that the turn order is displayed with the players names instead of the "X" and the "O".
@@ -201,9 +211,7 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 - At the Player vs Computer page, I would like you to choose if you want to be the 'X' or the 'O'. 
 - I Would like to implement difficulties, easy, medium or hard. Lets say if you where to choose hard, the computer would be harder to beat. 
 
-
 ---
-
 
 ## Technologies Used
 
@@ -245,7 +253,10 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
 ## Testing
 
+The W3C Markup Validator and W3C CSS validator Services were used to validate this project. 
 
+- [W3C Markup Validator](https://validator.w3.org/) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkagebounshin.github.io%2Ftictactoe-milestoneProjectNr2%2F)
+- [W3C CSS Validator]() - No Errors Found
 
 ### Testing User Stories from User Experience (UX) Section
 
