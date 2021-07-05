@@ -1,8 +1,3 @@
-/* 
-TO DO index.html.
-Add more cloud in different sizes, add animation from left to right.
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
@@ -38,7 +33,8 @@ body {
 }
 
 .navbar-brand {
-    margin-top: 6px;
+    font-size: 2.5rem;
+
     font-family: 'Waiting for the Sunrise', cursive;
 }
 
