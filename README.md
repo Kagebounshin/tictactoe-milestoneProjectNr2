@@ -46,16 +46,14 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 
     1. I want to get clear instructions on how the site works, what you can do, and how to do it.
     2. I want to easily navigate my way through the website. 
-     1. I want the game to be played easily.
+
+- As a Player,
+    1. I want the game to be played easily.
     2. I want to be able to play against a friend.
     3. I want to be able to play against the computer.
     4. I want it to have nice estetics. 
     5. I want feedback once the game is done, such as who won, and whats the score. 
     6. I want to restart the game when the game is finished.
-    7. I want to know if the author has done some other games. 
-
-
-
 
 ### Strategy
 
@@ -187,7 +185,8 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
 - Home Page
     - The home page has a header text wich reads 'Tic Tac Toe',
-    beneath that header are links to the tutorial page and the two diffrent game pages. Below all of that are  links to my gitHub, linkedIn and Instagram accounts.
+    underneath that header are links to the tutorial page and the two diffrent game pages. These links are also at the navbar, but I wanted you to be able to quickly choose where to go on the website, especially on your mobile where the navbar is collapsed. And that it would be reminiscent of a game menu.
+     Below all of that are links to my gitHub, linkedIn and Instagram accounts.
 - Game Pages
     - The Gameboard is at the center of the screen, the 9 diffrent spaces where you can make your mark has a hover effect on them, the effect slightly shrinks the hovered space. 
     - The game pages has a text wich displays whos turn it is. The Game is set to start with the player "X" as default. When you start playing, the text switches between the player "X" & "O" depending whos turn it is.
@@ -288,7 +287,13 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
 
 ### Testing User Stories from User Experience (UX) Section
 
-- You enter the site you , a modal will great you, at the top of the modal it says "Tic-Tac-Toe". And below the modals header some informative text, And then you are good to go. 
+- First time Visitor,
+    - I want to get clear instructions on how the site works, what you can do, and how to do it.
+        1. When entering the site, users can easily navigate their way through the site, using the navbar at the top. Below there is a large text wich reads "Tic Tac Toe", links to a tutorial page and two diffrent game pages & links to the authors gitHub, LinkedIn and Instagram accounts. 
+        2. The main text explains the soul purpose of the page.
+        3. The links below the main text give you three options, you can go to the tutorial page, or just start playing by choosing you're preferred game type. These three links are also avalible at the navbar.  
+
+
 
 ---
 
