@@ -74,7 +74,7 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 ### Scope
 
 - So alot of styling and a fun and intuitive gameplay is most important.
-- The first thats needed are instructions, what the game is about and how does it work. Ofcourse it's a simple game, but when you are aproaching children I think it's best to be as clear as you can be, sort out the questions they may have, before you even start the game. 
+- The first thats needed are instructions, what the game is about and how does it work. Ofcourse it's a simple game, but when you are approaching children I think it's best to be as clear as you can be, sort out the questions they may have, before you even start the game. 
 I will implement some easy to understand instructions to be shown when they enter the site. The instructions will be picture based, showing them the steps you need to take to win the game. 
 I'm thinking three pictures wich displays three winning combinations horizontally, vertically & diagonally. And a picture wich displays a tie. Look at the instruction [**wireframe**](#wireframes) to see my idea.
 - There will be a text displaying whos turn it is. 
@@ -165,11 +165,12 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
         <img src="assets/img/img-readme/7fc3cc.png">
         
-        
+-   #### Typography
 
-
-    -   #### Typography
-
+    - The fonts I've used across the site are from [Google Fonts](https://fonts.google.com/). The fonts are, 'Just Me Again Down Here', 'Waiting for the Sunrise' & 'Roboto'. 
+    - ['Just Me Again Down Here'](https://fonts.google.com/specimen/Just+Me+Again+Down+Here?query=Just+Me+Again+Down+Here) is used as the main font, the links on the navbar, and most of the informative paragraphs across the site. 
+    - ['Waiting for the Sunrise'](https://fonts.google.com/specimen/Waiting+for+the+Sunrise?query=Waiting+for+the+Sunrise) is used for the X's and O's, the secounds on the countdown timers & the numbers on the scoreboards.
+    - [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto) is used for the "Tic Tac Toe" header on the homepage, and the text inside the form on the contact page. I thought that the header looked much more nice with a diffrent font, I wanted it to stand out from the rest of the site. And for the form I wanted to have this font because it's more readable then the main font, nice to have when you're typing. 
          
 ## Features
 
