@@ -61,8 +61,8 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 
 - My targeted audience for this project is children somewhere between the ages of 4-9 years old. In most cases when two adults plays against each other it ends in a draw, unless your not familiar with the basic strategy of the game. So the Tic-tac-toe game is very simple, so it's well suited for children who dont already know the basic strategy. So I will try to make it appealing to kids at first. Having in mind what kids are interested in now a days, games, toys, etc. 
 
-- I made up a very simple chart, by asking my own kids and some of their friends. I wanted to know their thought on what they think is important for this project. So they had three choices to make, between "Game Play", "Styling" and the "Contact page". They were going to rank these choices between 1-3.
- <h2 align="center"><img src="assets/img/img-readme/chartOfImportance.png"></h2>
+- I made up a very simple [chart](assets/img/img-readme/chartOfImportance.png), by asking my own kids and some of their friends. I wanted to know their thought on what they think is important for this project. So they had three choices to make, between "Game Play", "Styling" and the "Contact page". They were going to rank these choices between 1-3.
+
 
 - The one who got the most points was "Styling". And I intend to agree, if my main target is children, I want it to look interesting and fun. Have things going on in the background. Other things to interact with besides the game itself. So the kids will keep on playing, and visit the site again. 
 - The second most was the "Game Play" choice. Though I would think it's more important then the styling. Without a functional game, then what's the purpose of the page. 
@@ -110,18 +110,19 @@ I'm thinking three pictures wich displays three winning combinations horizontall
     - The form will be conected with emailJS.
     - Below the form their will be links to my LinkedIn, gitHub & Instagram.
 
+- 
 ### Skeleton
 ---
 
 
 -   ### Wireframes
 
-    Home Page.
-    - <img src="assets/img/img-readme/wfHome.png">
-    Contact Page.
-    - <img src="assets/img/img-readme/wfContact.png">
-    Instruction modal.
-    - <img src="assets/img/img-readme/wfInstructions.png">
+    [Game Page](assets/img/img-readme/wfHome.png)
+
+    [Contact Page](assets/img/img-readme/wfContact.png)
+
+    [Instruction modal](assets/img/img-readme/wfInstructions.png)
+
 
 ### Surface 
 
@@ -146,9 +147,9 @@ I'm thinking three pictures wich displays three winning combinations horizontall
        
         <img src="assets/img/img-readme/fff8e6.png">
 
-        - Game Pages
+        - Home page, Game pages & Contact Page
          
-        At the game pages & the contact page you can click a button wich will randomly change the background color, the colors wich the background can randomly changes to is displayed below this text.
+        At the Home page, game pages & the contact page you can click a button wich will randomly change the background color, the colors wich the background can randomly changes to is displayed below this text.
             
         <img src="assets/img/img-readme/25876f.png">
         <img src="assets/img/img-readme/7fc3cc.png">
@@ -158,7 +159,6 @@ I'm thinking three pictures wich displays three winning combinations horizontall
         <img src="assets/img/img-readme/ffbd89.png">
         <img src="assets/img/img-readme/ba50f7.png">
         <img src="assets/img/img-readme/fff8e6.png">
-        <img src="assets/img/img-readme/000000.png">
 
         The Gameboard has the cream white (#fff8e6) color as background, and the box shadow is faded to 65% from the color black (#000000).
 
@@ -201,14 +201,14 @@ I'm thinking three pictures wich displays three winning combinations horizontall
     - Send feedback to me, or visit me on gitHub, Instagram or LinkedIn. 
 
 - Extra
-    - Responsive
+    - Responsive. 
 
 ## Features for the future
 
-- I would like to implement so that the players can set there name, so that the turn order is displayed with the players names instead of the "X" and the "O".
-- I would like to implement audio to the gameboard, so when any tile is clicked, a click sound is played. Or when the countdown timer has a few secounds left.
+- At the Player VS Player page, I would like to implement so that the players can set there name, so that the turn order is displayed with the players names instead of the "X" and the "O".
 - At the Player vs Computer page, I would like you to choose if you want to be the 'X' or the 'O'. 
-- I Would like to implement difficulties, easy, medium or hard. Lets say if you where to choose hard, the computer would be harder to beat. 
+- At the Player vs Computer page, I Would like to implement difficulties, easy, medium or hard. Lets say if you where to choose hard, the computer would be harder to beat. 
+- I would like to implement audio to the gameboard, so when any tile is clicked, a click sound is played. Or when the countdown timer has a few secounds left.
 
 ---
 
@@ -226,7 +226,7 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
 - [Bootstrap v5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
-- [Hover.css](https://ianlunn.github.io/Hover/) - Hover effect on buttons.
+- [Hover.css](https://ianlunn.github.io/Hover/) - Hover effect on buttons links.
 
 - [FontAwesome](https://fontawesome.com/) - provides icons across the site
 
@@ -248,6 +248,7 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
 - [favicon.ico Generator](https://www.favicon.cc/) - For creating the favicon.
 
+- [Amp What](https://www.amp-what.com/) - For the copyright icon at the home page. 
 ---
 
 ## Testing
@@ -262,49 +263,69 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
 ---
 
 - Home Page
-    - Mobile <img src="assets/img/img-readme/lightHomeMobile.png">
-    - Desktop <img src="assets/img/img-readme/lightHomeDesk.png">
-    ---
+    - Mobile [Result](assets/img/img-readme/lightHomeMobile.png)
+    - Desktop [Result](assets/img/img-readme/lightHomeDesk.png)
 - Player VS Player (Game Page)
-    - Mobile <img src="assets/img/img-readme/lightPVPMobile.png">
-    - Desktop <img src="assets/img/img-readme/lightPVPDesk.png">
-    ---
+    - Mobile [Result](assets/img/img-readme/lightPVPMobile.png)
+    - Desktop [Result](assets/img/img-readme/lightPVPDesk.png)
 - Player VS Computer (Game Page)
-    - Mobile <img src="assets/img/img-readme/lightPVCMobile.png">
-    - Desktop <img src="assets/img/img-readme/lightPVCDesk.png">
-    ---
+    - Mobile [Result](assets/img/img-readme/lightPVCMobile.pngg)
+    - Desktop [Result](assets/img/img-readme/lightPVCDesk.png)
 - Tutorial Page
-    - Mobile <img src="assets/img/img-readme/lightTutMobile.png">
-    - Desktop <img src="assets/img/img-readme/lightTutDesk.png">
-    ---
+    - Mobile [Result](assets/img/img-readme/lightTutMobile.png)
+    - Desktop [Result](assets/img/img-readme/lightTutDesk.png)  
 - Contact Page
-    - Mobile <img src="assets/img/img-readme/lightContactMobile.png">
-    - Desktop <img src="assets/img/img-readme/lightContactDesk.png">
+    - Mobile [Result](assets/img/img-readme/lightContactMobile.png)
+    - Desktop [Result](assets/img/img-readme/lightContactDesk.png)
 ---
-
-
-
 
 ### Testing User Stories from User Experience (UX) Section
 
 - First time Visitor,
-    - I want to get clear instructions on how the site works, what you can do, and how to do it.
-        1. When entering the site, users can easily navigate their way through the site, using the navbar at the top. Below there is a large text wich reads "Tic Tac Toe", links to a tutorial page and two diffrent game pages & links to the authors gitHub, LinkedIn and Instagram accounts. 
-        2. The main text explains the soul purpose of the page.
-        3. The links below the main text give you three options, you can go to the tutorial page, or just start playing by choosing you're preferred game type. These three links are also avalible at the navbar.  
+    1. I want to get clear instructions on how the site works, what you can do, and how to do it.
+        - When entering the site, users can easily navigate their way through the site, using the navbar at the top. Below there is a large text wich reads "Tic Tac Toe", links to a tutorial page and two diffrent game pages & links to the authors gitHub, LinkedIn and Instagram accounts. 
+        - The main text explains the soul purpose of the page.
+        - The links below the main text give you three options, you can go to the tutorial page, or just start playing by choosing you're preferred game type. These three links are also avalible at the navbar. 
+        - There is also a "How to play" page, wich explains the diffrent ways I can win, or what happens if there is no winner. It also explains whats going on around the gameboard.
+    2. I want to easily navigate my way through the website.
+        - With the existing navbar I can easily navigate my way through the site. When shown on smaller devices, the navbar collapses into a burger menu.
 
+- As a Player,
+    1. I want the game to be played easily.
+        - Player VS Player
+            - When I located the game page, a modal appears, explaining the choosed game type, that the game has a countdown timer. Also that the 'X' start. At the bottom of the modal there is a play button.
+            - When I press play, the game start. 
+            - The game takes turn between the 'X' & the 'O'. If you loose track of whose turn it is, you can look to the left above the gameboard, there you have a text wich shows whos turn it currently is.
+            - When you win a game either as 'X' or 'O', or if the time has run out, or if the game ends with a draw. A modal fades in and discribes the out come of that game, and I can easily restart the game by pressing the "Play Again" button on the modal. 
+            - The countdown timer is counting down from 15 secounds, when it's 3 secounds left, the color of the seconds changes to 'Red'. When the timer reaches 0, a modal fades in, explaining that the time has run out & a button were I can choose to play once more.
+        - Player VS Computer
+            - lorem
 
+    2. I want to be able to play against a friend.
+        - Player VS Player
+            - When I located the Player VS Player page, I can start playing with friends or family, either by passing the Computer mouse or the phone between each other. The time pressure and the scoreboard adds in a little extra competitive feeling.
+
+    3. I want to be able to play against the computer.
+        - Player VS Computer
+            - When I have located the Player VS Computer page, I can start playing against the computer, I am playing as the 'X'. I make a my mark, and then the computer make a mark. It goes on until there is a winner, tie or if the time has run out. A modal appears and I can choose to play again.
+    4. I want it to have nice estetics. 
+
+    5. I want feedback once the game is done, such as who won, and whats the score. 
+        - When either of the players or the computer wins, a modal fade in with a text that says who has won or if there was a 'Tie' or if the timer has run out. 
+        - Underneath the gameboard there is a scoreboard, if you win you'll get one point, if it's a 'Tie' the scoreboard remains unchanged. 
+    6. I want to restart the game when the game is finished.
+        - No mather the out come of the game, a modal will fade in. At the bottom of the modal is a "Play Again" button, click the button, and the game restarts. 
 
 ---
 
 ### Game Testing
 
+#### Player VS Player
 - Make Mark
     - I enter the site, I'll make my mark anywhere at the gameboard, and an "X" appear
     - The next mark I make displays an "O". 
     - Now it is the X's turn again, I try to click where the "O" was marked, nothing happends. I need to choose an unoccupied space at the gameboard. 
     - I fill up the rest of the gameboard, switching between the X's and O's
-    
 - Take Turns
     - The turn display shows that the X's goes first
     - When I make my first mark on the gameboard, an X appears on the clicked element
@@ -342,13 +363,16 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
 
 ### Further Testing
 
+- This project was tested different webbrowsers, Google Chrome & Microsoft Edge, Safari.
+- This project was tested different devices such as Desktop, Laptop, Ipad, Iphone 12 Pro, IphoneX, Iphone 8 & Iphone 7, Sony xperia Z1.
+- The links are tested alot, to ensure they work correctly.
+- Friend & Family members has tested the site, looking for bugs and other issues.
 
 
 ### Bugs
 
-- At the player vs computer page, after a game was finished (not after every game), and when you have clicked the "Play Again" button, the new board already had the 'X' randomly set to it (see the picture down below). If you refreashed the page it went back to the default stage, but after a few matches the bug was back. I havn't resolved that bug yet. But since you are the 'X' by default. I've added a line of code inside the computerMove function, so the computer is always set to the 'O'. This was the code I used "mark = cpu" on line 123 inside the gameScript.js. So whenever it feels like it, the computer makes the first mark on the gameboard. 
+- At the player vs computer page, after a game was finished (not after every game), and when you have clicked the "Play Again" button, the new board already had the 'X' randomly set to it ([See picture](assets/img/img-readme/gamebug1.png)). If you refreashed the page it went back to the default stage, but after a few matches the bug was back. I havn't resolved that bug yet. But since you are the 'X' by default. I've added a line of code inside the computerMove function, so the computer is always set to the 'O'. This was the code I used "mark = cpu" on line 123 inside the gameScript.js. So whenever it feels like it, the computer makes the first mark on the gameboard. 
 
-- <img src="assets/img/img-readme/gamebug1.png">
 
 ---
 
