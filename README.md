@@ -279,7 +279,7 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
     - Desktop [Result](assets/img/img-readme/lightContactDesk.png)
 ---
 
-### Testing User Stories from User Experience (UX) Section
+## Testing User Stories from User Experience (UX) Section
 
 - First time Visitor,
     1. I want to get clear instructions on how the site works, what you can do, and how to do it.
@@ -293,13 +293,16 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
 - As a Player,
     1. I want the game to be played easily.
         - Player VS Player
-            - When I located the game page, a modal appears, explaining the choosed game type, that the game has a countdown timer. Also that the 'X' start. At the bottom of the modal there is a play button.
+            - When I located the game page, a modal appears, explaining the game type I have choosed. That the game has a countdown timer. Also that the 'X' start. At the bottom of the modal is a play button.
             - When I press play, the game start. 
             - The game takes turn between the 'X' & the 'O'. If you loose track of whose turn it is, you can look to the left above the gameboard, there you have a text wich shows whos turn it currently is.
             - When you win a game either as 'X' or 'O', or if the time has run out, or if the game ends with a draw. A modal fades in and discribes the out come of that game, and I can easily restart the game by pressing the "Play Again" button on the modal. 
             - The countdown timer is counting down from 15 secounds, when it's 3 secounds left, the color of the seconds changes to 'Red'. When the timer reaches 0, a modal fades in, explaining that the time has run out & a button were I can choose to play once more.
         - Player VS Computer
-            - lorem
+            - I go to the desired page, using the navbar. A modal appears, explaining the game type I have choosed. That you play against the computer , that the game has a countdown timer. Also that you play as the 'X'. At the bottom of the modal is a play button.
+            - I press the play butto, the game is on.
+            - I am the one to make the first mark, after the computer make a random mark at the gameboard. I play until I win.
+            - A modal fades in, and I can click a "Play Again" button to start a new round. 
 
     2. I want to be able to play against a friend.
         - Player VS Player
@@ -309,16 +312,19 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
         - Player VS Computer
             - When I have located the Player VS Computer page, I can start playing against the computer, I am playing as the 'X'. I make a my mark, and then the computer make a mark. It goes on until there is a winner, tie or if the time has run out. A modal appears and I can choose to play again.
     4. I want it to have nice estetics. 
+        - Quotes from family & Friends. 
+            - "I think it looks nice, and is easy to understand." Love, 8 years old.
+            - "It is pretty, and the game is fun, I like to change the background, the pink one is my favorite" Saga, 5 years old. 
+            - "" Jenny, 30 years old
 
     5. I want feedback once the game is done, such as who won, and whats the score. 
         - When either of the players or the computer wins, a modal fade in with a text that says who has won or if there was a 'Tie' or if the timer has run out. 
         - Underneath the gameboard there is a scoreboard, if you win you'll get one point, if it's a 'Tie' the scoreboard remains unchanged. 
     6. I want to restart the game when the game is finished.
         - No mather the out come of the game, a modal will fade in. At the bottom of the modal is a "Play Again" button, click the button, and the game restarts. 
-
 ---
 
-### Game Testing
+## Game Testing
 
 #### Player VS Player
 - Make Mark
@@ -332,7 +338,6 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
     - The turn container switches to display that it's the O's turn
     - I make a new mark and an O appears on the gameboard.
     - The turn container switches back to display that it's the X's turn once again
-
 - Score Counter
     - I play a game and player "X" wins.
     - The score counter for player "X" increases with 1.
@@ -340,7 +345,6 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
     - The score counter for player "O" increases with 1.
     - I play a game and make it a "Tie".
     - The Score is unchanged
-
 - Restart Button
     - I wait for the time to run out, so I can see the game over message.
     - I click the restart button and the game restarts
@@ -351,6 +355,13 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
     - I play a game and I make it a "Tie".
     - I click the restart button and the game restarts
 
+#### Player VS Computer
+- Make Mark
+    - I start by making a mark, and an 'X' appears.
+    - A slight delay then the computer make its move by marking an 'O' at the gameboard.
+    - It's my turn again, I try to mark over the computers 'O'. I dosen't work. I need to find an unoccupied space. A make my mark. 
+    - Continuing doing this until one of us wins.
+    - I can restart the game, and the gameboard is cleard of all the marks. 
 ---
     
 ### Testing of the contact form
@@ -366,14 +377,14 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
 - This project was tested different webbrowsers, Google Chrome & Microsoft Edge, Safari.
 - This project was tested different devices such as Desktop, Laptop, Ipad, Iphone 12 Pro, IphoneX, Iphone 8 & Iphone 7, Sony xperia Z1.
 - The links are tested alot, to ensure they work correctly.
-- Friend & Family members has tested the site, looking for bugs and other issues.
+- Friend & Family members has tested the site, looking for bugs and other issues.                  
 
 
 ### Bugs
 
-- At the player vs computer page, after a game was finished (not after every game), and when you have clicked the "Play Again" button, the new board already had the 'X' randomly set to it ([See picture](assets/img/img-readme/gamebug1.png)). If you refreashed the page it went back to the default stage, but after a few matches the bug was back. I havn't resolved that bug yet. But since you are the 'X' by default. I've added a line of code inside the computerMove function, so the computer is always set to the 'O'. This was the code I used "mark = cpu" on line 123 inside the gameScript.js. So whenever it feels like it, the computer makes the first mark on the gameboard. 
+- At the 'Player VS Computer' page, after a game was finished (not after every game), and when you have clicked the "Play Again" button, the new board already had the 'X' randomly set to it ([See picture](assets/img/img-readme/gamebug1.png)). If you refreashed the page it went back to the default stage, but after a few matches the bug was back. I havn't resolved that bug yet. But since you are the 'X' by default. I've added a line of code inside the computerMove function, so the computer is always set to the 'O'. This was the code I used "mark = cpu" on line 123 inside the gameScript.js. So whenever it feels like it, the computer makes the first mark on the gameboard. 
 
-
+- At the 'Player VS Computer' page, I did a delay function on the computerMove, but if I did another move before the computer, I would mark the gameboard with an 'O' instead of an 'X'. So I removed that function, and the problem was solved. Also by removing that delay function, the above bug disapeard as well. It was a nice touch to the game, but since it could mess up the game play, I decieded to remove that function. (for now).
 ---
 
 ## Deployment
