@@ -128,11 +128,12 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
 ---
 
--   ### Design
-    - #### Colour Scheme
-        - Text Colors
+### Design
 
-        The text color of all the pages is set to have the color black (#000000). On the game pages there are some text styled with the color white (#ffffff). 
+#### Colour Scheme
+- Text Colors
+
+    - The text color of all the pages is set to have the color black (#000000). On the game pages there are some text styled with the color white (#ffffff). 
         
         The text in the form at the contact page has as more grey (#212529) color set to it.
 
@@ -141,15 +142,15 @@ I'm thinking three pictures wich displays three winning combinations horizontall
         <img src="assets/img/img-readme/212529.png">
         
         
-        - Navbar
+- Navbar
 
-        The Navbar has a cream white (#fff8e6) background, I wanted a more smooth and pleasing color instead of a basic white (#ffffff). 
+    - The Navbar has a cream white (#fff8e6) background, I wanted a more smooth and pleasing color instead of a basic white (#ffffff). 
        
         <img src="assets/img/img-readme/fff8e6.png">
 
-        - Home page, Game pages & Contact Page
+- Home page, Game pages & Contact Page
          
-        At the Home page, game pages & the contact page you can click a button wich will randomly change the background color, the colors wich the background can randomly changes to is displayed below this text.
+    - At the Home page, game pages & the contact page you can click a button wich will randomly change the background color, the colors wich the background can randomly changes to is displayed below this text.
             
         <img src="assets/img/img-readme/25876f.png">
         <img src="assets/img/img-readme/7fc3cc.png">
@@ -162,9 +163,9 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
         The Gameboard has the cream white (#fff8e6) color as background, and the box shadow is faded to 65% from the color black (#000000).
 
-        - Tutorial Page
+- Tutorial Page
 
-        The background for the tutorial page is set to a light blue color(#7fc3cc). 
+    - The background for the tutorial page is set to a light blue color(#7fc3cc). 
 
         <img src="assets/img/img-readme/7fc3cc.png">
 ---
@@ -201,7 +202,7 @@ I'm thinking three pictures wich displays three winning combinations horizontall
     - Send feedback to me, or visit me on gitHub, Instagram or LinkedIn. 
 
 - Extra
-    - Responsive. 
+    - Responsive across different platforms. 
 
 ## Features for the future
 
@@ -448,11 +449,13 @@ $ git clone https://kagebounshin.github.io/tictactoe-milestoneProjectNr2
 
 - The Structure for this game was obtained from [Anna Peterson](https://medium.com/@annapeterson89) and her tutorial "[The World’s Most Empowering Tic-Tac-Toe JavaScript Tutorial](https://javascript.plainenglish.io/the-worlds-most-empowering-tic-tac-toe-javascript-tutorial-a889e4c20883)". 
 
-### Content
-
 
 ### Acknowledgements
 
 - The layout inspration for this README.md is from Code Institute's own [Sample README](https://github.com/Code-Institute-Solutions/SampleREADME).
 
 - Thanks to [Anna Peterson](https://medium.com/@annapeterson89) for making it easy to understand the structure of a Tic-Tac-Toe game. 
+
+- Support from family & friends
+
+- Mentor for feedback
