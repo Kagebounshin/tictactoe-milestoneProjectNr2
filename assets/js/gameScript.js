@@ -1,6 +1,6 @@
 // The fundamentals for this game's structure was obtained from 
 // https://javascript.plainenglish.io/the-worlds-most-empowering-tic-tac-toe-javascript-tutorial-a889e4c20883
-// A very good tutorial on how to get down the basic of a Tic-Tac-Toe game
+
 window.onload = function () {
     $('.welcome-message').addClass('showMessage');
 };
@@ -101,20 +101,12 @@ function playerMove() {
 
     gameboard.forEach(function (mark, index) {
         xoContainer[index].innerHTML = mark
-
-
     });
     switchTurn()
-
-    // The  delay timer for the computerMove was obtained from this tutorial,
-    // with some modifications  https://www.youtube.com/watch?v=sNO5awLw9h0
-    let delayTime = ((Math.random() * 1000) + 200).toFixed();
-    setTimeout(function () {
-        if (win != 'X') {
-            computerMove()
-        }
-    }, delayTime)
-
+    // Aslong as player haven't won, make computer mark
+    if (win != 'X') {
+        computerMove()
+    }
 };
 
 function computerMove() {
@@ -133,14 +125,12 @@ function computerMove() {
 
         xoContainer[random].innerHTML = mark;
         gameboard.splice(random, 1, mark)
+        xoContainer[random].style.pointerEvents = "none";
     }
-
-    xoContainer[random].style.pointerEvents = "none";
-
     switchTurn()
-
 }
 
+// Switch turns between players and computer 
 function switchTurn() {
 
     if (mark === player1) {
@@ -153,6 +143,7 @@ function switchTurn() {
     gameMsg()
 }
 
+// Check for a game winner 
 function checkGameWinner() {
 
     var gameWinner = null;
@@ -165,7 +156,6 @@ function checkGameWinner() {
     }
     if (gameWinner) {
         return gameWinner;
-
     } else if (gameboard.includes('')) {
         return null;
     } else {
@@ -182,6 +172,7 @@ function gameMsg() {
         clearCountDown()
         displayWinner.textContent = 'You';
         $('.winning-message').addClass('showMessage');
+        // Increases the score by one
         xScore++
         xWin.innerHTML = xScore;
     } else if (win === 'O') {
