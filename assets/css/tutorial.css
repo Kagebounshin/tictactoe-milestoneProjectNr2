@@ -32,6 +32,14 @@ span:nth-child(4) {
     color: black;
 }
 
+/* MEDIA BREAKPOINTS */
+@media (min-width: 992px) {
+
+    .navbar-nav {
+        margin-left: 0;
+    }
+}
+
 /* ADDITIONAL CONTENT */
 
 img,

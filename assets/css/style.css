@@ -45,8 +45,12 @@ body {
     font-size: 1.5rem;
     border-radius: 50%;
     font-family: 'Sacramento', cursive;
-
     margin-left: 1rem;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: black;
+    background-color: #fff8e6;
 }
 
 .navbar-light .navbar-brand p {
@@ -59,6 +63,7 @@ body {
     color: black !important;
     font-size: 1.7rem;
     margin-left: 1rem;
+    margin-right: 1rem;
     margin-bottom: .5rem;
 }
 
@@ -88,6 +93,25 @@ body {
     margin-right: 1.5rem;
 }
 
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff8e6;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .15);
+    box-shadow: 12px 12px 2px 1px rgb(0 0 0 / 65%);
+    border-radius: .25rem;
+}
+
 .hvr-underline-reveal:before {
     background: black;
 }
@@ -110,10 +134,45 @@ body {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
     }
+
+    .topnav-right {
+        margin-bottom: .5rem;
+    }
 }
 
+@media (min-width: 992px) {
 
-/* ADDITIONAL STYLING */
+    .navbar-nav,
+    .topnav-right {
+        margin-left: auto;
+    }
+}
+
+/* ADDITIONAL STYLING  */
+
+#bgButton {
+    font-family: 'Sacramento', cursive;
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+    color: #fff8e6;
+    background-color: black;
+    border-radius: 32px;
+    border: none;
+}
+
+#bgButton p {
+    margin-top: .5rem;
+    margin-right: .1rem;
+}
+
+#bgButton:hover {
+    color: black;
+    background-color: #fff8e6;
+}
 
 .text-center {
     text-align: center;

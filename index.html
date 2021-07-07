@@ -33,17 +33,39 @@
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
+                    <a class="nav-link hvr-underline-reveal" aria-current="page" href="index.html">Home</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle hvr-underline-reveal" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Games
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="nav-link hvr-underline-reveal" aria-current="page" href="pvp.html">Player
+                                    VS
+                                    Player</a></li>
+                            <li><a class="nav-link hvr-underline-reveal" aria-current="page" href="cpu.html">Player VS
+                                    Computer</a></li>
+                            <li>
+
+                            </li>
+
+                        </ul>
+                    </li>
                     <a class="nav-link hvr-underline-reveal" aria-current="page" href="tutorial.html">How To Play</a>
-                    <a class="nav-link hvr-underline-reveal" aria-current="page" href="pvp.html">Player VS Player</a>
-                    <a class="nav-link hvr-underline-reveal" aria-current="page" href="cpu.html">Player VS Computer</a>
 
                     <a class="nav-link hvr-underline-reveal" href="contact.html" aria-hidden="true">Contact</a>
-                    <a id="bgButton" class="nav-link hvr-underline-reveal" href="#">Background</a>
+
 
                 </div>
+                <div class="topnav-right justify-content-end text-right">
+                    <button id="bgButton">
+                        <p>B</p>
+                    </button>
+                </div>
             </div>
+
         </div>
     </nav>
 
