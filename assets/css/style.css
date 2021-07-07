@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
 body {
     background-color: #25876f;
     padding: 0;
@@ -32,19 +34,25 @@ body {
     padding-bottom: 0px;
 }
 
-.navbar-brand {
-    font-size: 2.5rem;
-
-    font-family: 'Waiting for the Sunrise', cursive;
-}
-
 .navbar.bg-light {
     background-color: #fff8e6 !important;
 }
 
 .navbar-light .navbar-brand {
-    color: black !important;
+    background-color: black !important;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    font-family: 'Sacramento', cursive;
+
     margin-left: 1rem;
+}
+
+.navbar-light .navbar-brand p {
+    color: #fff8e6 !important;
+    margin-top: .25rem;
+    margin-left: .1rem;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -94,6 +102,16 @@ body {
     overflow: hidden;
     width: auto;
 }
+
+/* MEDIA BREAKPOINTS */
+
+@media (max-width: 991px) {
+    .navbar-light .navbar-brand {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
 
 /* ADDITIONAL STYLING */
 
