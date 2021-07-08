@@ -159,10 +159,10 @@ body {
     height: 3rem;
     width: 3rem;
     font-size: 1.5rem;
-    color: #fff8e6;
-    background-color: black;
-    border-radius: 32px;
-    border: none;
+    color: black;
+    background-color: #fff8e6;
+    border: 3px solid black;
+    border-radius: 50%;
 }
 
 #bgButton i {
@@ -171,8 +171,8 @@ body {
 }
 
 #bgButton:hover {
-    color: black;
-    background-color: #fff8e6;
+    color: #fff8e6;
+    background-color: black;
 }
 
 .text-center {
