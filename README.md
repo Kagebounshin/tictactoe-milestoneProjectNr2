@@ -133,47 +133,31 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 #### Colour Scheme
 - Text Colors
 
-    - The text color of all the pages is set to have the color black (#000000). On the game pages there are some text styled with the color white (#ffffff). 
-        
-        The text in the form at the contact page has as more grey (#212529) color set to it.
-
-        <img src="assets/img/img-readme/000000.png">
-        <img src="assets/img/img-readme/ffffff.png">
-        <img src="assets/img/img-readme/212529.png">
-        
+    - The text color of all the pages is set to have the color black ([#000000](assets/img/img-readme/000000.png)). On the game pages there are some text styled with the color white ([#ffffff](assets/img/img-readme/ffffff.png)). The text in the form at the contact page has as more grey ([#212529](assets/img/img-readme/212529.png)) color set to it.
         
 - Navbar
 
-    - The Navbar has a cream white (#fff8e6) background, I wanted a more smooth and pleasing color instead of a basic white (#ffffff). 
+    - The Navbar has a cream white ([#fff8e6](assets/img/img-readme/fff8e6.png)) background, I wanted a more smooth and pleasing color instead of a basic white ([#ffffff](assets/img/img-readme/ffffff.png)). 
        
-        <img src="assets/img/img-readme/fff8e6.png">
 
 - Home page, Game pages & Contact Page
          
-    - At the Home page, game pages & the contact page you can click a button wich will randomly change the background color, the colors wich the background can randomly changes to is displayed below this text.
-            
-        <img src="assets/img/img-readme/25876f.png">
-        <img src="assets/img/img-readme/7fc3cc.png">
-        <img src="assets/img/img-readme/fc9819.png">
-        <img src="assets/img/img-readme/3451c6.png">
-        <img src="assets/img/img-readme/D45B64.png">
-        <img src="assets/img/img-readme/ffbd89.png">
-        <img src="assets/img/img-readme/ba50f7.png">
-        <img src="assets/img/img-readme/fff8e6.png">
+    - At the Home page, game pages & the contact page you can click a button wich will randomly change the background color, the colors wich the background can randomly changes to is [#25876f](assets/img/img-readme/25876f.png), [#7fc3cc](assets/img/img-readme/7fc3cc.png), [#fc9819](assets/img/img-readme/fc9819.png), [#3451c6](assets/img/img-readme/3451c6.png), [#D45B64](assets/img/img-readme/D45B64.png), [#ffbd89](assets/img/img-readme/ffbd89.png), [#ba50f7](assets/img/img-readme/ba50f7.png), [#fff8e6](assets/img/img-readme/fff8e6.png).
+       
 
-        The Gameboard has the cream white (#fff8e6) color as background, and the box shadow is faded to 65% from the color black (#000000).
+    - The Gameboard has the cream white ([#fff8e6](assets/img/img-readme/fff8e6.png)) color as background, and the box shadow is faded to 65% from the color black ([#000000](assets/img/img-readme/000000.png)).
 
 - Tutorial Page
 
-    - The background for the tutorial page is set to a light blue color(#7fc3cc). 
+    - The background for the tutorial page is set to a light blue color ([#7fc3cc](assets/img/img-readme/7fc3cc.png)). 
 
-        <img src="assets/img/img-readme/7fc3cc.png">
 ---
 #### Typography
 
-- The fonts I've used across the site are from [Google Fonts](https://fonts.google.com/). The fonts are, 'Just Me Again Down Here', 'Waiting for the Sunrise' & 'Roboto'. 
+- The fonts I've used across the site are from [Google Fonts](https://fonts.google.com/). The fonts are, 'Just Me Again Down Here', 'Waiting for the Sunrise', 'Sacramento' & 'Roboto'. 
     - ['Just Me Again Down Here'](https://fonts.google.com/specimen/Just+Me+Again+Down+Here?query=Just+Me+Again+Down+Here) is used as the main font, the links on the navbar, and most of the informative paragraphs across the site. 
     - ['Waiting for the Sunrise'](https://fonts.google.com/specimen/Waiting+for+the+Sunrise?query=Waiting+for+the+Sunrise) is used for the X's and O's, the secounds on the countdown timers & the numbers on the scoreboards.
+    - ['Sacramento'](https://fonts.google.com/specimen/Sacramento?query=Sacramento) was used for the page logo. 
     - [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto) is used for the "Tic Tac Toe" header on the homepage, and the text inside the form on the contact page. I thought that the header looked much more nice with a diffrent font, I wanted it to stand out from the rest of the site. And for the form I wanted to have this font because it's more readable then the main font, nice to have when you're typing. 
 
 ---
