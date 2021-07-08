@@ -44,6 +44,7 @@ body {
     width: 3rem;
     font-size: 1.5rem;
     border-radius: 50%;
+
     font-family: 'Sacramento', cursive;
     margin-left: 1rem;
 }
@@ -55,7 +56,7 @@ body {
 
 .navbar-light .navbar-brand p {
     color: #fff8e6 !important;
-    margin-top: .25rem;
+    margin-top: .3rem;
     margin-left: .1rem;
 }
 
@@ -164,7 +165,7 @@ body {
     border: none;
 }
 
-#bgButton p {
+#bgButton i {
     margin-top: .5rem;
     margin-right: .1rem;
 }

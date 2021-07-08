@@ -31,6 +31,7 @@ CONTAINERS */
     animation-delay: 1.5s;
     color: #fff8e6;
     text-shadow: 4px 4px black;
+    ;
 }
 
 .welcome-container span:last-child {
