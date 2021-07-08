@@ -46,7 +46,7 @@ https://codepen.io/robsonvinicius/pen/bGpKQrw */
 }
 
 .social-link:hover {
-    color: white;
+    color: #fff8e6;
 }
 
 .social-link i {
@@ -74,7 +74,7 @@ https://codepen.io/robsonvinicius/pen/bGpKQrw */
 }
 
 .social-container li i {
-    color: #fff;
+    color: #fff8e6;
     font-size: 2rem;
 }
 
@@ -112,8 +112,17 @@ form ::placeholder {
 }
 
 .sendButton {
+    font-size: 2rem;
+    color: black;
     background-color: #fff8e6;
-    box-shadow: 5px 5px rgb(0 0 0 / 4%);
+    border-radius: 15%;
+    box-shadow: 8px 8px 2px 1px rgb(0 0 0 / 65%);
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.sendButton:hover {
+    color: black;
 }
 
 /* MEDIA BREAKPOINTS */
