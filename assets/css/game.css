@@ -78,9 +78,17 @@
 }
 
 .welcome-message h1 {
-    font-size: 4rem;
-    color: black;
-    font-family: 'Waiting for the Sunrise', cursive;
+    margin: 0 auto;
+    background-color: black;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: #fff8e6;
+    font-family: 'Sacramento', cursive;
+    margin-top: 1.5rem;
+    padding-top: 1.1rem;
+    padding-right: .1rem;
 }
 
 .gameover-message p,
@@ -196,10 +204,18 @@
 
     .gameover-message h1,
     .tie-message h1,
-    .winning-message h1,
-    .welcome-message h1 {
+    .winning-message h1 {
         font-size: 2rem;
         padding-top: 2.5rem !important;
+    }
+
+    .welcome-message h1 {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        padding-top: .9rem;
+        padding-right: .1rem;
     }
 
     .gameover-message p,
