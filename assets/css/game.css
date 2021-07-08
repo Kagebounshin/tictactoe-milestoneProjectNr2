@@ -130,7 +130,15 @@
     box-shadow: 12px 12px 2px 1px rgb(0 0 0 / 65%);
 }
 
-.restartButton,
+.restartButton {
+    background-color: transparent;
+    font-size: 2rem;
+    color: black;
+    border: 3px solid black;
+    border-radius: 32px;
+    margin-left: 5rem;
+}
+
 .startButton {
     display: block;
     margin: 0 auto;
@@ -142,9 +150,27 @@
 }
 
 .restartButton:hover,
-.startButton:hover {
+.startButton:hover,
+.home-link:hover {
     color: #fff8e6;
     background-color: black;
+}
+
+.home-link {
+    bottom: .8rem;
+    float: right;
+    margin-right: 6rem;
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+    border: 3px solid black;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.home-link i {
+    font-size: 2rem;
+    padding: .55rem;
 }
 
 
@@ -219,6 +245,20 @@
         top: 40%;
         width: 250px;
         height: 400px;
+    }
+
+    .home-link {
+        margin-right: 1.5rem;
+    }
+
+    .home-link i {
+        font-size: 1.7rem;
+        padding: .55rem;
+    }
+
+    .restartButton {
+        font-size: 1.7rem;
+        margin-left: 1rem;
     }
 }
 
