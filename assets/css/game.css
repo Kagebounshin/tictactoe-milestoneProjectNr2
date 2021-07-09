@@ -278,7 +278,7 @@
     }
 }
 
-@media (max-height: 250px) {
+@media (max-height: 376px) {
 
     .game-container {
         width: 250px;
