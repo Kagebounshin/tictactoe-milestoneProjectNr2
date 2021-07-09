@@ -278,7 +278,21 @@
     }
 }
 
-@media (max-height: 250px) {}
+@media (max-height: 250px) {
+
+    .game-container {
+        width: 250px;
+        height: 250px;
+        text-align: center;
+
+    }
+
+    .xo-container {
+        width: 80px;
+        height: 80px;
+        font-size: 60px;
+    }
+}
 
 /* Small devices (landscape phones, 576px and up) */
 
