@@ -300,7 +300,7 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
         - Quotes from family & Friends. 
             - "I think it looks nice, and is easy to understand." Love, 8 years old.
             - "It is pretty, and the game is fun, I like to change the background, the pink one is my favorite" Saga, 5 years old. 
-            - "" Jenny, 30 years old
+            - "I think it's a fun game to play with my kids or just playing against the computer. I like the colors, they are very pleasing for the eye" Jenny, 30 years old
 
     5. I want feedback once the game is done, such as who won, and whats the score. 
         - When either of the players or the computer wins, a modal fade in with a text that says who has won or if there was a 'Tie' or if the timer has run out. 
