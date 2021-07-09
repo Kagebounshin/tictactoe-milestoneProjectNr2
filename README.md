@@ -110,7 +110,9 @@ I'm thinking three pictures wich displays three winning combinations horizontall
     - The form will be conected with emailJS.
     - Below the form their will be links to my LinkedIn, gitHub & Instagram.
 
-- 
+- Late Development
+    - Late in the development, me and my mentor decided to also have a Player VS Computer game. So I made a new page, wich looks exactly like the Player Vs Player page, just with some minor changes. And made a script for it to work properly. 
+    - I also made a home page, becouse I got to diffrent game pages, I wanted you to enter the site on neutral grounds. So you could choose wich type of game to play from there. 
 ### Skeleton
 ---
 
@@ -165,27 +167,28 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 ## Features
 
 - Navbar
-    - All the pages has the same looking Navbar. The Navbrand takes you to the Homepage. 
-    - There is a "Background" button, and guess what, it changes the background of the page (not implemented on the tutorial page).  
+    - All the pages has the same looking [Navbar](assets/img/img-readme/navbar.png). The [Navbrand](assets/img/img-readme/navbrand.png) takes you to the Homepage. 
+    - There is a "[Background](assets/img/img-readme/bgButton.png)" button, and guess what, it changes the background of the page (not implemented on the tutorial page).  
 
 - Home Page
-    - The home page has a header text wich reads 'Tic Tac Toe',
-    underneath that header are links to the tutorial page and the two diffrent game pages. These links are also at the navbar, but I wanted you to be able to quickly choose where to go on the website, especially on your mobile where the navbar is collapsed. And that it would be reminiscent of a game menu.
-     Below all of that are links to my gitHub, linkedIn and Instagram accounts.
+    - The home page has a [Header](assets/img/img-readme/headerHome.png) wich reads 'Tic Tac Toe',
+    underneath that header are [links](assets/img/img-readme/linksHome.png) to the tutorial page and the two diffrent game pages. These links are also at the navbar, but I wanted you to be able to quickly choose where to go on the website, especially on your mobile where the navbar is collapsed. And that it would be reminiscent of a game menu.
+     Below all of that are [links](assets/img/img-readme/linksHome1.png) to my gitHub, linkedIn and Instagram accounts.
 - Game Pages
-    - The Gameboard is at the center of the screen, the 9 diffrent spaces where you can make your mark has a hover effect on them, the effect slightly shrinks the hovered space. 
-    - The game pages has a text wich displays whos turn it is. The Game is set to start with the player "X" as default. When you start playing, the text switches between the player "X" & "O" depending whos turn it is.
-    - There is a "Timer" wich count down from 15 on the Player vs Player page, and 10 for the Player vs Computer page. If the timer run out, the game is over. 
-    - Below the gameboards there is a score counter, wich display's the score for both players. To get one point you need to win the match, if the game ends in a tie, nobody gets a score. 
+    - The [Gameboard](assets/img/img-readme/gameboard.png) is at the center of the screen, the 9 diffrent spaces where you can make your mark has a hover effect on them, the effect slightly shrinks the hovered space. 
+    - The game pages has a text wich displays whos "[Turn](assets/img/img-readme/turn.png)" it is. The Game is set to start with the player "X" as default. When you start playing, the text switches between the player "X" & "O".
+    - There is a "[Timer](assets/img/img-readme/timer.png)" wich count down from 15 on the Player vs Player page, and 10 for the Player vs Computer page. If the timer run out, the game is over. 
+    - Below the gameboards there is a" [Scoreboard](assets/img/img-readme/scoreboard.png)", wich display's the score for both players. To get one point you need to win the match, if the game ends in a tie, nobody gets a score. 
+    - No matter the out come of the game, a "[Modal](assets/img/img-readme/modal.png)" will fade in. At the bottom of the modal is a "Play Again" button, click the button, and the game restarts. Or click the house icon to return the the Home Page. 
 
 - Tutorial Page
-    - Here are four pictures wich displays three ways to win a game, horizontally, vertically & diagonally. And a picture wich displays a tie.
-    - Below the pictures is explainations forr the Countdown timer, turn display & Score counter. 
+    - Here are four pictures wich displays three ways to win a game, [horizontally](assets/img/img-tutorial/win1.png), [vertically](assets/img/img-tutorial/win2.png) &  [diagonally](assets/img/img-tutorial/win3.png). And a picture wich displays a [tie](assets/img/img-tutorial/tie.png).
+    - Below the pictures is [explainations](assets/img/img-readme/explain.png) for the Countdown timer, turn display & Score counter. 
 
 - Contact Page
-    - Send feedback to me, or visit me on gitHub, Instagram or LinkedIn. 
+    - Send [feedback](assets/img/img-readme/feedback.png) to me, or visit me on [gitHub, Instagram or LinkedIn](assets/img/img-readme/linksContact.png). 
 
-- Extra
+- Extr
     - Responsive across different platforms. 
 
 ## Features for the future
@@ -306,7 +309,7 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
         - When either of the players or the computer wins, a modal fade in with a text that says who has won or if there was a 'Tie' or if the timer has run out. 
         - Underneath the gameboard there is a scoreboard, if you win you'll get one point, if it's a 'Tie' the scoreboard remains unchanged. 
     6. I want to restart the game when the game is finished.
-        - No mather the out come of the game, a modal will fade in. At the bottom of the modal is a "Play Again" button, click the button, and the game restarts. 
+        - No matter the out come of the game, a modal will fade in. At the bottom of the modal is a "Play Again" button, click the button, and the game restarts. 
 ---
 
 ## Game Testing
