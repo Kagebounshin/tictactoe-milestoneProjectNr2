@@ -130,7 +130,7 @@ body {
 /* MEDIA BREAKPOINTS */
 @media (max-width: 576px) {
     #bgButton i {
-        margin: 0;
+        margin-right: 3rem;
     }
 }
 
@@ -142,7 +142,6 @@ body {
 
     .topnav-right {
         margin-bottom: .5rem;
-        padding-right: .5rem;
     }
 }
 
