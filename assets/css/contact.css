@@ -170,9 +170,64 @@ form ::placeholder {
 
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+
+    .form-container {
+        margin-top: 1rem !important;
+    }
+
+    .form-container h1 {
+        margin-top: 0 !important;
+    }
+
+
+    /* FORM */
+
+    form input,
+    form textarea {
+        margin-top: .5rem !important;
+        box-shadow: 5px 5px rgb(0 0 0 / 4%);
+    }
+
+    .form-content {
+        margin-top: .5rem !important;
+        margin-bottom: .5rem !important;
+    }
+
+    form input {
+        height: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    form textarea {
+        height: 5rem;
+        margin-bottom: .5rem;
+    }
+
+    .sendButton {
+        font-size: 1rem;
+        box-shadow: 4px 4px 2px 1px rgb(0 0 0 / 65%);
+    }
+
+    .social-link {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .social-link::before {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .social-container li i {
+        font-size: 1rem;
+    }
+
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
+
 
 /* ADDITIONAL STYLING */
 
