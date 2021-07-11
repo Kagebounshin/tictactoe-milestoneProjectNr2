@@ -43,7 +43,6 @@ body {
     width: 3rem;
     font-size: 1.5rem;
     border-radius: 50%;
-
     font-family: 'Sacramento', cursive;
     margin-left: 1rem;
 }
@@ -112,6 +111,29 @@ body {
     border-radius: .25rem;
 }
 
+#bgButton {
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+    color: black;
+    background-color: #fff8e6;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+#bgButton i {
+    margin-top: .5rem;
+}
+
+#bgButton:hover {
+    color: #fff8e6;
+    background-color: black;
+}
+
+
 .hvr-underline-reveal:before {
     background: black;
 }
@@ -148,29 +170,16 @@ body {
     }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .navbar-light .navbar-nav .nav-link {
+        margin-top: -.5rem;
+        font-size: 1rem;
+
+    }
+}
+
 /* ADDITIONAL STYLING  */
 
-#bgButton {
-    display: block;
-    margin: 0 auto;
-    background-color: transparent;
-    height: 3rem;
-    width: 3rem;
-    font-size: 1.5rem;
-    color: black;
-    background-color: #fff8e6;
-    border: 3px solid black;
-    border-radius: 50%;
-}
-
-#bgButton i {
-    margin-top: .5rem;
-}
-
-#bgButton:hover {
-    color: #fff8e6;
-    background-color: black;
-}
 
 .text-center {
     text-align: center;
