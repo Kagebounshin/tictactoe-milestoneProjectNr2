@@ -130,7 +130,7 @@ body {
 /* MEDIA BREAKPOINTS */
 @media (max-width: 576px) {
     #bgButton i {
-        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 
