@@ -17,7 +17,6 @@ body {
     touch-action: manipulation;
 }
 
-
 /* CONTAINERS */
 
 .container-fluid {
@@ -138,6 +137,7 @@ body {
 
     .topnav-right {
         margin-bottom: .5rem;
+        padding-right: .5rem;
     }
 }
 
@@ -165,9 +165,8 @@ body {
 }
 
 #bgButton i {
-
-    margin-top: .5rem;
-    margin-right: .1rem;
+    /* margin-top: .5rem; */
+    margin: 0 auto;
 }
 
 #bgButton:hover {
