@@ -174,8 +174,6 @@
     padding: .55rem;
 }
 
-
-
 /* MEDIA BREAKPOINTS */
 
 /* Small devices (landscape phones, max 576px) */
@@ -271,7 +269,6 @@
     }
 }
 
-
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {
@@ -343,63 +340,9 @@
     }
 }
 
+/* Large devices (desktops, 992px and up) */
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    .game-container {
-        width: 150px;
-        height: 150px;
-        text-align: center;
-        margin-bottom: -9rem;
-    }
-
-    .xo-container {
-        width: 50px;
-        height: 50px;
-        font-size: 40px;
-    }
-
-
-    .turn-container h1 {
-        text-align: start;
-    }
-
-    .counter-container h1 {
-        text-align: end;
-    }
-
-    .score-header {
-        display: none;
-    }
-
-    .modal-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 250px;
-        height: 250px;
-    }
-
-    .modal-content-welcome {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 400px;
-        height: 250px;
-    }
-
-    .startButton {
-        font-size: 1rem;
-    }
-}
-
-
-
-
-/* Medium devices (tablets, 768px and up) */
-
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
     .game-container {
         width: 460px;
@@ -439,6 +382,111 @@
     .modal-content-welcome {
         width: 500px;
         height: 400px;
+    }
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .game-container {
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        margin-bottom: -4rem;
+    }
+
+    .xo-container {
+        width: 50px;
+        height: 50px;
+        font-size: 40px;
+    }
+
+    .turn-container h1 {
+        text-align: start;
+    }
+
+    .counter-container h1 {
+
+        padding-right: 0;
+    }
+
+    .score-header {
+        display: none;
+    }
+
+
+    .modal-content {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 250px;
+        height: 250px;
+    }
+
+    .modal-content-welcome {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 250px;
+    }
+
+    .startButton {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .game-container {
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        margin-bottom: -9rem;
+    }
+
+    .xo-container {
+        width: 50px;
+        height: 50px;
+        font-size: 40px;
+    }
+
+    .turn-container h1 {
+        text-align: start;
+    }
+
+    .counter-container h1 {
+        text-align: end;
+    }
+
+    .score-header {
+        margin-top: 3rem;
+    }
+
+    .score-left {
+        margin-top: -1rem;
+    }
+
+    .score-right {
+        margin-top: -1rem;
+    }
+
+    .modal-content {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 250px;
+        height: 250px;
+    }
+
+    .modal-content-welcome {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 250px;
+    }
+
+    .startButton {
+        font-size: 1rem;
     }
 }
 
