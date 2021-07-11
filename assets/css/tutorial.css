@@ -57,6 +57,51 @@ hr {
     }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .tutorial-container {
+        margin-top: 1rem !important;
+    }
+
+    .tutorial-container h1 {
+        font-size: 1rem;
+    }
+
+    .header-tutorial {
+        font-size: 1.5rem !important;
+    }
+
+    .tutorial-container h2 {
+        font-size: 1rem;
+        padding-top: 0 !important;
+    }
+
+    .tutorial-container p {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .tutorial-container span {
+        font-size: 1rem;
+    }
+
+    .tutorial-container span:nth-child(2),
+    span:nth-child(4) {
+        font-size: 1rem;
+    }
+
+    /* ADDITIONAL CONTENT */
+
+    img,
+    svg {
+        width: 200px;
+        height: 200px;
+    }
+
+    hr {
+        border: 2px solid white !important;
+    }
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 
     .tutorial-container {
@@ -96,51 +141,6 @@ hr {
     svg {
         width: 100px;
         height: 100px;
-    }
-
-    hr {
-        border: 2px solid white !important;
-    }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-    .tutorial-container {
-        margin-top: 1rem !important;
-    }
-
-    .tutorial-container h1 {
-        font-size: 1rem;
-    }
-
-    .header-tutorial {
-        font-size: 1.5rem !important;
-    }
-
-    .tutorial-container h2 {
-        font-size: 1rem;
-        padding-top: 0 !important;
-    }
-
-    .tutorial-container p {
-        font-size: 1rem;
-        margin-bottom: 0;
-    }
-
-    .tutorial-container span {
-        font-size: 1rem;
-    }
-
-    .tutorial-container span:nth-child(2),
-    span:nth-child(4) {
-        font-size: 1rem;
-    }
-
-    /* ADDITIONAL CONTENT */
-
-    img,
-    svg {
-        width: 200px;
-        height: 200px;
     }
 
     hr {
