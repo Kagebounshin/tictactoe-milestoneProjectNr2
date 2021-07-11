@@ -128,6 +128,11 @@ body {
 }
 
 /* MEDIA BREAKPOINTS */
+@media (max-width: 576px) {
+    #bgButton i {
+        margin-left: 1rem;
+    }
+}
 
 @media (max-width: 991px) {
     .navbar-light .navbar-brand {
@@ -165,8 +170,7 @@ body {
 }
 
 #bgButton i {
-    /* margin-top: .5rem; */
-    margin: 0 auto;
+    margin-top: .5rem;
 }
 
 #bgButton:hover {
