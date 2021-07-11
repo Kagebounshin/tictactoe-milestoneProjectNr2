@@ -129,7 +129,7 @@ body {
 
 /* MEDIA BREAKPOINTS */
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
     .navbar-light .navbar-brand {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;

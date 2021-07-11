@@ -103,8 +103,6 @@
     visibility: visible;
     animation-name: fade;
     animation-duration: 1s;
-    /* animation-timing-function: linear; */
-    /* animation-fill-mode: forwards; */
 }
 
 .winning-message span {
@@ -117,11 +115,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: #fff8e6;
-
     padding: 0;
     border-radius: 10px;
-    width: 500px;
-    height: 300px;
     box-shadow: 12px 12px 2px 1px rgb(0 0 0 / 65%);
 }
 
@@ -133,8 +128,6 @@
     background: #fff8e6;
     padding: 0;
     border-radius: 10px;
-    width: 500px;
-    height: 600px;
     box-shadow: 12px 12px 2px 1px rgb(0 0 0 / 65%);
 }
 
@@ -187,7 +180,7 @@
 
 /* Small devices (landscape phones, max 576px) */
 
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
 
     .game-container {
         width: 250px;
@@ -252,15 +245,15 @@
     }
 
     .modal-content {
-        top: 31%;
+        top: 29%;
         width: 250px;
         height: 250px;
     }
 
     .modal-content-welcome {
-        top: 40%;
+        top: 30%;
         width: 250px;
-        height: 400px;
+        height: 300px;
     }
 
     .home-link {
@@ -292,7 +285,116 @@
         width: 100px;
         height: 100px;
     }
+
+
+    .modal-content {
+        top: 31%;
+        width: 250px;
+        height: 250px;
+    }
+
+    .gameover-message h1,
+    .tie-message h1,
+    .winning-message h1 {
+        font-size: 2rem;
+        padding-top: 2.5rem !important;
+    }
+
+    .welcome-message h1 {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        padding-top: .9rem;
+        padding-right: .1rem;
+    }
+
+    .gameover-message p,
+    .tie-message p,
+    .winning-message p {
+        font-size: 2rem;
+    }
+
+    .welcome-message p {
+        font-size: 1.6rem;
+    }
+
+    .modal-content-welcome {
+
+        top: 35%;
+
+        width: 400px;
+
+        height: 300px;
+    }
+
+    .home-link {
+        margin-right: 1.5rem;
+    }
+
+    .home-link i {
+        font-size: 1.7rem;
+        padding: .55rem;
+    }
+
+    .restartButton {
+        font-size: 1.7rem;
+        margin-left: 1rem;
+    }
 }
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .game-container {
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        margin-bottom: -9rem;
+    }
+
+    .xo-container {
+        width: 50px;
+        height: 50px;
+        font-size: 40px;
+    }
+
+
+    .turn-container h1 {
+        text-align: start;
+    }
+
+    .counter-container h1 {
+        text-align: end;
+    }
+
+    .score-header {
+        display: none;
+    }
+
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 250px;
+        height: 250px;
+    }
+
+    .modal-content-welcome {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 250px;
+    }
+
+    .startButton {
+        font-size: 1rem;
+    }
+}
+
+
 
 /* Medium devices (tablets, 768px and up) */
 
@@ -302,11 +404,40 @@
         width: 460px;
         height: 460px;
         font-size: 100px;
+        margin-bottom: 0;
     }
 
     .xo-container {
         width: 150px;
         height: 150px;
+        font-size: 100px;
+    }
+
+    .gameover-message h1,
+    .tie-message h1,
+    .winning-message h1 {
+        font-size: 4rem;
+
+    }
+
+
+    .gameover-message p,
+    .tie-message p,
+    .winning-message p,
+    .welcome-message p {
+        font-size: 3rem;
+
+    }
+
+    .modal-content {
+        width: 500px;
+        height: 300px;
+
+    }
+
+    .modal-content-welcome {
+        width: 500px;
+        height: 400px;
     }
 }
 
