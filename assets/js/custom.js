@@ -45,7 +45,9 @@ function startGame() {
         '', '', '',
         '', '', ''
     ];
-
+    // Adding eventlistener to the gameboard divs
+    // https://dev.to/cilly_boloe/addeventlistener-once-js-bits-565d
+    // for only adding the click event once.
     for (let i in xoContainer) {
         xoContainer[i].addEventListener('click', clickHandler, {
             once: true
