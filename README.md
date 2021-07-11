@@ -346,10 +346,10 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
 #### Player VS Computer
 - Make Mark
     - I start by making a mark, and an 'X' appears.
-    - A slight delay then the computer make its move by marking an 'O' at the gameboard.
+    - Just as I make my mark the computer marks the gameboard with an 'O'.
     - It's my turn again, I try to mark over the computers 'O'. I dosen't work. I need to find an unoccupied space. A make my mark. 
     - Continuing doing this until one of us wins.
-    - I can restart the game, and the gameboard is cleard of all the marks. 
+    - I can restart the game, and the gameboard is cleard of all the marks & the timer is reset. And if any one has won, the score increases with 1. 
 ---
     
 ### Testing of the contact form
@@ -373,6 +373,8 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
 - At the 'Player VS Computer' page, after a game was finished (not after every game), and when you have clicked the "Play Again" button, the new board already had the 'X' randomly set to it ([See picture](assets/img/img-readme/gamebug1.png)). If you refreashed the page it went back to the default stage, but after a few matches the bug was back. I havn't resolved that bug yet. But since you are the 'X' by default. I've added a line of code inside the computerMove function, so the computer is always set to the 'O'. This was the code I used "mark = cpu" on line 123 inside the gameScript.js. So whenever it feels like it, the computer makes the first mark on the gameboard. 
 
 - At the 'Player VS Computer' page, I did a delay function on the computerMove, but if I did another move before the computer, I would mark the gameboard with an 'O' instead of an 'X'. So I removed that function, and the problem was solved. Also by removing that delay function, the above bug disapeard as well. It was a nice touch to the game, but since it could mess up the game play, I decieded to remove that function. (for now).
+
+- On Iphone X, in the safari browser, the "Change Background color button doesn't look like it does when viewed in other browsers, the [paint brush]() is not centered inside the circle 
 ---
 
 ## Deployment
@@ -436,7 +438,7 @@ $ git clone https://kagebounshin.github.io/tictactoe-milestoneProjectNr2
 
 - The Structure for this game was obtained from [Anna Peterson](https://medium.com/@annapeterson89) and her tutorial "[The World’s Most Empowering Tic-Tac-Toe JavaScript Tutorial](https://javascript.plainenglish.io/the-worlds-most-empowering-tic-tac-toe-javascript-tutorial-a889e4c20883)". 
 
-
+- For adding eventlistener [once](https://dev.to/cilly_boloe/addeventlistener-once-js-bits-565d) on gameboard, thanks to [Billy](https://dev.to/cilly_boloe)
 ### Acknowledgements
 
 - The layout inspration for this README.md is from Code Institute's own [Sample README](https://github.com/Code-Institute-Solutions/SampleREADME).
@@ -445,4 +447,4 @@ $ git clone https://kagebounshin.github.io/tictactoe-milestoneProjectNr2
 
 - Support from family & friends
 
-- Mentor for feedback
+- Mentor Femi for feedback & support!
