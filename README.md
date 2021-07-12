@@ -20,7 +20,6 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 
 
 2.[**Features**](#features)
-- [**Existing Features**](#existing-features)
 - [**Features For The Future**](#features-for-the-future)
 
 3.[**Technologies**](#technologies-used)
