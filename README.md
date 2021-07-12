@@ -244,7 +244,21 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 The W3C Markup Validator and W3C CSS validator Services were used to validate this project. 
 
 - [W3C Markup Validator](https://validator.w3.org/) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkagebounshin.github.io%2Ftictactoe-milestoneProjectNr2%2F)
-- [W3C CSS Validator]() - No Errors Found
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
+    - 404 - [Results](assets/img/img-readme/404W3C.png)
+    - Contact - [Results](assets/img/img-readme/ContactW3C.png)
+    - Cpu - [Results](assets/img/img-readme/cpuW3C.png)
+    - Game - [Results](assets/img/img-readme/gameW3C.png)
+    - Style 
+        - [Results](assets/img/img-readme/styleW3C.png)
+        - [Warnings](assets/img/img-readme/styleW3CWarnings.png)
+
+    - Tutorial 
+        - [Results](assets/img/img-readme/tutorialW3C.png)
+        - [Warnings](assets/img/img-readme/tutorialW3CWarnings.png)
+    - Welcome 
+        - [Results](assets/img/img-readme/welcomeW3C.png)
+        - [Warnings](assets/img/img-readme/welcomeW3CWarnings.png)
 
 ### Lighthouse Testing
 

@@ -141,9 +141,7 @@ body {
 .hvr-underline-reveal {
     display: inline-block;
     vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px transparent;
     position: relative;
     overflow: hidden;
     width: auto;
@@ -170,7 +168,7 @@ body {
     }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
     .navbar-light .navbar-nav .nav-link {
         margin-top: -.5rem;
         font-size: 1rem;
@@ -179,7 +177,6 @@ body {
 }
 
 /* ADDITIONAL STYLING  */
-
 
 .text-center {
     text-align: center;
