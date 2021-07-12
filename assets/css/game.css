@@ -401,16 +401,20 @@
     }
 
     .turn-container h1 {
-        text-align: start;
+        text-align: center;
+        margin-right: 5rem;
     }
 
     .counter-container h1 {
-
-        padding-right: 0;
+        text-align: center;
     }
 
     .score-header {
         display: none;
+    }
+
+    .score-left {
+        text-align: center;
     }
 
 
@@ -450,23 +454,29 @@
     }
 
     .turn-container h1 {
-        text-align: start;
+        text-align: center;
+        margin-right: 5rem;
     }
 
     .counter-container h1 {
-        text-align: end;
+        text-align: center;
+        margin-left: 2rem;
     }
 
     .score-header {
         margin-top: 3rem;
+        margin-left: 1.8rem;
     }
 
     .score-left {
         margin-top: -1rem;
+        margin-right: 2rem;
+        text-align: center;
     }
 
     .score-right {
         margin-top: -1rem;
+        margin-left: 2rem;
     }
 
     .modal-content {
