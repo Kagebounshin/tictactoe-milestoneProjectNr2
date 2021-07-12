@@ -31,8 +31,7 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 5.[**Deployment**](#deployment)
 
 6.[**Credits**](#credits)
-- [**Content**](#content)
-- [**Media**](#media)
+- [**Code**](#code)
 - [**Acknowledgements**](#acknowledgements)
 
 ---
@@ -457,6 +456,10 @@ $ git clone https://kagebounshin.github.io/tictactoe-milestoneProjectNr2
 - The Structure for this game was obtained from [Anna Peterson](https://medium.com/@annapeterson89) and her tutorial "[The World’s Most Empowering Tic-Tac-Toe JavaScript Tutorial](https://javascript.plainenglish.io/the-worlds-most-empowering-tic-tac-toe-javascript-tutorial-a889e4c20883)". 
 
 - For adding eventlistener [once](https://dev.to/cilly_boloe/addeventlistener-once-js-bits-565d) on gameboard, thanks to [Billy](https://dev.to/cilly_boloe)
+
+- bounceIn animation was made by [Aryan](https://codepen.io/ayan) an obtained from [codePen](https://codepen.io/ayan/pen/XWmwEjG)
+
+- Change background code was inspired from [this](https://www.w3resource.com/javascript-exercises/javascript-math-exercise-40.php) site. 
 ### Acknowledgements
 
 - The layout inspration for this README.md is from Code Institute's own [Sample README](https://github.com/Code-Institute-Solutions/SampleREADME).
