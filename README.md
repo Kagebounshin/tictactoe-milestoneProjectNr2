@@ -8,6 +8,7 @@ Welcome to my second milestone project provided by [Code Institute](https://code
 
 ## Table Of Content
 1.[**UX**](#user-experience) 
+- [**User Stories**](#user-stories)
 - [**Strategy**](#strategy)
 - [**Scope**](#scope)
 - [**Structure**](#structure)
@@ -15,7 +16,7 @@ Welcome to my second milestone project provided by [Code Institute](https://code
     - [**Wireframes**](#wireframes)
 - [**Surface**](#surface)
     - [**Design**](#design)
-- [**User Stories**](#user-stories)
+
 
 
 2.[**Features**](#features)
@@ -112,7 +113,7 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 
 - Late Development
     - Late in the development, me and my mentor decided to also have a Player VS Computer game. So I made a new page, wich looks exactly like the Player Vs Player page, just with some minor changes. And made a script for it to work properly. 
-    - I also made a home page, becouse I got to diffrent game pages, I wanted you to enter the site on neutral grounds. So you could choose wich type of game to play from there. 
+    - I also made a home page, becouse I got two diffrent game pages, I wanted you to enter the site on neutral grounds. So you could choose wich type of game to play from there. 
 ### Skeleton
 ---
 
@@ -188,7 +189,7 @@ I'm thinking three pictures wich displays three winning combinations horizontall
 - Contact Page
     - Send [feedback](assets/img/img-readme/feedback.png) to me, or visit me on [gitHub, Instagram or LinkedIn](assets/img/img-readme/linksContact.png). 
 
-- Extr
+- Extra
     - Responsive across different platforms. 
 
 ## Features for the future
@@ -286,7 +287,7 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
 - First time Visitor,
     1. I want to get clear instructions on how the site works, what you can do, and how to do it.
         - When entering the site, users can easily navigate their way through the site, using the navbar at the top. Below there is a large text wich reads "Tic Tac Toe", links to a tutorial page and two diffrent game pages & links to the authors gitHub, LinkedIn and Instagram accounts. 
-        - The main text explains the soul purpose of the page.
+        - The header explains the soul purpose of the page.
         - The links below the main text give you three options, you can go to the tutorial page, or just start playing by choosing you're preferred game type. These three links are also avalible at the navbar. 
         - There is also a "How to play" page, wich explains the diffrent ways I can win, or what happens if there is no winner. It also explains whats going on around the gameboard.
     2. I want to easily navigate my way through the website.
@@ -299,7 +300,7 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
             - When I press play, the game start. 
             - The game takes turn between the 'X' & the 'O'. If you loose track of whose turn it is, you can look to the left above the gameboard, there you have a text wich shows whos turn it currently is.
             - When you win a game either as 'X' or 'O', or if the time has run out, or if the game ends with a draw. A modal fades in and discribes the out come of that game, and I can easily restart the game by pressing the "Play Again" button on the modal. 
-            - The countdown timer is counting down from 15 secounds, when it's 3 secounds left, the color of the seconds changes to 'Red'. When the timer reaches 0, a modal fades in, explaining that the time has run out & a button were I can choose to play once more.
+            - The countdown timer is counting down from 15 seconds, when it's 3 seconds left, the color of the seconds changes to 'Red'. When the timer reaches 0, a modal fades in, explaining that the time has run out & a button were I can choose to play once more.
         - Player VS Computer
             - I go to the desired page, using the navbar. A modal appears, explaining the game type I have choosed. That you play against the computer , that the game has a countdown timer. Also that you play as the 'X'. At the bottom of the modal is a play button.
             - I press the play butto, the game is on.
@@ -317,10 +318,10 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
         - Quotes from family & Friends. 
             - "I think it looks nice, and is easy to understand." Love, 8 years old.
             - "It is pretty, and the game is fun, I like to change the background, the pink one is my favorite" Saga, 5 years old. 
-            - "I think it's a fun game to play with my kids or just playing against the computer. I like the colors, they are very pleasing for the eye" Jenny, 30 years old
+            - "I think it's a fun game to play with my kids or just playing against the computer. I like the colors, they are very pleasing for the eye" Jenny, 30 years old.
 
     5. I want feedback once the game is done, such as who won, and whats the score. 
-        - When either of the players or the computer wins, a modal fade in with a text that says who has won or if there was a 'Tie' or if the timer has run out. 
+        - When either of the players or the computer wins, a modal fade in with a text that says who has won or if there was a 'Tie' or if the time has run out. 
         - Underneath the gameboard there is a scoreboard, if you win you'll get one point, if it's a 'Tie' the scoreboard remains unchanged. 
     6. I want to restart the game when the game is finished.
         - No matter the out come of the game, a modal will fade in. At the bottom of the modal is a "Play Again" button, click the button, and the game restarts. 
@@ -347,6 +348,9 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
     - The score counter for player "O" increases with 1.
     - I play a game and make it a "Tie".
     - The Score is unchanged
+- Timer
+    - I start the game
+    - When the time has run out, a modal appears, and I can choose to play again. 
 - Restart Button
     - I wait for the time to run out, so I can see the game over message.
     - I click the restart button and the game restarts
@@ -372,12 +376,12 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
 - The page have a feedback form, before submitting the form, I enter my name, emailaddress and a feedback message. 
 - I click at the "Send" button under the form, The message is sent to my Gmail account, the form is reset back to it's default state, and it displays a message above the form thanking you for submitting. 
 - If I dont fill in the form correctley before submitting, lets say leaving the email input window empty, a message will be displayed saying I need to include a emailaddress if I want to submit the form. 
-- The icons at the bottom takes you to where you excpect. 
+- The icons at the bottom take you to gitHub, LinkedIn & Instagram.  
 
 ### Further Testing
 
 - This project was tested different webbrowsers, Google Chrome & Microsoft Edge, Safari.
-- This project was tested different devices such as Desktop, Laptop, Ipad, Iphone 12 Pro, IphoneX, Iphone 8 & Iphone 7, Sony xperia Z1.
+- This project was tested different devices such as Desktop, Laptop, Ipad, Iphone 12 Pro, Iphone X, Iphone 8 & Iphone 7, Sony xperia Z1.
 - The links are tested alot, to ensure they work correctly.
 - Friend & Family members has tested the site, looking for bugs and other issues.                  
 
@@ -388,7 +392,7 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
 
 - At the 'Player VS Computer' page, I did a delay function on the computerMove, but if I did another move before the computer, I would mark the gameboard with an 'O' instead of an 'X'. So I removed that function, and the problem was solved. Also by removing that delay function, the above bug disapeard as well. It was a nice touch to the game, but since it could mess up the game play, I decieded to remove that function. (for now).
 
-- On Iphone X, in the safari browser, the "Change Background color button doesn't look like it does when viewed in other browsers, the [paint brush]() is not centered inside the circle 
+- On Iphone X, in the safari browser, the "Change Background color button doesn't look like it does when viewed in other browsers, the [paint brush](assets/img/img-readme/bugIphoneX.png) is not centered inside the circle. Done nothing about this at the time. 
 ---
 
 ## Deployment
@@ -397,7 +401,7 @@ The W3C Markup Validator and W3C CSS validator Services were used to validate th
 
 My project was deployed to GitHub Pages, following these steps..
 
-1. Log in to [GitHub](https://github.com/) and locate the [GitHub Repository](https://kagebounshin.github.io/tictactoe-milestoneProjectNr2/).
+1. Log in to [GitHub](https://github.com/) and locate the [GitHub Repository](https://github.com/Kagebounshin/tictactoe-milestoneProjectNr2).
 2. At the top of the Repository, locate the "Settings" Button on the menu.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "None" and select "Master Branch".
@@ -409,7 +413,7 @@ My project was deployed to GitHub Pages, following these steps..
 
 By forking the GitHub Repository you can make a copy of the original repository to your GitHub account to just view or make changes without affecting the original. Use these steps or press this [link](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
 
-1. Log in to [GitHub](https://github.com/) and locate the [GitHub Repository](https://github.com/Kagebounshin/neverday-milestone-project-1).
+1. Log in to [GitHub](https://github.com/) and locate the [GitHub Repository](https://github.com/Kagebounshin/tictactoe-milestoneProjectNr2).
 2. In the top-right corner of the page, click Fork.
 3. Now you will have a copy of the original repository in your GitHub account.
 
@@ -417,7 +421,7 @@ By forking the GitHub Repository you can make a copy of the original repository 
 
 Follow these steps or press this [link](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop).
 
-1. Log in to GitHub and locate the [GitHub Repository](https://kagebounshin.github.io/tictactoe-milestoneProjectNr2)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Kagebounshin/tictactoe-milestoneProjectNr2)
 2. Above the list of files, click "Code".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4. Open Git Bash
